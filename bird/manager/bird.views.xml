@@ -244,7 +244,7 @@
                     <cell type="field" id="colrel" uitype="plugin" name="this" initialize="name=CollectionRelOneToManyPlugin;relname=VoucherOf;" colspan="9"/>
                 </row-->
                 <row>
-                    <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="12" rows="5" initialize="bgcolor=240,200,100;border=line;bordercolor=250,0,0"/>
+                    <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="12" rows="5" initialize="bgcolor=250,200,100;border=line;bordercolor=250,0,0"/>
                 </row>
                 <!--row>
                    <cell type="label" labelfor="collectingEvent"/>
