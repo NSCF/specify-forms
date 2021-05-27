@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> 
 <viewset name="Vertpaleo Views" i18nresname="views" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     
     <views>
@@ -43,8 +43,7 @@
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             busrules="edu.ku.brc.specify.datamodel.busrules.CollectionObjectBusRules"
             isinternal="false"
-            resourcelabels="false"
-            >
+            resourcelabels="false">
             <desc><![CDATA[The Collection Object form.]]></desc>
             <altviews>
                 <altview name="Collection Object View" viewdef="Collection Object" mode="view"/>
@@ -63,18 +62,18 @@
             </altviews>
         </view>      
         
-         <view name="CollectionObjectSub"
-              class="edu.ku.brc.specify.datamodel.CollectionObject"
-              usedefbusrule="false"
-              resourcelabels="false">
-              <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
-              <altviews>
-                  <altview name="COS View"       viewdef="CollectionObjectSub" mode="view"/>
-                  <altview name="COS Edit"       viewdef="CollectionObjectSub" mode="edit" default="true"/>
-                  <!-- <altview name="COS Table Edit" viewdef="CollectionObjectSub Table" mode="edit"/>
-                  <altview name="COS Table View" viewdef="CollectionObjectSub Table" mode="view"/>  -->
-              </altviews>      
-         </view>
+        <view name="CollectionObjectSub"
+            class="edu.ku.brc.specify.datamodel.CollectionObject"
+            usedefbusrule="false"
+            resourcelabels="false">
+            <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
+            <altviews>
+                <altview name="COS View"       viewdef="CollectionObjectSub" mode="view"/>
+                <altview name="COS Edit"       viewdef="CollectionObjectSub" mode="edit" default="true"/>
+                <!-- <altview name="COS Table Edit" viewdef="CollectionObjectSub Table" mode="edit"/>
+                <altview name="COS Table View" viewdef="CollectionObjectSub Table" mode="view"/>  -->
+            </altviews>      
+        </view>
 
         <view name="Determination"
               class="edu.ku.brc.specify.datamodel.Determination"
@@ -101,8 +100,7 @@
         </view>
         
         <view name="LocalityDetail"
-            class="edu.ku.brc.specify.datamodel.LocalityDetail"
-            >
+            class="edu.ku.brc.specify.datamodel.LocalityDetail">
             <desc><![CDATA[LocalityDetail form.]]></desc>
             <altviews>
                 <altview name="LocalityDetail View" viewdef="LocalityDetail" mode="view"/>
@@ -160,9 +158,8 @@
     
     <viewdefs>
         
-        <viewdef
+        <viewdef name="Collection Object"
             type="form"
-            name="Collection Object"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -351,9 +348,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef  name="Determination Table"
             type="formtable"
-            name="Determination Table"
             class="edu.ku.brc.specify.datamodel.Determination"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -361,9 +357,7 @@
             <definition>Determination</definition>
         </viewdef>
         
-        
-        <viewdef
-            name="Determination"
+        <viewdef name="Determination"
             type="form"
             class="edu.ku.brc.specify.datamodel.Determination"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -459,9 +453,8 @@
             </rows>
         </viewdef>
                 
-        <viewdef
+        <viewdef name="CollectingEventSub"
             type="form"
-            name="CollectingEventSub"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -509,9 +502,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectingEvent"
             type="form"
-            name="CollectingEvent"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -599,9 +591,8 @@
             </rows>
         </viewdef>
                  
-        <viewdef
+        <viewdef name="Preparation Table"
             type="formtable"
-            name="Preparation Table"
             class="edu.ku.brc.specify.datamodel.Preparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -609,9 +600,8 @@
             <definition>Preparation</definition>
         </viewdef>
                 
-        <viewdef
+        <viewdef name="Preparation"
             type="form"
-            name="Preparation"
             class="edu.ku.brc.specify.datamodel.Preparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
@@ -628,11 +618,11 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="7"/>
-                    <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
+                    
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date"/>
-                    <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
-                    <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>
+                   
+                    
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
                 </row>
                 <row>
@@ -643,6 +633,9 @@
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3"/>
                 <!--<row>
+                    <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
+                    <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
+                    <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>
                     <cell type="label" labelfor="desc"/>
                     <cell type="field" id="desc" name="description" uitype="text"/>
                     <cell type="label" labelfor="n1"/>
@@ -695,9 +688,8 @@
             </rows>
         </viewdef>
         
-        <viewdef 
+        <viewdef name="CollectionObjectCitation" 
             type="form" 
-            name="CollectionObjectCitation" 
             class="edu.ku.brc.specify.datamodel.CollectionObjectCitation" 
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -733,8 +725,7 @@
             </rows>
         </viewdef>
   
-        <viewdef
-            name="PaleoContext"
+        <viewdef name="PaleoContext"
             type="form"
             class="edu.ku.brc.specify.datamodel.PaleoContext"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -813,8 +804,7 @@
             </rows>
         </viewdef>
                 
-        <viewdef
-            name="SubPaleoContext"
+        <viewdef name="SubPaleoContext"
             type="form"
             class="edu.ku.brc.specify.datamodel.PaleoContext"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -888,9 +878,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="PaleoAttributes"
             type="form"
-            name="PaleoAttributes"
             class="edu.ku.brc.specify.datamodel.CollectionObjectAttribute"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1087,9 +1076,8 @@
             </rows>
         </viewdef>
                  
-        <viewdef
+        <viewdef name="AccessionItems Table"
             type="formtable"
-            name="AccessionItems Table"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1097,9 +1085,8 @@
             <definition>AccessionItems</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="AccessionItems"
               type="form"
-              name="AccessionItems"
               class="edu.ku.brc.specify.datamodel.CollectionObject"
               gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
               settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1126,9 +1113,8 @@
              </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectionObjectSub Table"
             type="formtable"
-            name="CollectionObjectSub Table"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1136,9 +1122,8 @@
             <definition>CollectionObjectSub</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectionObjectSub"
               type="form"
-              name="CollectionObjectSub"
               class="edu.ku.brc.specify.datamodel.CollectionObject"
               gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
               settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1165,9 +1150,8 @@
              </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="LocalityDetail"
             type="form"
-            name="LocalityDetail"
             class="edu.ku.brc.specify.datamodel.LocalityDetail"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
