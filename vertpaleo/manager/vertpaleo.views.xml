@@ -385,13 +385,16 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="taxon" uitype="querycbx" initialize="name=Taxon" colspan="7"/>
+                    <cell type="field" id="1" name="taxon" uitype="querycbx" initialize="name=Taxon" colspan="4"/>
                     <cell type="field" id="3" name="isCurrent" uitype="checkbox"/>
+                    
                 </row>
                 <row>
                     <cell type="label" labelfor="13"/>
-                    <cell type="field" id="13" name="preferredTaxon" uitype="text" readonly="true" colspan="9"/>
-                    <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="field" id="13" name="preferredTaxon" uitype="text" readonly="true" colspan="5"/>
+                    <!-- <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/> -->
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="addendum" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="7"/>
@@ -403,8 +406,7 @@
                 </row>
                 <!--<row>
                     
-                    <cell type="label" labelfor="9"/>
-                    <cell type="field" id="9" name="addendum" uitype="text"/>            
+                               
                     <cell type="label" labelfor="an"/>
                     <cell type="field" id="an" name="alternateName" uitype="text"/>
                     <cell type="label" labelfor="con"/>
@@ -636,7 +638,7 @@
                     <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date"/>
                     <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
                     <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>
-                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="3"/>
