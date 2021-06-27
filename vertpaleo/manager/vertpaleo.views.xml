@@ -406,7 +406,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="8"/>
-                    <cell type="field" id="8" name="qualifier" uitype="text"/>
+                    <cell type="field" id="8" name="qualifier" uitype="combobox"/>
                     <cell type="label" labelfor="9"/> 
                     <cell type="field" id="9" name="addendum" uitype="text"/>
                     <cell type="label" labelfor="t1"/>
@@ -427,7 +427,7 @@
                 </row>    
                 <row> 
                     <cell type="label" labelfor="mtd"/>
-                    <cell type="field" id="mtd" name="method" uitype="text"/>
+                    <cell type="field" id="mtd" name="method" uitype="combobox"/>
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="text" colspan="5"/>  
                 </row>
