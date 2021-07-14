@@ -384,14 +384,7 @@
             <rowDef auto="true" cell="p" sep="2px"/>
 
             <rows>
-                <row>
-                    <!-- <cell type="label"/> -->
-                    <!-- <cell type="field" id="3" name="isCurrent" uitype="checkbox"/> -->
-                    <cell type="label"/>
-                    <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
-                    <cell type="label"/>
-                    <cell type="field" id="21" name="yesNo2" uitype="checkbox" initialize="editable=true" colspan="3"/>
-                </row>
+                
                 <row>
                     <cell type="label" labelfor="an"/>
                     <cell type="field" id="an" name="alternateName" uitype="text" colspan="5"/>
@@ -411,6 +404,15 @@
                     <cell type="field" id="9" name="addendum" uitype="text"/>
                     <cell type="label" labelfor="t1"/>
                     <cell type="field" id="t1" name="text1" uitype="combobox"/>             
+                </row>
+                <row>
+                    
+                    <cell type="label"/>
+                    <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <!-- <cell type="label"/>  -->
+                    <!-- <cell type="field" id="3" name="isCurrent" uitype="checkbox" initialize="editable=true" /> -->
+                    <cell type="label"/>
+                    <cell type="field" id="21" name="yesNo2" uitype="checkbox" initialize="editable=true" colspan="3"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="13"/>
