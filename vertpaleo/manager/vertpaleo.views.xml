@@ -50,6 +50,17 @@
                 <altview name="Collection Object Edit" viewdef="Collection Object" mode="edit" default="true"/>
             </altviews>
         </view>
+
+        <view name="Collector"
+              class="edu.ku.brc.specify.datamodel.Collector"
+              busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
+        >
+            <desc><![CDATA[The Collectors Form.]]></desc>
+            <altviews>
+                <altview name="Collector View" viewdef="Collector" mode="view" validated="false" default="true"/>
+                <altview name="Collector Edit" viewdef="Collector" mode="edit" validated="true"/>
+            </altviews>
+        </view>
         
         <view name="CollectionObjectCitation"
             class="edu.ku.brc.specify.datamodel.CollectionObjectCitation"
