@@ -673,8 +673,8 @@
                     <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="t3"/>
-                    <cell type="field" id="t3" name="text3" uitype="combobox"/>
+                    <cell type="label" labelfor="t6"/>
+                    <cell type="field" id="t6" name="text6" uitype="combobox"/>
                     <cell type="label" labelfor="t4"/>
                     <cell type="field" id="t4" name="text4" uitype="text"/>
                     <!-- <cell type="label" labelfor="7"/> -->
