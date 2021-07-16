@@ -294,6 +294,11 @@
             </altviews>
         </view>
     -->
+
+        <view name="Collector"
+              class="edu.ku.brc.specify.datamodel.Collector"
+              busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
+        >
         
         <view name="Determination"
               class="edu.ku.brc.specify.datamodel.Determination"
