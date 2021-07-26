@@ -1153,9 +1153,8 @@
 
     <viewdefs>
 
-        <viewdef
+        <viewdef name="Accession"
                 type="form"
-                name="Accession"
                 class="edu.ku.brc.specify.datamodel.Accession"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1266,9 +1265,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AccessionCO"
                 type="form"
-                name="AccessionCO"
                 class="edu.ku.brc.specify.datamodel.Accession"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
