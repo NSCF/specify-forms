@@ -39,19 +39,6 @@
             </altviews>
         </view>
 
-        <view name="Collectors"
-              class="edu.ku.brc.specify.datamodel.Collector"
-              busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
-        >
-            <desc><![CDATA[The Collectors Subform.]]></desc>
-            <altviews>
-                <!-- <altview name="Collectors Icon View"  viewdef="CollectorsIconView" mode="view"/>
-                <altview name="Collectors Icon Edit"  viewdef="CollectorsIconView" mode="edit"/>  -->
-                <altview name="Collectors Table View" viewdef="Collectors Table"   mode="view"/>
-                <altview name="Collectors Table Edit" viewdef="Collectors Table"   mode="edit" default="true"/>
-            </altviews>
-        </view>
-        
         <view name="CollectingEventSub"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventBusRules"
@@ -638,6 +625,8 @@
                 <row>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent"/>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="3"/>
@@ -662,34 +651,7 @@
                 </row>-->
             </rows>
         </viewdef>
-
-        <viewdef  name="Collectors"
-                type="form"
-                class="edu.ku.brc.specify.datamodel.Collector"
-                gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
-                settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
-            <desc><![CDATA[The Collectors form - UNKNOWN use in database.]]></desc>
-            <enableRules/>
-
-            <columnDef>p,5dlu,p:g,5dlu,p</columnDef>
-            <rowDef auto="true" cell="p" sep="2px"/>
-
-            <rows>
-                <row>
-                    <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="agent.lastName" uitype="text" colspan="3"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" name="agent.firstName" uitype="text" colspan="3"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="7"/>
-                    <cell type="field" id="7" name="remarks" uitype="text" colspan="3"/>
-                </row>
-            </rows>
-        </viewdef>
-                 
+           
         <viewdef name="Preparation Table"
             type="formtable"
             class="edu.ku.brc.specify.datamodel.Preparation"
