@@ -28,6 +28,30 @@
             </altviews>
         </view>
 
+        <view name="Collector"
+              class="edu.ku.brc.specify.datamodel.Collector"
+              busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
+        >
+            <desc><![CDATA[The Collectors Form.]]></desc>
+            <altviews>
+                <altview name="Collector View" viewdef="Collector" mode="view" validated="false" default="true"/>
+                <altview name="Collector Edit" viewdef="Collector" mode="edit" validated="true"/>
+            </altviews>
+        </view>
+
+        <view name="Collectors"
+              class="edu.ku.brc.specify.datamodel.Collector"
+              busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
+        >
+            <desc><![CDATA[The Collectors Subform.]]></desc>
+            <altviews>
+                <!-- <altview name="Collectors Icon View"  viewdef="CollectorsIconView" mode="view"/>
+                <altview name="Collectors Icon Edit"  viewdef="CollectorsIconView" mode="edit"/>  -->
+                <altview name="Collectors Table View" viewdef="Collectors Table"   mode="view"/>
+                <altview name="Collectors Table Edit" viewdef="Collectors Table"   mode="edit" default="true"/>
+            </altviews>
+        </view>
+        
         <view name="CollectingEventSub"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventBusRules"
@@ -593,6 +617,76 @@
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
                 </row>-->
+            </rows>
+        </viewdef>
+
+        <viewdef name="Collector"
+                type="form"
+                class="edu.ku.brc.specify.datamodel.Collector"
+                gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+                settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[The Collector form.]]></desc>
+            <enableRules/>
+
+            <columnDef>105px,2px,210px,5px,100px,2px,98px,300px,p:g</columnDef>
+            <columnDef os="lnx">135px,2px,230px,5px,120px,2px,118px,325px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,215px,5px,140px,2px,138px,395px,p:g</columnDef>
+            <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g,p:g(2),p:g</columnDef>
+            <rowDef>p,2dlu,p:g,2dlu,p:g</rowDef>
+
+            <rows>
+                <row>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
+                </row>
+                <!--<row>
+                    <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
+                    <cell type="label" id="divLabel" label=" " initialize="align=right"/>
+                    <cell type="field" id="4" name="divisionCBX" uitype="combobox" ignore="true"/>
+                </row>
+                <row>
+                	<cell type="field" id="34" uitype="checkbox" name="isPrimary"/>                	
+                </row>
+                <row>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
+                    <cell type="label" labelfor="12"/>
+                    <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
+                </row>-->
+            </rows>
+        </viewdef>
+
+        <viewdef  name="Collectors"
+                type="form"
+                class="edu.ku.brc.specify.datamodel.Collector"
+                gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+                settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[The Collectors form - UNKNOWN use in database.]]></desc>
+            <enableRules/>
+
+            <columnDef>p,5dlu,p:g,5dlu,p</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+
+            <rows>
+                <row>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="agent.lastName" uitype="text" colspan="3"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" name="agent.firstName" uitype="text" colspan="3"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" name="remarks" uitype="text" colspan="3"/>
+                </row>
             </rows>
         </viewdef>
                  
