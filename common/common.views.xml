@@ -62,7 +62,7 @@
             </altviews>
         </view>
         
-       <view name="AgreementAuthorization"
+        <view name="AgreementAuthorization"
             objtitle="Agreement Authorization"
             class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
             resourcelabels="false">
@@ -141,7 +141,6 @@
                 <altview name="CollectingEventSubform Edit" viewdef="CollectingEventSubform" mode="edit"/>
             </altviews>
         </view>
-        
         
         <view name="CollectingTrip"
             class="edu.ku.brc.specify.datamodel.CollectingTrip"
@@ -282,7 +281,6 @@
             </altviews>
         </view>
         
-        
         <view name="Deaccession Agent"
               objtitle="Deaccession Agent"
               class="edu.ku.brc.specify.datamodel.DeaccessionAgent"
@@ -340,7 +338,6 @@
             </altviews>
             
         </view>
-              
               
         <view name="DNASequenceSubView"
               objtitle="DNA Sequence"
@@ -561,8 +558,7 @@
                 <altview name="Institution Edit" viewdef="Institution" mode="edit" validated="true" default="true"/>
             </altviews>
         </view>
-        
-                
+            
         <view name="AddressDiv"
             class="edu.ku.brc.specify.datamodel.Address"
              busrules="edu.ku.brc.specify.datamodel.busrules.AddressBusRules"
@@ -602,22 +598,18 @@
             resourcelabels="false">
             <desc><![CDATA[Loan display form]]></desc>
             <altviews>
-                <altview name="Loan View" viewdef="Loan" mode="view" default="true"/>
-                <altview name="Loan Edit" viewdef="Loan" mode="edit"/>
+                <altview name="Discipline View" viewdef="Discipline" mode="view" validated="false"/>
+                <altview name="Discipline Edit" viewdef="Discipline" mode="edit" validated="true" default="true"/>
             </altviews>
         </view>
         
-
         <view name="LoanAgent"
               objtitle="Loan Agent"
               class="edu.ku.brc.specify.datamodel.LoanAgent"
               resourcelabels="false">
             <desc><![CDATA[Subform within the Accession form.]]></desc>
             <altviews>
-                <altview name="LoanAgent Table View" viewdef="LoanAgent Table" mode="view"/>
-                <altview name="LoanAgent Table Edit" viewdef="LoanAgent Table" mode="edit"/>
-                <altview name="LoanAgent View" viewdef="LoanAgent" mode="view"/>
-                <altview name="LoanAgent Edit" viewdef="LoanAgent" mode="edit" default="true"/>
+                <altview name="Discipline View" viewdef="Discipline" mode="view" validated="false"/>
             </altviews>
         </view>
         
@@ -627,10 +619,8 @@
             resourcelabels="false">
             <desc><![CDATA[Loan display form]]></desc>
             <altviews>
-                <altview name="LoanItems Table View" viewdef="LoanItems Table" mode="view"/>
-                <altview name="LoanItems Table Edit" viewdef="LoanItems Table" mode="edit"/>
-                <altview name="LoanItems View" viewdef="LoanItems" mode="view" default="true"/>
-                <altview name="LoanItems Edit" viewdef="LoanItems" mode="edit"/>
+                <altview name="Discipline View" viewdef="DisciplineViewOnlyCollections" mode="view" validated="false"/>
+                <altview name="Discipline Edit" viewdef="DisciplineViewOnlyCollections" mode="edit" validated="true" default="true"/>
             </altviews>
         </view>
         
@@ -640,8 +630,8 @@
             resourcelabels="false">
             <desc><![CDATA[LoanReturnPreparation display form]]></desc>
             <altviews>
-                <altview name="LoanReturnPreparation View" viewdef="LoanReturnPreparation" mode="view" default="true"/>
-                <altview name="LoanReturnPreparation Edit" viewdef="LoanReturnPreparation" mode="edit"/>
+                <altview name="Discipline Edit View" viewdef="DisciplineWithoutCollections" mode="view" validated="false"/>
+                <altview name="Discipline Edit" viewdef="DisciplineWithoutCollections" mode="edit" validated="true" default="true"/>
             </altviews>
         </view>
         
@@ -652,8 +642,8 @@
             resourcelabels="false">
             <desc><![CDATA[Locality form.]]></desc>
             <altviews>
-                <altview name="Locality View" viewdef="Locality" mode="view"/>
-                <altview name="Locality Edit" viewdef="Locality" mode="edit" default="true"/>
+                <altview name="Collection View" viewdef="Collection" mode="view" validated="false"/>
+                <altview name="Collection Edit" viewdef="Collection" mode="edit" validated="true" default="true"/>
             </altviews>
         </view>
         
@@ -662,12 +652,11 @@
             resourcelabels="false">
             <desc><![CDATA[Locality form.]]></desc>
             <altviews>
-                <altview name="LocalityCitation View" viewdef="LocalityCitation" mode="view"/>
-                <altview name="LocalityCitation Edit" viewdef="LocalityCitation" mode="edit" default="true"/>
+                <altview name="CollectionSub View" viewdef="CollectionSub" mode="view" validated="false"/>
+                <altview name="CollectionSub Edit" viewdef="CollectionSub" mode="edit" validated="true" default="true"/>
             </altviews>
         </view>
         
-      
         <view name="LocalitySubForm"
             class="edu.ku.brc.specify.datamodel.Locality"
             busrules="edu.ku.brc.specify.datamodel.busrules.LocalityBusRules"
@@ -677,6 +666,16 @@
                 <altview name="Locality SubForm View" viewdef="LocalitySubForm" mode="view"/>
                 <altview name="Locality SubForm Edit" viewdef="LocalitySubForm" mode="edit" default="true"/>
             </altviews>
+        </view>
+        
+        <view name="LocalityMapper"
+            class="edu.ku.brc.specify.datamodel.CollectingEvent"
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventBusRules"
+            resourcelabels="false">
+            <desc><![CDATA[CollectingEvent]]></desc>
+            <altviews>
+                <altview name="LocalityMapper View" viewdef="LocalityMapper" mode="view" default="true"/>
+           </altviews>
         </view>
         
         <view name="LocalityMapper"
@@ -830,7 +829,6 @@
             </altviews>
         </view>
         
-        
     </views>
 
 <!--
@@ -841,7 +839,7 @@
 ######################################################################################################
 ######################################################################################################
 
-                Beginning of ViewDefs
+Beginning of ViewDefs
 
 ######################################################################################################
 ######################################################################################################
@@ -2027,8 +2025,6 @@
             
         </viewdef>
         
-   
-        
         <viewdef  name="DNASequenceSubView"
             type="form"
             class="edu.ku.brc.specify.datamodel.DNASequence" 
@@ -2262,9 +2258,11 @@
                 <row>
                     <cell type="subview" id="6" name="pages" viewname="FieldNotebookPage" defaulttype="table" colspan="10"/>
                 </row>
+                
                 <row>
                     <cell type="separator" label="" colspan="10"/>
                 </row>
+                
             </rows>
         </viewdef>
         
@@ -2489,6 +2487,7 @@
                     <cell type="label" labelfor="5" />
                     <cell type="field" id="5" name="preparation.countAmt" uitype="dsptextfield"/>
                 </row>
+                
                 <row>
                     <cell type="label" labelfor="3" />
                     <cell type="field" id="3" name="descriptionOfMaterial" uitype="text" colspan="14"/>
@@ -2546,6 +2545,23 @@
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="dataType" uitype="dsptextfield" readonly="true"/>
                 </row>
+            </rows>
+        </viewdef>
+        
+        <viewdef name="FieldNotebookPage" 
+            type="form" 
+            class="edu.ku.brc.specify.datamodel.FieldNotebookPage" 
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[Form For FieldNotebookPage]]></desc>
+            
+            <columnDef>100px,2px,103px,5px,73px,2px,103px,5px,430px,0px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,110px,5px,110px,2px,100px,5px,454px,0px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,154px,5px,95px,2px,115px,5px,520px,0px,p:g</columnDef>
+            <columnDef os="exp">p,2px,111px,5px,80px,2px,110px,p:g,p:g,0px</columnDef>
+            <rowDef auto="true" sep="2px" cell="p"/>
+            <rows>
+                
                 <row>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="type" uitype="text" isrequired="true" readonly="true"/> 
@@ -2574,6 +2590,7 @@
                 <row>
                     <cell type="separator" label="Discipline" colspan="4"/>
                 </row>
+
                 <row>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="dataType" uitype="dsptextfield" readonly="true"/>
@@ -2586,6 +2603,7 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="name" uitype="text"/>
                 </row>
+
             </rows>
         </viewdef>
 
@@ -2634,6 +2652,12 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="discipline" uitype="text" readonly="true" colspan="5"/>
                 </row>
+                <!--<row>
+                    <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" name="weight" uitype="text"/>
+                    <cell type="label" labelfor="6"/>
+                    <cell type="field" id="6" name="insuredForAmount" uitype="text"/>
+                </row>-->
                 <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="description" uitype="textarea" colspan="6"/>
@@ -2663,6 +2687,21 @@
                     <cell type="label" label="Numbering Scheme:" initialize="align=right;"/>
                     <cell type="field" id="4" name="catalogNumberingSchemeLbl" uitype="text" readonly="true" ignore="true" colspan="3"/>
                 </row>
+            </rows>
+        </viewdef>
+        
+        <viewdef name="SubPaleoContext"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.PaleoContext"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            
+            <desc><![CDATA[Stratigraphy subform within Collection Object form.]]></desc>
+            <enableRules/>
+            <columnDef>90px,2px,p,2px,100px,2px,p,2px,60px,2px,p,p:g</columnDef>
+            <rowDef auto="true" cell="p" sep="2dlu"/>
+            
+            <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="collectionName" uitype="text" isrequired="true" colspan="3"/> 
@@ -2844,7 +2883,7 @@
             </rows>
         </viewdef>
 
-         <viewdef name="AddressDiv"
+        <viewdef name="AddressDiv"
             type="form"
             class="edu.ku.brc.specify.datamodel.Address"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -4066,8 +4105,7 @@
                     <cell type="field" id="10" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>          
             </rows>           
-        </viewdef> 
-
+        </viewdef>
 
     </viewdefs>
 </viewset>

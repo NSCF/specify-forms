@@ -3,18 +3,18 @@
     
     <views>
         
-         <view name="AccessionItems"
-              class="edu.ku.brc.specify.datamodel.CollectionObject"
-              usedefbusrule="false"
-              resourcelabels="false">
-              <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
-              <altviews>
-                  <altview name="COS View"       viewdef="AccessionItems" mode="view"/>
-                  <altview name="COS Edit"       viewdef="AccessionItems" mode="edit" default="true"/>
-                  <altview name="COS Table Edit" viewdef="AccessionItems Table" mode="edit"/>
-                  <altview name="COS Table View" viewdef="AccessionItems Table" mode="view"/>
-              </altviews>      
-         </view>
+        <view name="AccessionItems"
+            class="edu.ku.brc.specify.datamodel.CollectionObject"
+            usedefbusrule="false"
+            resourcelabels="false">
+            <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
+            <altviews>
+                <altview name="COS View"       viewdef="AccessionItems" mode="view"/>
+                <altview name="COS Edit"       viewdef="AccessionItems" mode="edit" default="true"/>
+                <altview name="COS Table Edit" viewdef="AccessionItems Table" mode="edit"/>
+                <altview name="COS Table View" viewdef="AccessionItems Table" mode="view"/>
+            </altviews>      
+        </view>
 
         <view name="CollectingEvent"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
@@ -53,8 +53,7 @@
 
         <view name="Collector"
               class="edu.ku.brc.specify.datamodel.Collector"
-              busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
-        >
+              busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules">
             <desc><![CDATA[The Collectors Form.]]></desc>
             <altviews>
                 <altview name="Collector View" viewdef="Collector" mode="view" validated="false" default="true"/>
@@ -428,7 +427,7 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Determination subform for Collection Object form.]]></desc>
             <enableRules/>
-
+        
             <!-- <columnDef>100px,2px,210px,5px,76px,2px,200px,5px,90px,2px,140px,0px,p:g</columnDef> -->
             <columnDef>100px,2px,220px,5px,76px,2px,140px,5px,90px,2px,190px,0px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,210px,5px,110px,2px,205px,5px,105px,2px,156px,0px,p:g</columnDef>
