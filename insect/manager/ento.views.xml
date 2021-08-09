@@ -349,9 +349,11 @@
 
             <rows>
                 <row>
+                    <cell type="field" id="3" name="isCurrent" uitype="checkbox"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="an"/>
                     <cell type="field" id="an" name="alternateName" uitype="text" colspan="5"/>
-                    <cell type="field" id="3" name="isCurrent" uitype="checkbox"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="1"/>
