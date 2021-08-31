@@ -136,6 +136,10 @@
                     <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="COrem"/>
+                    <cell type="field" id="COrem" name="remarks" uitype="textareabrief" rows="2" colspan="9"/> 
+                </row>
+                <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="12" rows="5"/>
                 </row>
                 <row>
@@ -471,7 +475,6 @@
                     <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDateDatePrecision" uifieldformatter="Date"/>
                     <cell type="label" labelfor="prepcode" label="Prep Code"/>
                     <cell type="field" id="prepcode" name="text5" uitype="text" />
-
                 </row>
                 <row>
                     <cell type="label" labelfor="fix" label="Fixed"/>
