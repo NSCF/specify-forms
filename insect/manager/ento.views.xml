@@ -236,10 +236,10 @@
                 <row>
                     <cell type="subview" viewname="Preparation" id="8" name="preparations" defaulttype="form" colspan="12"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="subview" id="15" viewname="EntoAttributes" name="collectionObjectAttribute" colspan="12"/>
                 </row>
-                <!-- <row>
+                <row>
                     <cell type="separator" label="Attachments" colspan="12"/>
                 </row> -->
                 <row>
@@ -254,7 +254,13 @@
                     </cell>
                 </row>
                 <row>
-                    <cell type="separator" label="" colspan="12"/>
+                    <cell type="separator" label="Metadata" colspan="12"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="12"/>
+                    <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="10"/>
@@ -262,8 +268,7 @@
                     <cell type="label" labelfor="11"/>
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                 </row>
-                <!--
-                <row>
+                <!-- <row>
                     <cell type="label" label="RELNAMEHERE:" initialize="align=right;"/>
                     <cell type="field" id="colrel" uitype="plugin" name="this" initialize="name=CollectionRelOneToManyPlugin;relname=xxxx;" colspan="9"/>
                 </row>
@@ -369,14 +374,7 @@
                     <cell type="field" id="yn4" name="yesNo4" uitype="checkbox" initialize="editable=true"/>
                     <cell type="field" id="yn5" name="yesNo5" uitype="checkbox" initialize="editable=true"/>
                     <cell type="field" id="yn6" name="yesNo6" uitype="checkbox" initialize="editable=true"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="9"/>
-                    <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
-                    <cell type="label" labelfor="12"/>
-                    <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>
-                -->
+                </row> -->
             </rows>
         </viewdef>
 
