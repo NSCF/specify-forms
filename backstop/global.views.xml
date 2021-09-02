@@ -2766,7 +2766,7 @@
             class="edu.ku.brc.specify.datamodel.TreeDefIface"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
-        <desc><![CDATA[New Tree Definition Data Entry Form]]></desc>
+            <desc><![CDATA[New Tree Definition Data Entry Form]]></desc>
 
             <columnDef>p,2px,p:g(2),p</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
