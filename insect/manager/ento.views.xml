@@ -191,10 +191,10 @@
                     <cell type="field" id="fn" name="fieldNumber" uitype="text"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="status"/>
-                    <cell type="field" id="status" name="text1" uitype="combobox"/>
-                    <cell type="label" labelfor="condition"/>
-                    <cell type="field" id="condition" name="objectCondition" uitype="text"/>
+                    <cell type="label" labelfor="invby" />
+                    <cell type="field" id="invby" name="inventorizedBy" uitype="querycbx" initialize="name=Agent"/>
+                    <cell type="label" labelfor="invdate"/>
+                    <cell type="field" id="invdate" uitype="plugin" name="this" initialize="name=PartialDateUI;df=inventoryDate;tp=inventoryDatePrecision" uifieldformatter="Date"/>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="projectNumber" uitype="text"/> 
                     <!-- 
@@ -202,15 +202,13 @@
                     <cell type="field" id="legdb" name="availability" uitype="text" readonly="true" />  
                     -->
                 </row>
+                <!-- <row>
+                    <cell type="label" />
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments" colspan="3" initialize="btn=true;icon=CollectionObjectAttachment"/> 
+                </row> -->
                 <row>
-                    <cell type="label" labelfor="invby" />
-                    <cell type="field" id="invby" name="inventorizedBy" uitype="querycbx" initialize="name=Agent"/>
-                    <cell type="label" labelfor="invdate"/>
-                    <cell type="field" id="invdate" uitype="plugin" name="this" initialize="name=PartialDateUI;df=inventoryDate;tp=inventoryDatePrecision" uifieldformatter="Date"/>
-                    <!-- <cell type="label" />
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments" colspan="3" initialize="btn=true;icon=CollectionObjectAttachment"/> -->
-                </row>
-                <row>
+                    <cell type="label" labelfor="t2"/>
+                    <cell type="field" id="t2" name="text2" uitype="combobox"/>
                     <cell type="label" />
                     <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
                     <cell type="label" />
@@ -269,6 +267,12 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                 </row>
                 <!-- <row>
+                    <cell type="label" labelfor="status"/>
+                    <cell type="field" id="status" name="text1" uitype="combobox"/>
+                    <cell type="label" labelfor="condition"/>
+                    <cell type="field" id="condition" name="objectCondition" uitype="text"/>
+                </row>
+                <row>
                     <cell type="label" label="RELNAMEHERE:" initialize="align=right;"/>
                     <cell type="field" id="colrel" uitype="plugin" name="this" initialize="name=CollectionRelOneToManyPlugin;relname=xxxx;" colspan="9"/>
                 </row>
@@ -360,8 +364,6 @@
                 <row>
                     <cell type="label" labelfor="t1"/>
                     <cell type="field" id="t1" name="text1" uitype="text"/>
-                    <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="t2" name="text2" uitype="text"/>
                     <cell type="label" labelfor="n2"/>
                     <cell type="field" id="n2" name="totalValue" uitype="text"/>
                 </row>
@@ -425,7 +427,7 @@
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="addendum" uitype="combobox"/> 
                     <cell type="label" labelfor="typeNme"/>
-                    <cell type="field" id="typeNme" name="confidence" uitype="text"/>
+                    <cell type="field" id="typeNme" name="confidence" uitype="combobox"/>
                     <!--
                     <cell type="label" labelfor="teste"/>
                     <cell type="field" id="teste" name="text2" uitype="text"/>
@@ -445,7 +447,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="mtd"/>
-                    <cell type="field" id="mtd" name="method" uitype="text"/>
+                    <cell type="field" id="mtd" name="method" uitype="combobox"/>
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="text" colspan="5"/>
                 </row> 
@@ -681,8 +683,8 @@
             
             <rows>
                 <row>
-                    <cell type="label" labelfor="CErem"/>
-                    <cell type="field" id="CErem" name="text2" uitype="text" colspan="12"/>
+                    <cell type="label" labelfor="hab"/>
+                    <cell type="field" id="hab" name="text2" uitype="text" colspan="12"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="Trap"/>
@@ -934,7 +936,7 @@
                     <cell type="label" labelfor="accunit" label="Uncertainty Unit"/>
                     <cell type="field" id="accunit" name="GeoRefAccuracyUnit" uitype="combobox" picklist="AccuracyUnits"/>
                     <cell type="label" labelfor="2" />
-                    <cell type="field" id="2" name="validation" uitype="combobox" picklist="Precision" colspan="2"/>
+                    <cell type="field" id="2" name="validation" uitype="combobox" picklist="Precision" readonly="true" colspan="2"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="3"/>
@@ -944,13 +946,13 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="protocol" />
-                    <cell type="field" id="protocol" name="Protocol" uitype="text" />
+                    <cell type="field" id="protocol" name="Protocol" uitype="combobox" />
                     <cell type="label" labelfor="source" />
-                    <cell type="field" id="source" name="Source" uitype="text" colspan="6"/>
+                    <cell type="field" id="source" name="Source" uitype="combobox" colspan="6"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="noGeoref"/>
-                    <cell type="field" id="noGeoref" name="noGeoRefBecause" uitype="text" colspan="10"/>
+                    <cell type="field" id="noGeoref" name="noGeoRefBecause" uitype="text" readonly="true" colspan="10"/>
                 </row> 
                 <row>
                     <cell type="label" labelfor="remarks"/>
@@ -1017,9 +1019,9 @@
                 <row>  
                     <cell type="subview" id="7" name="geoCoordDetails" viewname="GeoCoordDetail" colspan="13"/> 
                 </row>
-                <!-- <row>
+                <row>
                     <cell type="subview" id="8" name="localityDetails" viewname="LocalityDetail" colspan="9"/> 
-                </row> -->
+                </row>
                 <row>
                     <cell type="separator" label="Elevation" colspan="13"/>
                 </row>
@@ -1128,16 +1130,21 @@
                     <cell type="field" id="3" name="countAmt" uitype="text"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="stat"/>
+                    <cell type="field" id="stat" name="status" uitype="combobox"/>
+                    <cell type="label" labelfor="t7"/>
+                    <cell type="field" id="t7" name="text7" uitype="text"/>
+                    <cell type="label" />
+                    <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
+
+                </row>
+                <row>
                     <cell type="label" labelfor="sex"/>
                     <cell type="field" id="sex" name="text5" uitype="combobox" />
                     <cell type="label" labelfor="ls"/>
                     <cell type="field" id="ls" name="text4" uitype="combobox" />
                     <cell type="label" label="Stage/Sex Counts"/>
                     <cell type="subview" id="preparationAttribute" name="preparationAttribute" viewname="PreparationAttribute" initialize="btn=true"/> 
-                </row>
-                <row>
-                    <cell type="label" />
-                    <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
                     <cell type="separator" label="Storage details" colspan="11"/>
@@ -1175,8 +1182,6 @@
                 <row>
                     <cell type="label" labelfor="sn"/>
                     <cell type="field" id="sn" name="sampleNumber" uitype="text"/>
-                    <cell type="label" labelfor="stat"/>
-                    <cell type="field" id="stat" name="status" uitype="text"/>
                     <cell type="label" labelfor="sl"/>
                     <cell type="field" id="sl" name="storageLocation" uitype="text"/>
                 </row>
