@@ -215,6 +215,10 @@
                     <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="t3"/>
+                    <cell type="field" id="t3" name="text3" uitype="text" colspan="5"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="COrem"/>
                     <cell type="field" id="COrem" name="remarks" uitype="textareabrief" rows="2" colspan="9"/> 
                 </row>
@@ -362,8 +366,6 @@
                     <cell type="subview" viewname="SubPaleoContext" id="9" name="paleoContext" defaulttype="table" colspan="12"/>
                 </row> 
                 <row>
-                    <cell type="label" labelfor="t1"/>
-                    <cell type="field" id="t1" name="text1" uitype="text"/>
                     <cell type="label" labelfor="n2"/>
                     <cell type="field" id="n2" name="totalValue" uitype="text"/>
                 </row>
