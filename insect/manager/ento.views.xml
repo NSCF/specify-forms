@@ -354,6 +354,8 @@
                 <row>
                     <cell type="label" labelfor="an"/>
                     <cell type="field" id="an" name="alternateName" uitype="text" colspan="5"/>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="nameUsage" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="1"/>
@@ -378,8 +380,8 @@
                 <row>
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="typeStatusName" uitype="combobox"/> 
-                    <cell type="label" labelfor="11"/>
-                    <cell type="field" id="11" name="nameUsage" uitype="combobox"/>
+                    <cell type="label" labelfor="mtd"/>
+                    <cell type="field" id="mtd" name="method" uitype="text"/>
                     <cell type="label" labelfor="t1"/>
                     <cell type="field" id="t1" name="text1" uitype="combobox"/>  
                 </row>
