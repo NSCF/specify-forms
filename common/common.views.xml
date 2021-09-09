@@ -4542,13 +4542,14 @@
 
             <rows>
                 <row>
-                    <cell type="label" labelfor="localityName"/>
-                    <cell type="field" id="localityName" name="localityName" uitype="text" colspan="14"/>
-                </row>
-                <row>
                     <cell type="label" labelfor="geography"/>
                     <cell type="field" id="geography" name="geography" uitype="querycbx" initialize="name=Geography" colspan="14"/>
                 </row>
+                <row>
+                    <cell type="label" labelfor="localityName"/>
+                    <cell type="field" id="localityName" name="localityName" uitype="text" colspan="14"/>
+                </row>
+                
                 <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="this" uitype="plugin" initialize="name=LatLonUI" colspan="11"/>
@@ -4559,12 +4560,6 @@
                     <cell type="label" label=""/>
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="latLongMethod" uitype="text" colspan="3"/>
-                </row>
-                <row>
-                    <cell type="subview" id="7" name="geoCoordDetails" viewname="GeoCoordDetail" colspan="17"/>
-                </row>
-                <row>
-                    <cell type="subview" id="8" name="localityDetails" viewname="LocalityDetail" colspan="17"/>
                 </row>
                 <row>
                     <cell type="separator" label="Elevation" colspan="17"/>
@@ -4579,6 +4574,11 @@
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="elevationAccuracy" uitype="text"/>
                 </row>
+
+                <row>
+                    <cell type="subview" id="7" name="geoCoordDetails" viewname="GeoCoordDetail" colspan="17"/>
+                </row>
+                
                 <row>
                     <cell type="separator" label="Plugins" colspan="17"/>
                 </row>
@@ -4603,6 +4603,9 @@
                 </row>
                 <!--<row>
                     <cell type="subview" id="10" viewname="LocalityCitation" name="localityCitations" colspan="12"/>
+                </row>
+                <row>
+                    <cell type="subview" id="8" name="localityDetails" viewname="LocalityDetail" colspan="17"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="gml"/>
