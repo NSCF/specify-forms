@@ -157,10 +157,7 @@
                     <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="t1"/>
-                    <cell type="field" id="t1" name="text1" uitype="text"/>
-                    <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="t2" name="text2" uitype="text"/>
+                    
                 </row>
                 <row>
                     <cell type="label" labelfor="rem"/>
@@ -206,6 +203,10 @@
                     <cell type="field" id="guid" name="guid" uitype="text" colspan="5" readonly="true"/>
                 </row>
                 <!--<row>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="text"/>
+                    <cell type="label" labelfor="t2"/>
+                    <cell type="field" id="t2" name="text2" uitype="text"/>
                     <cell type="label" label="RELNAMEHERE:" initialize="align=right;"/>
                     <cell type="field" id="colrel" uitype="plugin" name="this" initialize="name=CollectionRelOneToManyPlugin;relname=xxxx;" colspan="9"/>
                 </row>
@@ -618,8 +619,7 @@
                     <cell type="field" id="2" name="preparedByAgent" uitype="querycbx" initialize="name=Agent"/>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date"/>
-                    <cell type="label" labelfor="desc"/>
-                    <cell type="field" id="desc" name="description" uitype="text"/>
+                    
                 </row>
                 <row>
                     <cell type="label" labelfor="t3"/>
@@ -636,10 +636,22 @@
                 <row>
                     <cell type="label" labelfor="t1"/>
                     <cell type="field" id="t1" name="text1" uitype="combobox"/>
-                    <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="t2" name="text2" uitype="combobox"/>
+                    <cell type="label" labelfor="t5"/>
+                    <cell type="field" id="t5" name="text5" uitype="text"/>
+                </row>
+                <row>
+                <cell type="label" labelfor="t2"/>
+                <cell type="field" id="t2" name="text2" uitype="combobox"/>
+                <cell type="label" labelfor="t6"/>
+                <cell type="field" id="t6" name="text6" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="rem"/>
+                    <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
                 <!--<row>
+                    <cell type="label" labelfor="desc"/>
+                    <cell type="field" id="desc" name="description" uitype="text"/>
                     <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
                     <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>
                     <cell type="label" labelfor="desc"/>
