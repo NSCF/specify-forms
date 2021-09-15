@@ -51,7 +51,7 @@
             </altviews>
         </view>
         
-         <view name="CollectionObjectSub"
+        <view name="CollectionObjectSub"
               class="edu.ku.brc.specify.datamodel.CollectionObject"
               usedefbusrule="false"
               resourcelabels="false">
@@ -62,7 +62,7 @@
                   <!-- <altview name="COS Table Edit" viewdef="CollectionObjectSub Table" mode="edit"/>
                   <altview name="COS Table View" viewdef="CollectionObjectSub Table" mode="view"/>  -->
               </altviews>      
-         </view>
+        </view>
 
         <view name="Determination"
               class="edu.ku.brc.specify.datamodel.Determination"

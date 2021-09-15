@@ -3872,11 +3872,11 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t1"/>
-                    <cell type="field" id="t1" name="text1" uitype="combobox" colspan="3"/>
+                    <cell type="field" id="t1" name="text1" uitype="combobox"/>
                     <cell type="label" labelfor="8"/>
                     <cell type="field" id="8" name="geoRefCompiledBy" uitype="querycbx" initialize="name=Agent"/>
                     <cell type="label" labelfor="9"/>
-                    <cell type="field" id="9" name="geoRefCompiledDate" uitype="formattedtext" uifieldformatter="Date" colspan="13"/>
+                    <cell type="field" id="9" name="geoRefCompiledDate" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
                 <!--<row>
                     <cell type="label" labelfor="3"/>
