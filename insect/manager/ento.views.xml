@@ -191,25 +191,31 @@
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="fieldNumber" uitype="text" colspan="2"/>
                 </row>
-				<row>
-				    <cell type="label" labelfor="remarks"/>
-                    <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="1" colspan="5"/> 
-					<cell type="label" labelfor="SortingStatus"/>
-                    <cell type="field" id="SortingStatus" name="name" uitype="text" colspan="2"/>
-				</row>
-				<row>
-					<cell type="label" label="                       Audit:" />
-					<cell type="subview" viewname="TreatmentEventForCollObj" id="13" name="treatmentEvents"  initialize="btn=true"/>
-					<cell type="label" label="      Attachments:" />
- 					<cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments"  initialize="btn=true;icon=CollectionObjectAttachment"/>
+                <row>
+                    <cell type="label" labelfor="SortingStatus"/>
+                    <cell type="field" id="SortingStatus" name="name" uitype="text" colspan="10"/>
                 </row>
 				<row>
-				    <cell type="label" labelfor="collectingeventspace1"/><cell type="label" labelfor="collectingeventspace2"/>
+				    <cell type="label" labelfor="remarks"/>
+                    <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="10"/> 
+				</row>
+                <row>
+				    <cell type="label" labelfor="collectingeventspace1"/>
 				</row>
                 <row>
                     <cell type="label" labelfor="collectingEvent"/>
                     <cell type="field" id="collectingEvent" name="collectingEvent" uitype="querycbx"  initialize="name=CollectingEvent;clonebtn=true" colspan="9"/>
                 </row>
+                <row>
+					<cell type="label" label="                       Audit:" />
+					<cell type="subview" viewname="TreatmentEventForCollObj" id="13" name="treatmentEvents"  initialize="btn=true"/>
+					<cell type="label" label="      Attachments:" />
+ 					<cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments"  initialize="btn=true;icon=CollectionObjectAttachment"/>
+                </row>
+                <row>
+				    <cell type="label" labelfor="collectingeventspace2"/>
+                    <cell type="label" labelfor="collectingeventspace3"/>
+				</row>
 				 <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="12" rows="5"/>
                 </row>
@@ -219,6 +225,7 @@
                 <row>
                     <cell type="subview" id="15" viewname="EntoAttributes" name="collectionObjectAttribute" colspan="12"/>
                 </row>
+                
                 <row>
                     <cell type="separator" label="" colspan="12"/>
                 </row>
