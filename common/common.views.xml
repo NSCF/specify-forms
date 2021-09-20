@@ -1483,16 +1483,16 @@ Beginning of ViewDefs
             <rows>
                 <row>
                     <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="agent.lastName" uitype="text" cols="20" colspan="3"/>
+                    <cell type="field" id="3" name="agent.lastName" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" name="agent.initials" uitype="text" colspan="3"/>
+                    <cell type="field" id="5" name="agent.initials" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" name="agent.firstName" uitype="text" cols="20" colspan="3"/>
-                </row>WebLinkButton
+                    <cell type="field" id="5" name="agent.firstName" uitype="text"/>
+                </row>
                 <row>
                     <!-- <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="agent.email" uitype="text" cols="32"/>
