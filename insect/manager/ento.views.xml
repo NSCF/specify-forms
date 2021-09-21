@@ -501,6 +501,12 @@
                     <cell type="field" id="4" name="locality" uitype="querycbx" initialize="name=Locality;title=Locality;clonebtn=true" colspan="10"/> 
                 </row>
                 <row>
+                    <cell type="separator" label="Host" colspan="13"/>
+                </row>
+                <row>
+                    <cell type="subview" id="8" name="collectingEventAttribute" viewname="CollectingEventAttribute" colspan="13"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
@@ -555,8 +561,15 @@
                     <cell type="subview" viewname="CollectionObjectSub" id="11" colspan="13" rows="3" name="collectionObjects" initialize="addsearch=true"/>
                 </row>
                 <row>
+                    <cell type="separator" label="Host" colspan="13"/>
+                </row>
+                <row>
+                    <cell type="subview" id="8" name="collectingEventAttribute" viewname="CollectingEventAttribute" colspan="13"/>
+                </row>
+                <row>
                     <cell type="separator" label="Attachments" colspan="13"/>
                 </row>
+                
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectingEventAttachments" colspan="13" initialize="btn=true;icon=CollectingEventAttachment"/>
                 </row>
