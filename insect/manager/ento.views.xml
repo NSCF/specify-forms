@@ -81,32 +81,40 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="stationFieldNumber" uitype="text"/>
+                    <cell type="field" id="1" name="stationFieldNumber" uitype="text" colspan="3"/>
+                    <cell type="label" labelfor="TrapNumber"/>
+                    <cell type="field" id="TrapNumber" name="text1" uitype="text" colspan="3"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="13"/>
+                    <cell type="field" id="13" name="verbatimDate" uitype="text"/>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" uitype="plugin" name="this" initialize="name=PartialDateUI;df=startDate;tp=startDatePrecision" uifieldformatter="Date"/>
                     <cell type="label" labelfor="10"/>
                     <cell type="field" id="10" uitype="plugin" name="this" initialize="name=PartialDateUI;df=endDate;tp=endDatePrecision" uifieldformatter="Date"/>
                 </row>
 				<row>
-					<cell type="label" labelfor="TrapNumber"/>
-                    <cell type="field" id="TrapNumber" name="text1" uitype="text"/>
 				    <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="method" uitype="combobox"/>
-                    <cell type="label" labelfor="13"/>
-                    <cell type="field" id="13" name="verbatimDate" uitype="text"/>  
+                    <cell type="field" id="3" name="method" uitype="combobox" colspan="6"/>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectingEventAttachments" colspan="3" initialize="btn=true;icon=CollectingEventAttachment"/>
                 </row>
 				<row>
                     <cell type="label" labelfor="collectingTrip"/>
-                    <cell type="field" id="collectingTrip" name="collectingTrip" uitype="querycbx" initialize="name=CollectingTrip;title=CollectingTrip" colspan="5"/> 
-				</row>
+                    <cell type="field" id="collectingTrip" name="collectingTrip" uitype="querycbx" initialize="name=CollectingTrip;title=CollectingTrip" colspan="10"/> 
+                </row>
 				<row>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="locality" uitype="querycbx" initialize="name=Locality;title=Locality;clonebtn=true" colspan="10"/> 
                 </row>	
-				<row>
-                    <cell type="label" labelfor="6"/>
-                    <cell type="field" id="6" name="remarks" uitype="textareabrief" rows="1" colspan="10"/>
+                <row>
+				    <cell type="label" labelfor="collectingeventspace1"/>
+				</row>
+                <row>
+                    <cell type="subview" viewname="CollectingEventAuthorization" id="cepermits" desc="Authorization" name="collectingEventAuthorizations" colspan="13"/>
                 </row>
+                <row>
+				    <cell type="label" labelfor="collectingeventspace2"/>
+				</row>
 				<row>
 				    <cell type="label" labelfor="space8"/>
 				    <cell type="subview" viewname="Collectors" id="5" name="collectors" colspan="10" rows="3"/>
@@ -115,14 +123,13 @@
                     <cell type="separator" label="Attachments" colspan="12"/>
                 </row-->
                 <row>
-				    <cell type="label" labelfor="spaceatt"/>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectingEventAttachments" colspan="12" initialize="btn=true;icon=CollectingEventAttachment"/>
                 </row>
                 <row>
                     <cell type="subview" id="8" name="collectingEventAttribute" viewname="CollectingEventAttribute" colspan="12"/>
                 </row>
-				<row>
-                    <cell type="subview" viewname="CollectionObjectSub" id="11" colspan="12" rows="3" name="collectionObjects" initialize="addsearch=true"/>
+                <row>
+                    <cell type="label" labelfor="6"/>
+                    <cell type="field" id="6" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
             </rows>
         </viewdef>

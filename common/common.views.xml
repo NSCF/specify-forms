@@ -249,6 +249,18 @@
             </altviews>
         </view>
 
+        <view name="CollectingEventAuthorization"
+            objtitle="Accession Authorization"
+            class="edu.ku.brc.specify.datamodel.CollectingEventAuthorization"
+            busrules="edu.ku.brc.specify.datamodel.busrules.AccessionAuthorizationBusRules"
+            resourcelabels="false">
+            <desc><![CDATA[Permit subform within the Accession form.]]></desc>
+            <altviews>
+                <altview name="CollectingEventAuthorization View" viewdef="CollectingEventAuthorization" mode="view" default="true"/>
+                <altview name="CollectingEventAuthorization Edit" viewdef="CollectingEventAuthorization" mode="edit"/>
+            </altviews>
+        </view>
+
         <view name="CollectingEventSubform"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventBusRules"
@@ -2105,6 +2117,29 @@
 				</row>
             </rows>
         </viewdef>
+
+        <viewdef name="CollectingEventAuthorization"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.CollectingEventAuthorization"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[Permit subform for CollectingEventAuthorization.]]></desc>
+            <enableRules/>
+            <columnDef>90px,2px,250px,4px,90px,2px,400px,4px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,230px,570px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,215px,685px,p:g</columnDef>
+            <columnDef os="exp">p,2px,p,p:g</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+            
+            <rows>
+                <row>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="permit" uitype="querycbx" initialize="name=Permit"/>
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="remarks" uitype="text" />
+                </row>
+            </rows>
+        </viewdef>
         
         <viewdef name="CollectingEventSubform"
             type="form"
@@ -2619,19 +2654,23 @@
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="agent.firstName" uitype="text" cols="20" colspan="3"/>
                 </row>
-				<row>
-                    <cell type="label" labelfor="title"/>
-                    <cell type="field" id="title" name="agent.title" uitype="text" cols="20" colspan="3"/>
-                </row>
-				<row>
-                    <cell type="label" labelfor="suffix"/>
-                    <cell type="field" id="suffix" name="agent.suffix" uitype="text" cols="20" colspan="3"/>
-                </row>
-                <!--row>
+				<!--
+                    <row>
+                        <cell type="label" labelfor="title"/>
+                        <cell type="field" id="title" name="agent.title" uitype="text" cols="20" colspan="3"/>
+                    </row>
+                -->
+                <!--
+                    <row>
+                        <cell type="label" labelfor="suffix"/>
+                        <cell type="field" id="suffix" name="agent.suffix" uitype="text" cols="20" colspan="3"/>
+                    </row>
+                -->    
+                <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="agent.email" uitype="text" cols="32"/>
                     <cell type="field" id="mailto" name="agent" uitype="plugin" initialize="name=WebLinkButton;url=mailto:$email$;label=Send Mail;watch=7"/>
-                </row-->
+                </row>
             </rows>
         </viewdef>
 
@@ -3635,29 +3674,31 @@
             <rows>
 				<row>
 				    <cell type="label" labelfor="originalCoordSystem"/>
-                    <cell type="field" id="originalCoordSystem" name="originalCoordSystem" uitype="combobox" />
+                    <cell type="field" id="originalCoordSystem" name="originalCoordSystem" uitype="combobox" colspan="16" />
 				</row>
 				<row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="maxUncertaintyEst" uitype="text" />
                     <cell type="label" labelfor="6"/>
-                    <cell type="field" id="6" name="maxUncertaintyEstUnit" uitype="combobox"/>
+                    <cell type="field" id="6" name="maxUncertaintyEstUnit" uitype="combobox" colspan="3" />
+                    <cell type="label" labelfor="text1"/>
+                    <cell type="field" id="text1" name="text1" uitype="text" colspan="6"/>
                 </row>
 				<row>
-				    <cell type="label" labelfor="4"/>
-                    <cell type="field" id="4" name="geoRefDetRef" uitype="text" />
                     <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="geoRefDetBy" uitype="querycbx" initialize="name=Agent" />
+                    <cell type="field" id="1" name="geoRefDetBy" uitype="querycbx" initialize="name=Agent" colspan="5" />
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="geoRefDetDate" uitype="formattedtext" uifieldformatter="Date" colspan="8"/>
 				</row>
                 <row>
-				    <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="geoRefDetDate" uitype="formattedtext" uifieldformatter="Date" />
-				    <cell type="label" labelfor="coordinateprecision"/>
-                    <cell type="field" id="coordinateprecision" name="protocol" uitype="combobox" />
+                    <cell type="label" labelfor="coordinateprecision"/>
+                    <cell type="field" id="coordinateprecision" name="protocol" uitype="text" colspan="5" />
+                    <cell type="label" labelfor="4"/>
+                    <cell type="field" id="4" name="geoRefDetRef" uitype="text" colspan="8"/>
                 </row>
 				<row>
                     <cell type="label" labelfor="10"/>
-                    <cell type="field" id="10" name="geoRefRemarks" uitype="text" colspan="10" />
+                    <cell type="field" id="10" name="geoRefRemarks" uitype="text" colspan="16" />
                 </row>
             </rows>
         </viewdef>
@@ -4244,40 +4285,46 @@
             
             <rows>
 			    <row>
+                    <cell type="label" labelfor="geography"/>
+                    <cell type="field" id="geography" name="geography" uitype="querycbx" initialize="name=Geography" colspan="5"/>
+                    <cell type="label" labelfor="text3"/>
+                    <cell type="field" id="text3" name="text3" uitype="text" colspan="4" readonly="true"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="localityName"/>
                     <cell type="field" id="localityName" name="localityName" uitype="text" required="true" colspan="12"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="namedPlace"/>
+                    <cell type="field" id="namedPlace" name="namedPlace" uitype="text" colspan="5" readonly="true"/>
+                    <cell type="label" labelfor="gridref"/>
+					<cell type="field" id="gridref" name="shortName" uitype="text" colspan="3"/>
                 </row>
 				<row>
                     <cell type="label" labelfor="VerbLocalityname"/>
                     <cell type="field" id="VerbLocalityname" name="text2" uitype="text" colspan="12" readonly="true"/>
                 </row>
-				 <row>
-                    <cell type="label" labelfor="remarks"/>
-                    <cell type="field" id="remarks" name="remarks" uitype="text" colspan="12"/>
+                <row>
+                    <cell type="label" labelfor="verbatimLatitude"/>
+                    <cell type="field" id="verbatimLatitude" name="verbatimLatitude" uitype="text" colspan="12" readonly="true" /><cell type="label" labelfor="space1"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="geography"/>
-                    <cell type="field" id="geography" name="geography" uitype="querycbx" initialize="name=Geography" colspan="12"/>
+                    <cell type="label" labelfor="GeogProblem"/>
+                    <cell type="field" id="GeogProblem" name="text1" uitype="text" colspan="12"/>
                 </row>
-				<row>
-                    <cell type="label" labelfor="text3"/>
-                    <cell type="field" id="text3" name="text3" uitype="text" colspan="12" readonly="true"/>
+                <row>
+                    <cell type="label" labelfor="6"/>
+                    <cell type="field" id="6" name="latLongMethod" uitype="combobox" colspan="5"/>
+                    <!-- <cell type="label" labelfor="Text4"/>
+                    <cell type="field" id="Text4" name="text4" uitype="text" colspan="3"/> -->
                 </row>
                 <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="this" uitype="plugin" initialize="name=LatLonUI" colspan="11"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="6"/>
-                    <cell type="field" id="6" name="latLongMethod" uitype="combobox" colspan="3"/><cell type="label" labelfor="2"/>
-                    <cell type="label" labelfor="GeogProblem"/>
-                    <cell type="field" id="GeogProblem" name="text1" uitype="text" colspan="3"/>
-                </row>
-				<row>
-                    <cell type="label" labelfor="verbatimLatitude"/>
-                    <cell type="field" id="verbatimLatitude" name="verbatimLatitude" uitype="text" colspan="3" readonly="true" /><cell type="label" labelfor="space1"/>
-					<cell type="label" labelfor="gridref"/>
-					<cell type="field" id="gridref" name="shortName" uitype="text" colspan="3"/>
+                    <cell type="label" labelfor="remarks"/>
+                    <cell type="field" id="remarks" name="remarks" uitype="text" colspan="12"/>
                 </row>
 				<row>
 				   <cell type="label" labelfor="space2"/>
