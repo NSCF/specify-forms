@@ -629,13 +629,16 @@
 
             <rows>
                 <row>
-                    <cell type="label" labelfor="7"/>
-                    <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
+                    <cell type="label" labelfor="t6"/>
+                    <cell type="field" id="t6" name="text6" uitype="text"/>
+                    <cell type="label"/>
                     <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
                     <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
                 </row>
                 <row> 
+                    <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="preparedByAgent" uitype="querycbx" initialize="name=Agent"/>
                     <cell type="label" labelfor="1"/>
@@ -663,12 +666,14 @@
                 <row>
                 <cell type="label" labelfor="t2"/>
                 <cell type="field" id="t2" name="text2" uitype="combobox"/>
-                <cell type="label" labelfor="t6"/>
-                <cell type="field" id="t6" name="text6" uitype="text"/>
+                
                 </row>
                 <row>
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="countAmt" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="separator" label="Prep remarks" colspan="13"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="rem"/>
