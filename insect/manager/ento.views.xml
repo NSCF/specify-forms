@@ -398,7 +398,10 @@
                 <row> 
                     <cell type="label" labelfor="mtd"/>
                     <cell type="field" id="mtd" name="method" uitype="combobox"/>  
+                    <cell type="label" labelfor="t2"/>
+                    <cell type="field" id="t2" name="text2" uitype="text" colspan="4"/>
                 </row>
+                    
                 <row>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
