@@ -599,6 +599,9 @@
                     <cell type="field" id="6" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <row>
+                    <cell type="subview" id="9" name="collectingEventAttribute" viewname="CollectingEventAttribute" colspan="13"/>
+                </row>
+                <row>
                     <cell type="subview" viewname="Collectors" id="12" name="collectors" colspan="12" rows="3"/>
                 </row>
             </rows>
@@ -643,9 +646,7 @@
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
-                <row>
-                    <cell type="subview" id="8" name="collectingEventAttribute" viewname="CollectingEventAttribute" colspan="13"/>
-                </row>    
+                    
                 <row>
                     <cell type="subview" viewname="Collectors" id="5" name="collectors" colspan="13" rows="3"/>
                 </row>
