@@ -163,6 +163,10 @@
                     <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <row>
+                    <cell type="label" label="Attachments:" />
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments"  initialize="btn=true;icon=CollectionObjectAttachment"/>
+                </row>
+                <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="12" rows="5"/>
                 </row>
                 <row>
@@ -175,10 +179,10 @@
                     <cell type="subview" id="15" viewname="EntoAttributes" name="collectionObjectAttribute" colspan="12"/>
                 </row> -->
                 <row>
-                    <cell type="separator" label="Attachments" colspan="12"/>
+                    <!-- <cell type="separator" label="Attachments" colspan="12"/> -->
                 </row>
                 <row>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments" colspan="5" initialize="icon=CollectionObjectAttachment" defaulttype="icon"/>
+                    <!-- <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments" colspan="5" initialize="icon=CollectionObjectAttachment" defaulttype="icon"/> -->
                 </row>
                 <row>
                     <cell type="separator" label="" colspan="12"/>
@@ -708,7 +712,7 @@
                 
                 <row>
                     <!-- <cell type="label" labelfor="rem"/> -->
-                    <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
+                    <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
                 <!--<row>
                     <cell type="label" labelfor="desc"/>
