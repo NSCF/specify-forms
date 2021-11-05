@@ -2245,8 +2245,8 @@
                 <row>
                     <cell type="label" labelfor="hostTaxon"/>
                     <cell type="field" id="hostTaxon" name="hostTaxon" uitype="querycbx" initialize="name=Taxon" colspan="7"/>
-                    <!-- <cell type="label" labelfor="Habitat"/> -->
-                    <!-- <cell type="field" id="Habitat" name="text1" uitype="text"  colspan="5"/> -->
+                    <cell type="label" labelfor="Habitat"/>
+                    <cell type="field" id="Habitat" name="text1" uitype="text"  colspan="5"/>
                 </row>
                 <row>
                     <!-- <cell type="label" labelfor="Behaviour"/> -->
