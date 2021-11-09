@@ -2251,12 +2251,12 @@
                 <row>
                     <cell type="label" labelfor="Behaviour"/>
                     <cell type="field" id="Behaviour" name="text2" uitype="text"  colspan="5"/>
+                    <cell type="label" labelfor="VegetationType"/>
+                    <cell type="field" id="VegetationType" name="text3" uitype="text"  colspan="7"/>
                 </row>
                 <row>
-                    <!-- <cell type="label" labelfor="VegetationType"/> -->
-                    <!-- <cell type="field" id="VegetationType" name="text3" uitype="text"  colspan="5"/> -->
-                    <!-- <cell type="label" labelfor="Behaviour"/> -->
-                    <!-- <cell type="field" id="Behaviour" name="text2" uitype="text"  colspan="5"/> -->
+                    <cell type="label" labelfor="HostAge"/>
+                    <cell type="field" id="HostAge" name="text4" uitype="text"  colspan="5"/>
                 </row>
             </rows>
         </viewdef>
