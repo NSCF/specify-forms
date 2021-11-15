@@ -55,6 +55,7 @@
     <field table="CollectingEvent" name="collectorLastName2" onetomanysequence="1" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="lastName"/>
     <field table="CollectingEvent" name="collectorMiddle2" onetomanysequence="1" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="middleInitial"/>
     <field table="CollectingEvent" name="collectorTitle2" onetomanysequence="1" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="title"/>
+    <field table="CollectingEvent" name="collectorInitials2" onetomanysequence="1" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="initials"/>
     <field table="CollectingEvent" name="collectorFirstName3" onetomanysequence="2" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="firstName"/>
     <field table="CollectingEvent" name="collectorLastName3" onetomanysequence="2" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="lastName"/>
     <field table="CollectingEvent" name="collectorMiddle3" onetomanysequence="2" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="middleInitial"/>
@@ -471,6 +472,7 @@
     <field table="Determination" name="text21" actualname="text2" onetomanysequence="0" relationshipname="collectionObject"/>
     <field table="Determination" name="number11" actualname="number1" onetomanysequence="0" relationshipname="collectionObject"/>
     <field table="Determination" name="number21" actualname="number2" onetomanysequence="0" relationshipname="collectionObject"/>
+    <field table="Determination" name="Addendum" actualname="addendum" onetomanysequence="0" relationshipname="collectionObject"/>
     <field table="Determination" name="confidence1" actualname="confidence" onetomanysequence="0" relationshipname="collectionObject"/>
     <field table="Determination" name="method1" actualname="method" onetomanysequence="0" relationshipname="collectionObject"/>
     <field table="Determination" name="qualifier1" actualname="qualifier" onetomanysequence="0" relationshipname="collectionObject"/>
