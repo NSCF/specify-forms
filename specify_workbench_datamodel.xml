@@ -114,6 +114,7 @@
     <field column="Collector Title 7"  name="collectorTitle7" type="java.lang.String" length="50"/>
     <field column="Collector First Name 8" name="collectorFirstName8" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 8"  name="collectorLastName8" type="java.lang.String" length="120"/>
+    <field column="Collector Initials 1"  name="collectorInitials1" type="java.lang.String" length="50"/>
     <field column="Collector Middle Initials 8" name="collectorMiddle8" type="java.lang.String" length="50"/>
     <field column="Collector Title 8"  name="collectorTitle8" type="java.lang.String" length="50"/>
     <field column="Permit 1" name="cePermit1" type="java.lang.String" length="64"/>

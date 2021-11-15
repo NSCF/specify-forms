@@ -50,6 +50,7 @@
     <field table="CollectingEvent" name="collectorLastName1" onetomanysequence="0" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="lastName"/>
     <field table="CollectingEvent" name="collectorMiddle1" onetomanysequence="0" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="middleInitial"/>
     <field table="CollectingEvent" name="collectorTitle1" onetomanysequence="0" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="title"/>
+    <field table="CollectingEvent" name="collectorInitials1" onetomanysequence="0" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="initials"/>
     <field table="CollectingEvent" name="collectorFirstName2" onetomanysequence="1" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="firstName"/>
     <field table="CollectingEvent" name="collectorLastName2" onetomanysequence="1" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="lastName"/>
     <field table="CollectingEvent" name="collectorMiddle2" onetomanysequence="1" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="middleInitial"/>
