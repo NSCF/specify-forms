@@ -4549,13 +4549,15 @@
                     <cell type="field" id="t1" name="text1" uitype="text" colspan="14"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="t2" name="text2" uitype="text" colspan="14"/>
-                </row>
-                <row>
                     <cell type="label" labelfor="np"/>
                     <cell type="field" id="np" name="namedPlace" uitype="text" colspan="14"/>
                 </row>
+                
+                <row>
+                    <cell type="label" labelfor="t2"/>
+                    <cell type="field" id="t2" name="text2" uitype="text" colspan="14"/>
+                </row>
+                
                 
                 <row>
                     <cell type="label" labelfor="5"/>
