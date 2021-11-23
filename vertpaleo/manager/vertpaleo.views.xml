@@ -123,12 +123,11 @@
         <view name="Locality"
             class="edu.ku.brc.specify.datamodel.Locality"
             busrules="edu.ku.brc.specify.datamodel.busrules.LocalityBusRules"
-            isinternal="false"
-            resourcelabels="false">
+            isinternal="false">
             <desc><![CDATA[Locality form.]]></desc>
             <altviews>
-                <altview name="Collection View" viewdef="Collection" mode="view" validated="false"/>
-                <altview name="Collection Edit" viewdef="Collection" mode="edit" validated="true" default="true"/>
+                <altview name="Locality View" viewdef="Locality" mode="view"/>
+                <altview name="Locality Edit" viewdef="Locality" mode="edit" default="true"/>
             </altviews>
         </view>
         
