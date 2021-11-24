@@ -4609,12 +4609,12 @@
                     <!-- <cell type="field" id="6" name="latLongMethod" uitype="combobox" picklist="Latlongmethod"/> -->
                 </row>
                 <row>
-                    <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="elevationAccuracy" uitype="text" cols="20"/>
-                    <cell type="label" labelfor="9"/>
-                    <cell type="field" id="9" name="minElevation" uitype="text" cols="20"/>
-                    <cell type="label" labelfor="10"/>
-                    <cell type="field" id="10" name="maxElevation" uitype="text" cols="20"/>
+                    <!-- <cell type="label" labelfor="1"/> -->
+                    <!-- <cell type="field" id="1" name="elevationAccuracy" uitype="text" cols="20"/> -->
+                    <!-- <cell type="label" labelfor="9"/> -->
+                    <!-- <cell type="field" id="9" name="minElevation" uitype="text" cols="20"/> -->
+                    <!-- <cell type="label" labelfor="10"/> -->
+                    <!-- <cell type="field" id="10" name="maxElevation" uitype="text" cols="20"/> -->
                     <!-- <cell type="label" labelfor="11"/> -->
                     <!-- <cell type="field" id="11" name="elevationMethod" uitype="text" cols="20"/> -->
                 </row>
