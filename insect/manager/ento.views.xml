@@ -132,8 +132,10 @@
                 <row>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="catalogNumber" uitype="formattedtext" initialize="series=true"/>
-                    <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="accession" uitype="querycbx" initialize="name=AccessionCO;title=AccessionCO" isrequired="false"/>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="text"/>
+                    <!-- <cell type="label" labelfor="3"/> -->
+                    <!-- <cell type="field" id="3" name="accession" uitype="querycbx" initialize="name=AccessionCO;title=AccessionCO" isrequired="false"/> -->
                     <cell type="label" labelfor="14"/>
                     <cell type="field" id="14" name="altCatalogNumber" uitype="text"/>
                 </row>
