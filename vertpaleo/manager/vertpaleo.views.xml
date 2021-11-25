@@ -551,8 +551,10 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="pcsh"/>
-                    <cell type="field" uitype="querycbx" id="pcsh" name="paleoContext" initialize="name=PaleoContext" colspan="7"/>
-                    <cell type="field" id="pm" name="this" uitype="plugin" initialize="name=PaleoMap;title=Paleo Map"/>
+                    <cell type="field" uitype="querycbx" id="pcsh" name="paleoContext" initialize="name=PaleoContext" colspan="1"/>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="combobox"/>
+                    <cell type="field" id="pm" name="this" uitype="plugin" initialize="name=PaleoMap;title=Paleo Map" colspan="4"/>
                 </row> 
                 <row>
                     <cell type="label" labelfor="4"/>
