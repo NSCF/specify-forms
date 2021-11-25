@@ -563,6 +563,12 @@
                     <cell type="field" id="6" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <row>
+                    <!-- <cell type="separator" label="Collecting Event Attribute" colspan="13"/> -->
+                </row>
+                <row>
+                    <cell type="subview" id="18" name="collectingEventAttribute" viewname="CollectingEventAttribute" colspan="13"/>
+                </row>
+                <row>
                     <cell type="subview" viewname="Collectors" id="12" name="collectors" colspan="12" rows="3"/>
                 </row>
             </rows>
