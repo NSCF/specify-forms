@@ -60,6 +60,19 @@
                 <altview name="Collector Edit" viewdef="Collector" mode="edit" validated="true"/>
             </altviews>
         </view>
+
+        <view name="Collectors"
+            class="edu.ku.brc.specify.datamodel.Collector"
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
+            resourcelabels="false">
+            <desc><![CDATA[The Collectors Subform.]]></desc>
+            <altviews>
+                <!-- <altview name="Collectors Icon View"  viewdef="CollectorsIconView" mode="view"/>
+                <altview name="Collectors Icon Edit"  viewdef="CollectorsIconView" mode="edit"/>  -->
+                <altview name="Collectors Table View" viewdef="Collectors Table"   mode="view"/>
+                <altview name="Collectors Table Edit" viewdef="Collectors Table"   mode="edit" default="true"/>
+            </altviews>
+        </view>
         
         <view name="CollectionObjectCitation"
             class="edu.ku.brc.specify.datamodel.CollectionObjectCitation"
@@ -433,6 +446,38 @@
             <definition>Collectors</definition>
         </viewdef>
 
+        <viewdef name="Collectors"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.Collector"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+
+            <desc><![CDATA[The Collectors form - UNKNOWN use in database.]]></desc>
+            <enableRules/>
+
+            <columnDef>p,5dlu,p:g,5dlu,p</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+            <rows>
+                <row>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="agent.lastName" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" name="agent.initials" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" name="agent.firstName" uitype="text"/>
+                </row>
+                <row>
+                    <!-- <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" name="agent.email" uitype="text" cols="32"/>
+                    <cell type="field" id="mailto" name="agent" uitype="plugin" initialize="name=WebLinkButton;url=mailto:$email$;label=Send Mail;watch=7"/> -->
+                </row>
+            </rows>
+        </viewdef>
+
         <viewdef  name="Determination Table"
             type="formtable"
             class="edu.ku.brc.specify.datamodel.Determination"
@@ -581,8 +626,9 @@
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Collecting Event]]></desc>
-
-            <columnDef>100px,2px,210px,5px,75px,2px,210px,5px,90px,2px,126px,0px,p:g</columnDef>
+            
+            <columnDef>100px,2px,210px,5px,75px,2px,200px,5px,100px,2px,116px,20px,p:g</columnDef>
+            <!-- <columnDef>100px,2px,210px,5px,75px,2px,210px,5px,90px,2px,126px,0px,p:g</columnDef> -->
             <columnDef os="lnx">115px,2px,210px,5px,105px,2px,210px,5px,125px,2px,136px,0px,p:g</columnDef>
             <columnDef os="mac">130px,2px,260px,5px,85px,2px,260px,5px,115px,2px,166px,0px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g,5px:g,p,2px,p:g(2),0px</columnDef>
@@ -603,7 +649,7 @@
                     <cell type="label" labelfor="8"/>
                     <cell type="field" id="8" uitype="plugin" name="this" initialize="name=PartialDateUI;df=endDate;tp=endDatePrecision" uifieldformatter="Date"/>
                     <cell type="label" labelfor="13"/>
-                    <cell type="field" id="13" name="verbatimDate" uitype="text" colspan="1"/>   
+                    <cell type="field" id="13" name="verbatimDate" uitype="text"/>   
                 </row>
                 <row>
                     <cell type="label" labelfor="pcsh"/>
