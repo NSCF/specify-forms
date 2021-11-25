@@ -259,6 +259,10 @@
                     <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <row>
+                    <cell type="label" label="Attachments:" />
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments"  initialize="btn=true;icon=CollectionObjectAttachment"/>
+                </row>
+                <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="12" rows="5"/>
                 </row>
                 <row>
@@ -271,10 +275,10 @@
                     <cell type="subview" id="7" name="collectionObjectCitations" viewname="CollectionObjectCitation" colspan="12"/>                    
                 </row>
                 <row>
-                    <cell type="separator" label="Attachments" colspan="12"/>
+                    <!-- <cell type="separator" label="Attachments" colspan="12"/> -->
                 </row>
                 <row>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments" colspan="5" initialize="icon=CollectionObjectAttachment" defaulttype="icon"/>
+                    <!-- <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments" colspan="5" initialize="icon=CollectionObjectAttachment" defaulttype="icon"/> -->
                     <cell type="panel" id="116" name="outerPanel" coldef="p,2px,p:g,5px,p,2px,p:g" rowdef="p,4px,p,4px,p" colspan="5">
                         <rows>
 							<row>
