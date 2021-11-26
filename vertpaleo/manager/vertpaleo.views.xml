@@ -424,7 +424,7 @@
                     <cell type="label" labelfor="9"/> 
                     <cell type="field" id="9" name="addendum" uitype="text"/>
                     <cell type="label" labelfor="con"/>
-                    <cell type="field" id="con" name="confidence" uitype="combobox" picklist="DetConfidence"/>
+                    <cell type="field" id="con" name="confidence" uitype="combobox" picklist="Certainty"/>
                                 
                 </row>
                 
@@ -768,7 +768,7 @@
                     <cell type="field" id="t5" name="text5" uitype="combobox"/>
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="combobox" colspan="2"/>
-                    <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true" colspan="3"/>
+                    <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true" colspan="3" picklist="PaleoLifeStage"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="rem"/>
