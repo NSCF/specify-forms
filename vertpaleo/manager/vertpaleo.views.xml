@@ -641,7 +641,7 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Collecting Event]]></desc>
 
-            <columnDef>100px,2px,200px,5px,75px,2px,200px,5px,100px,2px,106px,20px,p:g</columnDef>
+            <columnDef>100px,2px,200px,5px,65px,2px,200px,5px,100px,2px,116px,40px,p:g</columnDef>
             <!-- <columnDef>100px,2px,210px,5px,75px,2px,200px,5px,100px,2px,116px,20px,p:g</columnDef> -->
             <!-- <columnDef>100px,2px,210px,5px,75px,2px,210px,5px,90px,2px,126px,0px,p:g</columnDef> -->
             <columnDef os="lnx">115px,2px,210px,5px,105px,2px,210px,5px,125px,2px,136px,0px,p:g</columnDef>
