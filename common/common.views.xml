@@ -2997,33 +2997,34 @@
             class="edu.ku.brc.specify.datamodel.DeterminationCitation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
-            
             <desc><![CDATA[Locality]]></desc>
-            <columnDef>100px,2px,715px,0px</columnDef>
-            <columnDef os="lnx">115px,2px,790px,0px</columnDef>
-            <columnDef os="mac">130px,2px,890px,0px</columnDef>
-            <columnDef os="exp">p,2px,p:g,0px</columnDef>
+            <columnDef>105px,2px,500px,5px,103px,2px,150px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,230px,5px,73px,2px,155px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,215px,5px,80px,2px,165px,p:g</columnDef>
+            <columnDef os="exp">p,2px,p:g,5px,100px,2px,p:g,p:g(2)</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
             
             <rows>
                 <row>
                     <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" name="referenceWork" uitype="querycbx" initialize="name=ReferenceWork;title=ReferenceWork"/>
-                </row>            
+                    <cell type="field" id="5" name="referenceWork" uitype="querycbx" initialize="name=ReferenceWork;title=ReferenceWork" colspan="6"/>
+                </row>
                 <row>
                     <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="remarks" uitype="textareabrief" rows="2" colspan="2"/>
+                    <cell type="field" id="1" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
                 </row>
-                <!--    
-                    <row>
-                        <cell type="label" labelfor="2"/>
-                        <cell type="field" id="2" name="createdByAgent" uitype="querycbx" initialize="name=Agent;title=Agent"/>
-                    </row>
-                    <row>
-                        <cell type="label" labelfor="4"/>
-                        <cell type="field" id="4" name="modifiedByAgent" uitype="querycbx" initialize="name=Agent;title=Agent"/>
-                    </row> 
-                -->
+                <!--<row>
+                    <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
+                    <cell type="label" labelfor="12"/>
+                    <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
+                </row>-->
             </rows>
         </viewdef>
 
