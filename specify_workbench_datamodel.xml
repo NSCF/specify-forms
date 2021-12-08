@@ -941,8 +941,11 @@
     <field column="Storage Location 1" name="storageLocation1" type="java.lang.String" length="50"/>
     <field column="Prep YesNo 1" name="prepYesNo1" type="boolean" />
     <field column="Prep Text1 1" name="prep1Text1" type="java.lang.String" length="500"/>
+    <field column="Sex" name="text1" type="java.lang.String" length="65535"/>
     <field column="Prep Text2 1" name="prep1Text2" type="java.lang.String" length="500"/>
+    <field column="Life Stage" name="text2" type="java.lang.String" length="65535"/>
     <field column="Prep Integer1 1" name="prep1Integer1" type="java.lang.Integer" length="10"/>
+    <field column="Total Count" name="countAmt" type="java.lang.Integer" length="10"/>
     <field column="Prep Integer2 1" name="prep1Integer2" type="java.lang.Integer" length="10"/>
     <field column="Number1 1" name="prep1Number1" type="java.lang.Double"/>
     <field column="Number2 1" name="prep1Number2" type="java.lang.Double"/>
@@ -975,6 +978,7 @@
     <field column="Storage Location 2" name="storageLocation2" type="java.lang.String" length="50"/>
     <field column="Prep YesNo 2" name="prepYesNo2" type="boolean" />
     <field column="Prep Text1 2" name="prep2Text1" type="java.lang.String" length="500"/>
+    <field column="Verbatim Sex/Stage/Count" name="text7" type="java.lang.String" length="65535"/>
     <field column="Prep Text2 2" name="prep2Text2" type="java.lang.String" length="500"/>
     <field column="Prep Integer1 2" name="prep2Integer1" type="java.lang.Integer" length="10"/>
     <field column="Prep Integer2 2" name="prep2Integer2" type="java.lang.Integer" length="10"/>
