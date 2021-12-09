@@ -943,6 +943,7 @@
     <field column="Prep YesNo 1" name="prepYesNo1" type="boolean" />
     <field column="Prep Text1 1" name="prep1Text1" type="java.lang.String" length="500"/>
     <field column="Sex" name="text1" type="java.lang.String" length="65535"/>
+    <field column="Preparation Type" name="text5" type="java.lang.String" length="65535"/>
     <field column="Prep Text2 1" name="prep1Text2" type="java.lang.String" length="500"/>
     <field column="Life Stage" name="text2" type="java.lang.String" length="65535"/>
     <field column="Prep Integer1 1" name="prep1Integer1" type="java.lang.Integer" length="10"/>
