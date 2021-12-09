@@ -531,6 +531,7 @@
     <field column="Number2 1" name="number21" type="java.lang.Float" length="24"/>
     <field column="Confidence 1" name="confidence1" type="text" length="50"/>
     <field column="Method 1" name="method1" type="text" length="50"/>
+    <field column="Type Status" name="typeStatusName" type="text" length="50"/>
     <field column="Qualifier 1" name="qualifier1" type="text" length="16"/>
     <field column="Subsp Qualifier 1" name="subspQualifier1" type="text" length="16"/>
     <field column="Var Qualifier 1" name="varQualifier1" type="text" length="16"/>
