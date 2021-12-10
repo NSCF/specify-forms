@@ -830,7 +830,7 @@
     <field table="Preparation" name="prepText2" actualname="text2" />
     <field table="Preparation" name="prepText3" actualname="text3" />
     <field table="Preparation" name="prepText4" actualname="text4" />
-    <field table="Preparation" name="prepText5" actualname="text5" />
+    <field table="Preparation" name="Preparation Type" actualname="text5" />
     <field table="Preparation" name="prepInteger1" actualname="integer1"/>
     <field table="Preparation" name="prepIntege2" actualname="integer2"/>
     <field table="Preparation" name="prepNumber1" actualname="number1" />
