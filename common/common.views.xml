@@ -2,10 +2,10 @@
 <viewset name="Common" i18nresname="common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <views>
-    
-          <view name="Address"
+
+        <view name="Address"
             class="edu.ku.brc.specify.datamodel.Address"
-             busrules="edu.ku.brc.specify.datamodel.busrules.AddressBusRules"
+            busrules="edu.ku.brc.specify.datamodel.busrules.AddressBusRules"
             resourcelabels="false">
             <desc><![CDATA[Address subform within the Accession form.]]></desc>
             <altviews>
@@ -16,9 +16,7 @@
             </altviews>
         </view>
 
-
-
-   <view name="Agent"
+        <view name="Agent"
             class="edu.ku.brc.specify.datamodel.Agent"
             busrules="edu.ku.brc.specify.datamodel.busrules.AgentBusRules"
             isinternal="false"
@@ -30,7 +28,7 @@
             </altviews>
         </view>
 
-   <view name="Taxon"
+        <view name="Taxon"
             class="edu.ku.brc.specify.datamodel.Taxon"
             busrules="edu.ku.brc.specify.datamodel.busrules.TaxonBusRules"
             isinternal="false"
@@ -42,7 +40,7 @@
             </altviews>
         </view>
         
-  <view name="TaxonCitation"
+        <view name="TaxonCitation"
             class="edu.ku.brc.specify.datamodel.TaxonCitation"
             resourcelabels="false">
             <desc><![CDATA[Taxon data entry form.]]></desc>
@@ -51,10 +49,10 @@
                 <altview name="TaxonCitation Edit" viewdef="TaxonCitation" mode="edit" default="true"/>
             </altviews>
         </view>
+
         <view name="Accession"
-              class="edu.ku.brc.specify.datamodel.Accession"
-              busrules="edu.ku.brc.specify.datamodel.busrules.AccessionBusRules"
-              >
+            class="edu.ku.brc.specify.datamodel.Accession"
+            busrules="edu.ku.brc.specify.datamodel.busrules.AccessionBusRules">
             <desc><![CDATA[The Accession form.]]></desc>
             <altviews>
                 <altview name="Accession View" viewdef="Accession" mode="view" default="true"/>
@@ -64,8 +62,7 @@
         
         <view name="AccessionCO"
             class="edu.ku.brc.specify.datamodel.Accession"
-            busrules="edu.ku.brc.specify.datamodel.busrules.AccessionBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.AccessionBusRules" >
             <desc><![CDATA[The Accession form as seen in the CO form.]]></desc>
             <altviews>
                 <altview name="AccessionCO View" viewdef="AccessionCO" mode="view" default="true"/>
@@ -76,8 +73,7 @@
         <view name="AccessionAgent"
               objtitle="Accession Agent"
               class="edu.ku.brc.specify.datamodel.AccessionAgent"
-              busrules="edu.ku.brc.specify.datamodel.busrules.AccessionAgentBusRules"
-              >
+              busrules="edu.ku.brc.specify.datamodel.busrules.AccessionAgentBusRules" >
             <desc><![CDATA[Subform within the Accession form.]]></desc>
             <altviews>
                 <altview name="AccessionAgent View" viewdef="AccessionAgent" mode="view"/>
@@ -90,8 +86,7 @@
         <view name="AccessionAuthorization"
             objtitle="Accession Authorization"
             class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
-            busrules="edu.ku.brc.specify.datamodel.busrules.AccessionAuthorizationBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.AccessionAuthorizationBusRules" >
             <desc><![CDATA[Permit subform within the Accession form.]]></desc>
             <altviews>
                 <altview name="AccessionAuthorization View" viewdef="AccessionAuthorization" mode="view" default="true"/>
@@ -99,23 +94,21 @@
             </altviews>
         </view>
         
-         <view name="AccessionItems"
-              class="edu.ku.brc.specify.datamodel.CollectionObject"
-              usedefbusrule="false"
-              >
-              <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
-              <altviews>
-                  <altview name="COS View"       viewdef="AccessionItems" mode="view"/>
-                  <altview name="COS Edit"       viewdef="AccessionItems" mode="edit" default="true"/>
-                  <altview name="COS Table Edit" viewdef="AccessionItems Table" mode="edit"/>
-                  <altview name="COS Table View" viewdef="AccessionItems Table" mode="view"/>
-              </altviews>      
-         </view>
+        <view name="AccessionItems"
+            class="edu.ku.brc.specify.datamodel.CollectionObject"
+            usedefbusrule="false" >
+            <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
+            <altviews>
+                <altview name="COS View"       viewdef="AccessionItems" mode="view"/>
+                <altview name="COS Edit"       viewdef="AccessionItems" mode="edit" default="true"/>
+                <altview name="COS Table Edit" viewdef="AccessionItems Table" mode="edit"/>
+                <altview name="COS Table View" viewdef="AccessionItems Table" mode="view"/>
+            </altviews>      
+        </view>
 
         <view name="AgreementAgent"
               objtitle="Agreement Agent"
-              class="edu.ku.brc.specify.datamodel.AccessionAgent"
-              >
+              class="edu.ku.brc.specify.datamodel.AccessionAgent" >
             <desc><![CDATA[Subform within the Accession form.]]></desc>
             <altviews>
                 <altview name="AgreementAgent View" viewdef="AgreementAgent" mode="view"/>
@@ -123,10 +116,9 @@
             </altviews>
         </view>
         
-       <view name="AgreementAuthorization"
+        <view name="AgreementAuthorization"
             objtitle="Agreement Authorization"
-            class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
-            >
+            class="edu.ku.brc.specify.datamodel.AccessionAuthorization" >
             <desc><![CDATA[Permit subform within the Accession form.]]></desc>
             <altviews>
                 <altview name="AgreementAuthorization View" viewdef="AgreementAuthorization" mode="view" default="true"/>
@@ -135,8 +127,7 @@
         </view>
                 
         <view name="AddressOfRecord"
-            class="edu.ku.brc.specify.datamodel.AddressOfRecord"
-            >
+            class="edu.ku.brc.specify.datamodel.AddressOfRecord" >
             <desc><![CDATA[AddressOfRecord subform within the Accession form.]]></desc>
             <altviews>
                 <altview name="AddressOfRecord View" viewdef="AddressOfRecord" mode="view" default="true"/>
@@ -147,8 +138,7 @@
         <view name="Appraisal"
             class="edu.ku.brc.specify.datamodel.Appraisal"
             busrules="edu.ku.brc.specify.datamodel.busrules.AppraisalBusRules"
-            isinternal="false"
-            >
+            isinternal="false" >
             <desc><![CDATA[The appraisal subform.]]></desc>
             <altviews>
                 <altview name="Appraisal View" viewdef="Appraisal" mode="view" default="true"/>
@@ -158,8 +148,7 @@
         
         <view name="Borrow"
             class="edu.ku.brc.specify.datamodel.Borrow"
-            busrules="edu.ku.brc.specify.datamodel.busrules.BorrowBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.BorrowBusRules" >
             <desc><![CDATA[Borrow display form]]></desc>
             <altviews>
                 <altview name="Borrow View" viewdef="Borrow" mode="view" default="true"/>
@@ -169,8 +158,7 @@
         
         <view name="BorrowAgent"
             Objtitle="Borrow Agent"
-            class="edu.ku.brc.specify.datamodel.BorrowAgent"
-            >
+            class="edu.ku.brc.specify.datamodel.BorrowAgent" >
             <desc><![CDATA[Agent subform for the Borrow form]]></desc>
             <altviews>
                 <altview name="BorrowAgent Table View" viewdef="BorrowAgent Table" mode="view"/>
@@ -181,8 +169,7 @@
         </view>
         
         <view name="BorrowMaterial"
-            class="edu.ku.brc.specify.datamodel.BorrowMaterial"
-            >
+            class="edu.ku.brc.specify.datamodel.BorrowMaterial" >
             <desc><![CDATA[Borrow material display form]]></desc>
             <altviews>
                 <altview name="BorrowMaterial View" viewdef="BorrowMaterial" mode="view" default="true"/>
@@ -191,8 +178,7 @@
         </view>
         
         <view name="BorrowReturnMaterial"
-            class="edu.ku.brc.specify.datamodel.BorrowReturnMaterial"
-            >
+            class="edu.ku.brc.specify.datamodel.BorrowReturnMaterial" >
             <desc><![CDATA[Borrow return material display form]]></desc>
             <altviews>
                 <altview name="BorrowReturnMaterial View" viewdef="BorrowReturnMaterial" mode="view" default="true"/>
@@ -202,15 +188,13 @@
         
         <view name="CollectingEventSubform"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
-            busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventBusRules" >
             <desc><![CDATA[CollectingEvent Form]]></desc>
             <altviews>
                 <altview name="CollectingEventSubform View" viewdef="CollectingEventSubform" mode="view" default="true"/>
                 <altview name="CollectingEventSubform Edit" viewdef="CollectingEventSubform" mode="edit"/>
             </altviews>
         </view>
-        
         
         <view name="CollectingTrip"
             class="edu.ku.brc.specify.datamodel.CollectingTrip"
@@ -237,8 +221,7 @@
 
         <view name="Collector"
             class="edu.ku.brc.specify.datamodel.Collector"
-            busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules" >
             <desc><![CDATA[The Collectors Form.]]></desc>
             <altviews>
                 <altview name="Collector View" viewdef="Collector" mode="view" validated="false" default="true"/>                
@@ -248,8 +231,7 @@
         
         <view name="Collectors"
             class="edu.ku.brc.specify.datamodel.Collector"
-            busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules" >
             <desc><![CDATA[The Collectors Subform.]]></desc>
             <altviews>
                 <!-- <altview name="Collectors Icon View"  viewdef="CollectorsIconView" mode="view"/>
@@ -260,8 +242,7 @@
         </view>
         
         <view name="CollectionObjectCitation"
-            class="edu.ku.brc.specify.datamodel.CollectionObjectCitation"
-            >
+            class="edu.ku.brc.specify.datamodel.CollectionObjectCitation" >
             <desc><![CDATA[The Collection Object form.]]></desc>
             <altviews>
                 <altview name="CollectionObjectCitation View" viewdef="CollectionObjectCitation" mode="view"/>
@@ -271,19 +252,16 @@
 
         <view name="Collection Object Search"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
-            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionObjectBusRules"
-            
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionObjectBusRules" >
             <desc><![CDATA[The Collection Object Search form.]]></desc>
             <altviews>
                 <altview name="Collection Object Search" viewdef="Collection Object Search" label="Search" mode="search" default="true"/>
             </altviews>
         </view>
         
-         <view name="CollectionObjectSub"
+        <view name="CollectionObjectSub"
               class="edu.ku.brc.specify.datamodel.CollectionObject"
-              usedefbusrule="false"
-              >
+              usedefbusrule="false" >
               <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
               <altviews>
                   <altview name="COS View"       viewdef="CollectionObjectSub" mode="view"/>
@@ -291,22 +269,20 @@
                   <!-- <altview name="COS Table Edit" viewdef="CollectionObjectSub Table" mode="edit"/>
                   <altview name="COS Table View" viewdef="CollectionObjectSub Table" mode="view"/>  -->
               </altviews>      
-         </view>
+        </view>
         
-         <view name="CollectionObjectSubTable"
+        <view name="CollectionObjectSubTable"
               class="edu.ku.brc.specify.datamodel.CollectionObject"
-              usedefbusrule="false"
-              >
+              usedefbusrule="false" >
               <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
               <altviews>
                   <altview name="COS Table Edit" viewdef="CollectionObjectSub Table" mode="edit"/>
                   <altview name="COS Table View" viewdef="CollectionObjectSub Table" mode="view"/>
               </altviews>      
-         </view>
+        </view>
         
         <view name="CommonNameTx"
-            class="edu.ku.brc.specify.datamodel.CommonNameTx"
-            >
+            class="edu.ku.brc.specify.datamodel.CommonNameTx">
             <desc><![CDATA[The Common Name form.]]></desc>
             <altviews>
                 <altview name="CommonNameTx View" viewdef="CommonNameTx" mode="view" default="true"/>
@@ -317,8 +293,7 @@
         <view name="ConservDescription"
             class="edu.ku.brc.specify.datamodel.ConservDescription"
             busrules="edu.ku.brc.specify.datamodel.busrules.ConservDescriptionBusRules"
-            isinternal="false"
-            >
+            isinternal="false" >
             <desc><![CDATA[Conservation Description.]]></desc>
             <altviews>
                 <altview name="Conservation Description View" viewdef="ConservDescription" mode="view"/>
@@ -328,8 +303,7 @@
         
         <view name="ConservEvent"
             class="edu.ku.brc.specify.datamodel.ConservEvent"
-            busrules="edu.ku.brc.specify.datamodel.busrules.ConservEventBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.ConservEventBusRules" >
             <desc><![CDATA[Conservation Event]]></desc>
             <altviews>
                 <altview name="Conservation Event View" viewdef="ConservEvent" mode="view"/>
@@ -339,8 +313,7 @@
         
         <view name="ConservDescriptionSub"
             class="edu.ku.brc.specify.datamodel.ConservDescription"
-            busrules="edu.ku.brc.specify.datamodel.busrules.ConservDescriptionBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.ConservDescriptionBusRules" >
             <desc><![CDATA[Conservation Description.]]></desc>
             <altviews>
                 <altview name="ConservDescriptionSub View" viewdef="ConservDescriptionSub" mode="view" default="true"/>
@@ -381,8 +354,7 @@
         </view>
         
         <view name="Deaccession"
-              class="edu.ku.brc.specify.datamodel.Deaccession"
-              >
+            class="edu.ku.brc.specify.datamodel.Deaccession" >
             <desc><![CDATA[The Deaccession form.]]></desc>
             <altviews>
                 <altview name="Deaccession View" viewdef="Deaccession" mode="view" default="true"/>
@@ -391,9 +363,8 @@
         </view>
         
         <view name="Deaccession Agent"
-              objtitle="Deaccession Agent"
-              class="edu.ku.brc.specify.datamodel.DeaccessionAgent"
-              >
+            objtitle="Deaccession Agent"
+            class="edu.ku.brc.specify.datamodel.DeaccessionAgent" >
             <desc><![CDATA[Subform within the Deaccession form.]]></desc>
             <altviews>
                 <altview name="DeaccessionAgent View" viewdef="DeaccessionAgent" mode="view"/>
@@ -402,10 +373,9 @@
         </view>
         
         <view name="Determination"
-              class="edu.ku.brc.specify.datamodel.Determination"
-              busrules="edu.ku.brc.specify.datamodel.busrules.DeterminationBusRules" 
-              isexternal="true"
-              >
+            class="edu.ku.brc.specify.datamodel.Determination"
+            busrules="edu.ku.brc.specify.datamodel.busrules.DeterminationBusRules" 
+            isexternal="true" >
             <desc><![CDATA[Subform within the Collection Object form.]]></desc>
             <altviews>
                 <altview name="Determination View"       viewdef="Determination" mode="view"/>
@@ -416,8 +386,7 @@
         </view>
         
         <view name="DeterminationCitation"
-            class="edu.ku.brc.specify.datamodel.DeterminationCitation"
-            >
+            class="edu.ku.brc.specify.datamodel.DeterminationCitation" >
             <desc><![CDATA[Locality form.]]></desc>
             <altviews>
                 <altview name="DeterminationCitation View" viewdef="DeterminationCitation" mode="view"/>
@@ -427,8 +396,7 @@
         
         <view name="DeterminationViewOnly"
             class="edu.ku.brc.specify.datamodel.Determination"
-            isexternal="true"
-            >
+            isexternal="true" >
             <desc><![CDATA[Subform within the Collection Object form.]]></desc>
             <altviews>
                 <altview name="Determination View"       viewdef="Determination" mode="view" default="true"/>
@@ -436,10 +404,10 @@
         </view>
 
         <view name="DNASequence"
-              objtitle="DNA Sequence"
-              class="edu.ku.brc.specify.datamodel.DNASequence"
-              busrules="edu.ku.brc.specify.datamodel.busrules.DNASequenceBusRules"
-              isinternal="false">
+            objtitle="DNA Sequence"
+            class="edu.ku.brc.specify.datamodel.DNASequence"
+            busrules="edu.ku.brc.specify.datamodel.busrules.DNASequenceBusRules"
+            isinternal="false">
             <desc><![CDATA[DNA Sequencing form.]]></desc>
             <altviews>
                 <altview name="DNASequence View" viewdef="DNASequence" mode="view"/>
@@ -448,9 +416,9 @@
         </view>
         
         <view name="DNASequenceRun"
-              objtitle="DNA SequencingRun"
-              class="edu.ku.brc.specify.datamodel.DNASequencingRun"
-              busrules="edu.ku.brc.specify.datamodel.busrules.DNASequencingRunBusRules">
+            objtitle="DNA SequencingRun"
+            class="edu.ku.brc.specify.datamodel.DNASequencingRun"
+            busrules="edu.ku.brc.specify.datamodel.busrules.DNASequencingRunBusRules">
             <desc><![CDATA[DNA SequencingRun]]> </desc>
             <altviews>
                 <altview name="DNASequenceRun View" viewdef="DNASequenceRun" mode="view"/>
@@ -459,8 +427,7 @@
         </view>
         
         <view name="DNASequencingRunCitation"
-            class="edu.ku.brc.specify.datamodel.DNASequencingRunCitation"
-            >
+            class="edu.ku.brc.specify.datamodel.DNASequencingRunCitation" >
             <desc><![CDATA[Locality form.]]></desc>
             <altviews>
                 <altview name="DNASequencingRunCitation View" viewdef="DNASequencingRunCitation" mode="view"/>
@@ -469,9 +436,9 @@
         </view>
         
         <view name="DNASequenceSubView"
-              objtitle="DNA Sequence"
-              class="edu.ku.brc.specify.datamodel.DNASequence"
-              busrules="edu.ku.brc.specify.datamodel.busrules.DNASequenceBusRules">
+            objtitle="DNA Sequence"
+            class="edu.ku.brc.specify.datamodel.DNASequence"
+            busrules="edu.ku.brc.specify.datamodel.busrules.DNASequenceBusRules">
             <desc><![CDATA[DNA Sequencing form.]]></desc>
             <altviews>
                 <altview name="DNASequence View" viewdef="DNASequenceSubView" mode="view"/>
@@ -480,8 +447,7 @@
         </view>
         
         <view name="ExchangeIn"
-            class="edu.ku.brc.specify.datamodel.ExchangeIn"
-            >
+            class="edu.ku.brc.specify.datamodel.ExchangeIn" >
             <desc><![CDATA[Exchange In display form]]></desc>
             <altviews>
                 <altview name="ExchangeIn View" viewdef="ExchangeIn" mode="view" default="true"/>
@@ -490,8 +456,7 @@
         </view>
         
         <view name="ExchangeInPrep"
-            class="edu.ku.brc.specify.datamodel.ExchangeInPrep"
-            >
+            class="edu.ku.brc.specify.datamodel.ExchangeInPrep" >
             <desc><![CDATA[Exchange In display form]]></desc>
             <altviews>
                 <altview name="ExchangeInPrep Table View" viewdef="ExchangeInPrep Table" mode="view"/>
@@ -502,8 +467,7 @@
         </view>
                 
         <view name="ExchangeOut"
-            class="edu.ku.brc.specify.datamodel.ExchangeOut"
-            >
+            class="edu.ku.brc.specify.datamodel.ExchangeOut" >
             <desc><![CDATA[Exchange Out display form]]></desc>
             <altviews>
                 <altview name="ExchangeOut View" viewdef="ExchangeOut" mode="view" default="true"/>
@@ -512,8 +476,7 @@
         </view>
         
         <view name="ExchangeOutPrep"
-            class="edu.ku.brc.specify.datamodel.ExchangeOutPrep"
-            >
+            class="edu.ku.brc.specify.datamodel.ExchangeOutPrep" >
             <desc><![CDATA[Exchange Out display form]]></desc>
             <altviews>
                 <altview name="ExchangeOutPrep Table View" viewdef="ExchangeOutPrep Table" mode="view"/>
@@ -526,8 +489,7 @@
         <view name="FieldNotebook"
             class="edu.ku.brc.specify.datamodel.FieldNotebook"
             busrules="edu.ku.brc.specify.datamodel.busrules.FieldNotebookBusRules"
-            isinternal="false"
-            >
+            isinternal="false" >
             <desc><![CDATA[Field Notebook Form.]]></desc>
             <altviews>
                 <altview name="FieldNotebook Edit" viewdef="FieldNotebook" mode="edit"/>
@@ -537,7 +499,7 @@
         
         <view name="FieldNotebookPage"
             class="edu.ku.brc.specify.datamodel.FieldNotebookPage"
-             busrules="edu.ku.brc.specify.datamodel.busrules.FieldNotebookPageBusRules"
+            busrules="edu.ku.brc.specify.datamodel.busrules.FieldNotebookPageBusRules"
             resourcelables="false">
             <desc><![CDATA[Field Notebook Page.]]></desc>
             <altviews>
@@ -558,10 +520,9 @@
             </altviews>
         </view>
         
-         <view name="FundingAgent"
+        <view name="FundingAgent"
             class="edu.ku.brc.specify.datamodel.FundingAgent"
-            busrules="edu.ku.brc.specify.datamodel.busrules.FundingAgentBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.FundingAgentBusRules" >
             <desc><![CDATA[The FundingAgents Form.]]></desc>
             <altviews>
                 <altview name="FundingAgent View" viewdef="FundingAgent" mode="view" validated="false" default="true"/>                
@@ -571,8 +532,7 @@
         
         <view name="FundingAgents"
             class="edu.ku.brc.specify.datamodel.FundingAgent"
-            busrules="edu.ku.brc.specify.datamodel.busrules.FundingAgentBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.FundingAgentBusRules" >
             <desc><![CDATA[The FundingAgents Subform.]]></desc>
             <altviews>
                 <!-- <altview name="FundingAgents Icon View"  viewdef="FundingAgentsIconView" mode="view"/>
@@ -584,8 +544,7 @@
         
         <view name="GeoCoordDetail"
             class="edu.ku.brc.specify.datamodel.GeoCoordDetail"
-            isinternal="true"
-            >
+            isinternal="true" >
             <desc><![CDATA[Locality form.]]></desc>
             <altviews>
                 <altview name="GeoCoordDetail View" viewdef="GeoCoordDetail" mode="view"/>
@@ -595,8 +554,7 @@
         
         <view name="Gift"
             class="edu.ku.brc.specify.datamodel.Gift"
-            busrules="edu.ku.brc.specify.datamodel.busrules.GiftBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.GiftBusRules" >
             <desc><![CDATA[Gift display form]]></desc>
             <altviews>
                 <altview name="Gift View" viewdef="Gift" mode="view" default="true"/>
@@ -605,9 +563,8 @@
         </view>
         
         <view name="GiftAgent"
-              objtitle="Gift Agent"
-              class="edu.ku.brc.specify.datamodel.GiftAgent"
-              >
+            objtitle="Gift Agent"
+            class="edu.ku.brc.specify.datamodel.GiftAgent" >
             <desc><![CDATA[Subform within the Accession form.]]></desc>
             <altviews>
                 <altview name="GiftAgent Table View" viewdef="GiftAgent Table" mode="view"/>
@@ -619,8 +576,7 @@
         
         <view name="GiftItems"
             class="edu.ku.brc.specify.datamodel.GiftPreparation"
-            busrules="edu.ku.brc.specify.datamodel.busrules.GiftPreparationBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.GiftPreparationBusRules" >
             <desc><![CDATA[Gift display form]]></desc>
             <altviews>
                 <altview name="GiftItems Table View" viewdef="GiftItems Table" mode="view"/>
@@ -632,8 +588,7 @@
         
         <view name="Loan"
             class="edu.ku.brc.specify.datamodel.Loan"
-            busrules="edu.ku.brc.specify.datamodel.busrules.LoanBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.LoanBusRules" >
             <desc><![CDATA[Loan display form]]></desc>
             <altviews>
                 <altview name="Loan View" viewdef="Loan" mode="view" default="true"/>
@@ -642,9 +597,8 @@
         </view>
 
         <view name="LoanAgent"
-              objtitle="Loan Agent"
-              class="edu.ku.brc.specify.datamodel.LoanAgent"
-              >
+            objtitle="Loan Agent"
+            class="edu.ku.brc.specify.datamodel.LoanAgent" >
             <desc><![CDATA[Subform within the Accession form.]]></desc>
             <altviews>
                 <altview name="LoanAgent Table View" viewdef="LoanAgent Table" mode="view"/>
@@ -656,8 +610,7 @@
         
         <view name="LoanItems"
             class="edu.ku.brc.specify.datamodel.LoanPreparation"
-            busrules="edu.ku.brc.specify.datamodel.busrules.LoanPreparationBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.LoanPreparationBusRules" >
             <desc><![CDATA[Loan display form]]></desc>
             <altviews>
                 <altview name="LoanItems Table View" viewdef="LoanItems Table" mode="view"/>
@@ -669,8 +622,7 @@
         
         <view name="LoanReturnPreparation"
             class="edu.ku.brc.specify.datamodel.LoanReturnPreparation"
-            busrules="edu.ku.brc.specify.datamodel.busrules.LoanReturnPreparationBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.LoanReturnPreparationBusRules" >
             <desc><![CDATA[LoanReturnPreparation display form]]></desc>
             <altviews>
                 <altview name="LoanReturnPreparation View" viewdef="LoanReturnPreparation" mode="view" default="true"/>
@@ -681,8 +633,7 @@
         <view name="Locality"
             class="edu.ku.brc.specify.datamodel.Locality"
             busrules="edu.ku.brc.specify.datamodel.busrules.LocalityBusRules"
-            isinternal="false"
-            >
+            isinternal="false" >
             <desc><![CDATA[Locality form.]]></desc>
             <altviews>
                 <altview name="Locality View" viewdef="Locality" mode="view"/>
@@ -691,8 +642,7 @@
         </view>
         
         <view name="LocalityCitation"
-            class="edu.ku.brc.specify.datamodel.LocalityCitation"
-            >
+            class="edu.ku.brc.specify.datamodel.LocalityCitation" >
             <desc><![CDATA[Locality form.]]></desc>
             <altviews>
                 <altview name="LocalityCitation View" viewdef="LocalityCitation" mode="view"/>
@@ -701,8 +651,7 @@
         </view>
         
         <view name="LocalityDetail"
-            class="edu.ku.brc.specify.datamodel.LocalityDetail"
-            >
+            class="edu.ku.brc.specify.datamodel.LocalityDetail" >
             <desc><![CDATA[LocalityDetail form.]]></desc>
             <altviews>
                 <altview name="LocalityDetail View" viewdef="LocalityDetail" mode="view"/>
@@ -712,8 +661,7 @@
                 
         <view name="LocalitySubForm"
             class="edu.ku.brc.specify.datamodel.Locality"
-            busrules="edu.ku.brc.specify.datamodel.busrules.LocalityBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.LocalityBusRules" >
             <desc><![CDATA[Locality SubForm form.]]></desc>
             <altviews>
                 <altview name="Locality SubForm View" viewdef="LocalitySubForm" mode="view"/>
@@ -723,8 +671,7 @@
         
         <view name="LocalityMapper"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
-            busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventBusRules" >
             <desc><![CDATA[CollectingEvent]]></desc>
             <altviews>
                 <altview name="LocalityMapper View" viewdef="LocalityMapper" mode="view" default="true"/>
@@ -733,8 +680,7 @@
 
         <view name="Permit"
             class="edu.ku.brc.specify.datamodel.Permit"
-            busrules="edu.ku.brc.specify.datamodel.busrules.PermitBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.PermitBusRules" >
             <desc><![CDATA[Permit subform within the Accession form.]]></desc>
             <altviews  defaultmode="view">
                 <altview name="Permit View" viewdef="Permit" mode="view"/>
@@ -744,8 +690,7 @@
 
         <view name="PermitForAccessions"
             class="edu.ku.brc.specify.datamodel.Permit"
-            busrules="edu.ku.brc.specify.datamodel.busrules.PermitBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.PermitBusRules" >
             <desc><![CDATA[Permit subform within the Accession form.]]></desc>
             <altviews>
                 <altview name="PermitForAccessions View" viewdef="PermitForAccessions" mode="view" default="true"/>
@@ -754,9 +699,8 @@
         </view>
        
         <view name="Preparation"
-              class="edu.ku.brc.specify.datamodel.Preparation"
-              busrules="edu.ku.brc.specify.datamodel.busrules.PreparationBusRules"
-               >
+            class="edu.ku.brc.specify.datamodel.Preparation"
+            busrules="edu.ku.brc.specify.datamodel.busrules.PreparationBusRules" >
             <desc><![CDATA[Subform within the Preparation form.]]></desc>
             <altviews>
                 <altview name="Preparation Table View" viewdef="Preparation Table" mode="view"/>
@@ -767,8 +711,7 @@
         </view>
         
         <view name="PreparationAttributes"
-            class="edu.ku.brc.specify.datamodel.PreparationAttribute"
-            >
+            class="edu.ku.brc.specify.datamodel.PreparationAttribute" >
             <desc><![CDATA[Subform within the Collection Object form.]]></desc>
             <altviews>
                 <altview name="PreparationAttributes View" viewdef="PreparationAttributes" mode="view" />
@@ -778,8 +721,7 @@
         
         <view name="Project"
             class="edu.ku.brc.specify.datamodel.Project"
-            isinternal="false"
-            >
+            isinternal="false" >
             <desc><![CDATA[Project form.]]></desc>
             <altviews>
                 <altview name="Project View" viewdef="Project" mode="view" default="true"/>
@@ -788,8 +730,7 @@
         </view>
         
         <view name="ProjectSub"
-            class="edu.ku.brc.specify.datamodel.Project"
-            >
+            class="edu.ku.brc.specify.datamodel.Project" >
             <desc><![CDATA[Project form.]]></desc>
             <altviews>
                 <altview name="ProjectSub Table View" viewdef="ProjectSub Table" mode="view" default="true"/>
@@ -798,8 +739,7 @@
 
         <view name="InfoRequest"
             class="edu.ku.brc.specify.datamodel.InfoRequest"
-            busrules="edu.ku.brc.specify.datamodel.busrules.InfoRequestBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.InfoRequestBusRules" >
             <desc><![CDATA[Subform within the InfoRequest form.]]></desc>
             <altviews>
                 <altview name="InfoRequest View" viewdef="InfoRequest" mode="view"/>
@@ -809,8 +749,7 @@
         
         <view name="InfoRequestColObj"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
-            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionObjectBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionObjectBusRules" >
             <desc><![CDATA[Subform within the InfoRequestColObj Object form.]]></desc>
             <altviews>
                 <altview name="InfoRequestColObj View" viewdef="InfoRequestColObj" mode="view"/>
@@ -819,8 +758,7 @@
         </view>
         
         <view name="OtherIdentifiers"
-              class="edu.ku.brc.specify.datamodel.OtherIdentifier"
-               >
+            class="edu.ku.brc.specify.datamodel.OtherIdentifier" >
             <desc><![CDATA[Subform within the collectionObject form.]]></desc>
             <altviews>
                 <altview name="OtherIdentifiers Table View" viewdef="OtherIdentifiers Table" mode="view"/>
@@ -832,8 +770,7 @@
         
         <view name="RepositoryAgreement"
             class="edu.ku.brc.specify.datamodel.RepositoryAgreement"
-            isinternal="false"
-            >
+            isinternal="false" >
             <desc><![CDATA[The RepositoryAgreement form.]]></desc>
             <altviews>
                 <altview name="RepositoryAgreement View" viewdef="RepositoryAgreement" mode="view" default="true"/>
@@ -843,8 +780,7 @@
         
         <view name="Shipment"
             class="edu.ku.brc.specify.datamodel.Shipment"
-            busrules="edu.ku.brc.specify.datamodel.busrules.LoanGiftShipmentBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.LoanGiftShipmentBusRules" >
             <desc><![CDATA[Shipment Subform within the Loan Object form.]]></desc>
             <altviews>
                 <altview name="Shipment View" viewdef="Shipment" mode="view"/>
@@ -854,8 +790,7 @@
         
         <view name="SubPaleoContext"
             class="edu.ku.brc.specify.datamodel.PaleoContext"
-            isinternal="true"
-            >
+            isinternal="true" >
             <desc><![CDATA[PaleoContext subform within Collection Object form.]]></desc>
             <altviews>
                 <altview name="SubPaleoContext View" viewdef="SubPaleoContext" mode="view"/>
@@ -865,8 +800,7 @@
         
         <view name="TreatmentEvent"
             class="edu.ku.brc.specify.datamodel.TreatmentEvent"
-            isinternal="false"
-            >
+            isinternal="false" >
             <desc><![CDATA[Treatment Event form.]]></desc>
             <altviews>
                 <altview name="TreatmentEvent View" viewdef="TreatmentEvent" mode="view" default="true"/>
@@ -875,8 +809,7 @@
         </view>
         
         <view name="TreatmentEventSub"
-            class="edu.ku.brc.specify.datamodel.TreatmentEvent"
-            >
+            class="edu.ku.brc.specify.datamodel.TreatmentEvent" >
             <desc><![CDATA[Treatment Event form.]]></desc>
             <altviews>
                 <altview name="TreatmentEventSub View" viewdef="TreatmentEventSub" mode="view" default="true"/>
@@ -886,8 +819,7 @@
         
         <view name="Discipline"
             class="edu.ku.brc.specify.datamodel.Discipline"
-            busrules="edu.ku.brc.specify.datamodel.busrules.DisciplineBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.DisciplineBusRules" >
             <desc><![CDATA[The Discipline Object form.]]></desc>
             <altviews>
                 <altview name="Discipline View" viewdef="Discipline" mode="view" validated="false"/>
@@ -897,8 +829,7 @@
         
         <view name="DisciplineViewOnly"
             class="edu.ku.brc.specify.datamodel.Discipline"
-            busrules="edu.ku.brc.specify.datamodel.busrules.DisciplineBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.DisciplineBusRules" >
             <desc><![CDATA[The Discipline Object form.]]></desc>
             <altviews>
                 <altview name="Discipline View" viewdef="Discipline" mode="view" validated="false"/>
@@ -907,8 +838,7 @@
         
         <view name="DisciplineViewOnlyCollections"
             class="edu.ku.brc.specify.datamodel.Discipline"
-            busrules="edu.ku.brc.specify.datamodel.busrules.DisciplineBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.DisciplineBusRules" >
             <desc><![CDATA[The Discipline Object form without collections subform.]]></desc>
             <altviews>
                 <altview name="Discipline View" viewdef="DisciplineViewOnlyCollections" mode="view" validated="false"/>
@@ -918,8 +848,7 @@
         
         <view name="DisciplineWithoutCollections"
             class="edu.ku.brc.specify.datamodel.Discipline"
-            busrules="edu.ku.brc.specify.datamodel.busrules.DisciplineBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.DisciplineBusRules" >
             <desc><![CDATA[The Discipline Object form without collections subform.]]></desc>
             <altviews>
                 <altview name="Discipline Edit View" viewdef="DisciplineWithoutCollections" mode="view" validated="false"/>
@@ -929,8 +858,7 @@
 
         <view name="Collection"
             class="edu.ku.brc.specify.datamodel.Collection"
-            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionBusRules" >
             <desc><![CDATA[The Collection Object form.]]></desc>
             <altviews>
                 <altview name="Collection View" viewdef="Collection" mode="view" validated="false"/>
@@ -940,8 +868,7 @@
         
         <view name="CollectionSub"
             class="edu.ku.brc.specify.datamodel.Collection"
-            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionBusRules" >
             <desc><![CDATA[The Collection Object form.]]></desc>
             <altviews>
                 <altview name="CollectionSub View" viewdef="CollectionSub" mode="view" validated="false"/>
@@ -951,8 +878,7 @@
         
         <view name="CollectionGridViewOnly"
             class="edu.ku.brc.specify.datamodel.Collection"
-            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionBusRules" >
             <desc><![CDATA[The Collection Object form.]]></desc>
             <altviews>
                 <altview name="Collection View" viewdef="CollectionGrid" mode="view" validated="false"/>
@@ -961,8 +887,7 @@
         
         <view name="CollectionGrid"
             class="edu.ku.brc.specify.datamodel.Collection"
-            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionBusRules" >
             <desc><![CDATA[The Collection Object form.]]></desc>
             <altviews>
                 <altview name="CollectionGrid View" viewdef="CollectionGrid" mode="view" validated="false"/>
@@ -972,8 +897,7 @@
         
         <view name="CollectionForGrid"
             class="edu.ku.brc.specify.datamodel.Collection"
-            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionBusRules" >
             <desc><![CDATA[The Collection Object form.]]></desc>
             <altviews>
                 <altview name="CollectionGrid View" viewdef="CollectionForGrid" mode="view" validated="false"/>
@@ -981,8 +905,7 @@
         </view>
         
         <view name="Institution"
-            class="edu.ku.brc.specify.datamodel.Institution"
-            >
+            class="edu.ku.brc.specify.datamodel.Institution" >
             <desc><![CDATA[The Institution Object form.]]></desc>
             <altviews>
                 <altview name="Institution View" viewdef="Institution" mode="view" validated="false"/>
@@ -992,8 +915,7 @@
                 
         <view name="AddressDiv"
             class="edu.ku.brc.specify.datamodel.Address"
-             busrules="edu.ku.brc.specify.datamodel.busrules.AddressBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.AddressBusRules" >
             <desc><![CDATA[Address subform within the Accession form.]]></desc>
             <altviews>
                 <altview name="AddressDiv View" viewdef="AddressDiv" mode="view" validated="false" default="true"/>
@@ -1003,8 +925,7 @@
         
         <view name="Division"
             class="edu.ku.brc.specify.datamodel.Division"
-            busrules="edu.ku.brc.specify.datamodel.busrules.DivisionBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.DivisionBusRules" >
             <desc><![CDATA[Subform within the Collection Object form.]]></desc>
             <altviews>
                 <altview name="Division View" viewdef="Division" mode="view"/>
@@ -1014,8 +935,7 @@
 
         <view name="DivisionOnly"
             class="edu.ku.brc.specify.datamodel.Division"
-            busrules="edu.ku.brc.specify.datamodel.busrules.DivisionBusRules"
-            >
+            busrules="edu.ku.brc.specify.datamodel.busrules.DivisionBusRules" >
             <desc><![CDATA[Subform within the Collection Object form.]]></desc>
             <altviews>
                 <altview name="Division View" viewdef="DivisionOnly" mode="view"/>
@@ -1045,19 +965,18 @@
 
 
     <viewdefs>
-      <viewdef
+
+        <viewdef name="Address Table"
             type="formtable"
-            name="Address Table"
             class="edu.ku.brc.specify.datamodel.Address"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Address grid view.]]></desc>
             <definition>Address</definition>
-         </viewdef>
+        </viewdef>
 
-<viewdef
+        <viewdef name="Address"
             type="form"
-            name="Address"
             class="edu.ku.brc.specify.datamodel.Address"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1070,29 +989,25 @@
             <rowDef>p,2dlu,p,2dlu,p,2dlu,p,2dlu,p,2dlu,p,2dlu,p,2dlu,p,2dlu,p</rowDef>
             
             <rows>
-                <!--row>
+                <!--<row>
                     <cell type="label" label=" "/>
                     <cell type="field" id="1" name="isPrimary" uitype="checkbox"/>
- 				<cell type="field" id="ic" name="isCurrent" uitype="checkbox" colspan="2"/>
- </row>
- <row>
-   <cell type="label" label=" "/>
+ 				    <cell type="field" id="ic" name="isCurrent" uitype="checkbox" colspan="2"/>
+                </row>
+                <row>
+                    <cell type="label" label=" "/>
                     <cell type="field" id="is" name="isShipping" uitype="checkbox"/>
                 </row-->
-  <row>
+                <row>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="address" uitype="text"/>
-                
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="address2" uitype="text"/>
-                
                     <cell type="label" labelfor="a3"/>
                     <cell type="field" id="a3" name="address3" uitype="text"/>
-              
                     <cell type="label" labelfor="a4"/>
                     <cell type="field" id="a4" name="address4" uitype="text"/>
                 </row>
-              
                 <row>
                     <cell type="label" labelfor="4" />
                     <cell type="field" id="4" name="city" uitype="text"/>
@@ -1113,25 +1028,21 @@
                     <cell type="label" labelfor="10"/>
                     <cell type="field" id="10" name="fax" uitype="text"/>
                 </row>
- <row>
-               <cell type="label" labelfor="12"/>
+                <row>
+                <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampModified" uitype="label" readonly="true" cols="20" colspan="2"/>
-  
-            
                </row>
-               
             </rows>
         </viewdef>
         
- <viewdef
-            name="Taxon"
+        <viewdef name="Taxon"
             type="form"
             class="edu.ku.brc.specify.datamodel.Taxon"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
             useresourcelabels="true">
             <desc><![CDATA[New Taxon Node Form]]></desc>
-           <enableRules>
+            <enableRules>
                 <!--<rule id="acceptedParent"><![CDATA[!isAccepted.isSelected()]]></rule>-->
                 <rule id="hybridParent1"><![CDATA[isHybrid.isSelected()]]></rule>
                 <rule id="hybridParent2"><![CDATA[isHybrid.isSelected()]]></rule>
@@ -1145,7 +1056,7 @@
             <rowDef auto="true" cell="p" sep="2dlu"/>
             
             <rows>
-  <row>
+                <row>
                     <cell type="label" labelfor="name"/>
                     <cell type="field" id="name" uitype="text" name="name"/>
                     <cell type="label" labelfor="definitionItem"/>
@@ -1159,7 +1070,6 @@
                     <!-- <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;url=[GBIF_Canada]?king=$kingdomName$AMPp_action=containingAMP;taxa=$genusName$%20$speciesName$AMPp_format=html;label=ITIS"/> -->
                     <!-- Put in remote prefs: URL_Prefix.GBIF_Canada = http://www.cbif.gc.ca/pls/itisca/taxastep -->
                 </row>
-              
                 <row>
                 	<cell type="label" labelfor="fullName"/>
                 	<cell type="field" id="fullName"  uitype="text" name="fullName" colspan="3" readonly="true"/>
@@ -1180,7 +1090,7 @@
                     <cell type="label" labelfor="source"/>
                     <cell type="field" id="source" uitype="text" name="source" colspan="3"/>
                 </row> 
-<row>
+                <row>
                     <cell type="label" labelfor="remarks"/>
                     <cell type="field" id="remarks" uitype="text" name="remarks" colspan="7"/>
                 </row>     
@@ -1276,8 +1186,7 @@
             </rows>
         </viewdef>
 
-   <viewdef
-            name="TaxonCitation"
+        <viewdef name="TaxonCitation"
             type="form"
             class="edu.ku.brc.specify.datamodel.TaxonCitation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -1295,14 +1204,14 @@
                     <cell type="label" labelfor="referenceWork"/>
                     <cell type="field" id="referenceWork" uitype="querycbx" initialize="name=ReferenceWork" name="referenceWork"/>
                 </row>
-   <row>
+                <row>
                     <cell type="label" labelfor="text1"/>
                     <cell type="field" id="text1" name="text1" uitype="text" />
                 </row>
-<row>
-<cell type="label" labelfor="text2"/>
+                <row>
+                    <cell type="label" labelfor="text2"/>
                     <cell type="field" id="text2" name="text2" uitype="combobox" />
-</row>
+                </row>
                 <row>
                     <cell type="label" labelfor="remarks"/>
                     <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="2"/>
@@ -1310,16 +1219,15 @@
             </rows>
         </viewdef>
 
- <viewdef
+        <viewdef name="Agent"
             type="form"
-            name="Agent"
             class="edu.ku.brc.specify.datamodel.Agent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Agent subform for Acessions.]]></desc>
 
             <columnDef>100px,2px,125px,5px,75px,2px,128px,5px,250px,2px,140px,5px,90px,2px,29px,2px,35px,0px,15px,p:g</columnDef>
-<!--columnDef>100px,2px,125px,5px,75px,2px,128px,5px,80px,2px,140px,5px,90px,2px,29px,2px,35px,0px,15px,p:g</columnDef-->
+            <!--columnDef>100px,2px,125px,5px,75px,2px,128px,5px,80px,2px,140px,5px,90px,2px,29px,2px,35px,0px,15px,p:g</columnDef-->
             <columnDef os="lnx">115px,2px,146px,5px,85px,2px,140px,5px,90px,2px,149px,5px,100px,2px,35px,2px,35px,0px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,150px,5px,85px,2px,160px,5px,105px,2px,164px,5px,120px,2px,45px,2px,48px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g,5px:g,p,2px,p:g,5px:g,p,2px,p:g,2px,p,0px,p,p:g</columnDef>
@@ -1337,10 +1245,12 @@
                     <cell type="field" id="3" name="lastName" uitype="text" colspan="5"/>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="firstName" uitype="text"/>
-<!--cell type="label" labelfor="midInit"/>
+                    <!--
+                    <cell type="label" labelfor="midInit"/>
                     <cell type="field" id="midInit" name="middleInitial" uitype="text" colspan="3"/>
                     <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="initials" uitype="text" colspan="3"/-->
+                    <cell type="field" id="2" name="initials" uitype="text" colspan="3"/>
+                    -->
                 </row>
                 <row>
                     <cell type="label" labelfor="8"/>
@@ -1348,27 +1258,28 @@
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="email" uitype="text" colspan="5"/>
                     <cell type="field" id="mailto" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=MailTo;icon=EMail;watch=7"/>      
- </row>
+                </row>
                 <row>
                     <cell type="label" labelfor="remks"/>
                     <cell type="field" id="remks" name="remarks" uitype="text" colspan="10"/>
-</row>
-                      <row>
+                </row>
+                <row>
                     <cell type="subview" viewname="Address" id="9" name="addresses" colspan="19"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="GroupPersons" id="31" name="groups" defaulttype="table" colspan="19"/>
                 </row>
-                      <row>
+                <row>
                     <cell type="subview" viewname="AgentVariant" id="10" name="variants" colspan="19"/>
-                      </row>
+                </row>
                 <row>
                     <cell type="separator" label="Attachments" colspan="19"/>
                 </row>
                 <row>
                     <cell type="subview" id="agentAttachments" viewname="ObjectAttachment" name="agentAttachments" initialize="btn=true;icon=AgentAttachment"/>
                 </row>
-                <!--  <row>
+                <!--  
+                <row>
                     <cell type="label" labelfor="19" />
                     <cell type="field" id="19" uitype="plugin" name="this" initialize="name=PartialDateUI;df=dateOfBirth;tp=dateOfBirthPrecision" uifieldformatter="Date"/>
                     <cell type="label" labelfor="20" />
@@ -1401,13 +1312,13 @@
                     <cell type="field" id="23" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="24"/>
                     <cell type="field" id="24" name="timestampCreated" uitype="label" readonly="true"/>
-                </row> -->
-                  </rows>
+                </row> 
+                -->
+            </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="Accession"
             type="form"
-            name="Accession"
             class="edu.ku.brc.specify.datamodel.Accession"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1465,7 +1376,8 @@
                     <cell type="label" labelfor="11"/>
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                 </row>
-                <!-- <row>
+                <!-- 
+                <row>
                     <cell type="label" labelfor="99"/>
                     <cell type="field" id="99" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=AccessionNumber"/>
                 </row>               
@@ -1514,13 +1426,13 @@
                 </row>
                 <row>
                     <cell type="subview" viewname="TreatmentEventForAccession" id="13" name="treatmentEvents" colspan="12" initialize="btn=true"/>
-                </row> -->
+                </row> 
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="AccessionCO"
             type="form"
-            name="AccessionCO"
             class="edu.ku.brc.specify.datamodel.Accession"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1578,9 +1490,8 @@
             </rows>
         </viewdef>
                 
-        <viewdef
+        <viewdef name="AccessionAgent Table"
             type="formtable"
-            name="AccessionAgent Table"
             class="edu.ku.brc.specify.datamodel.AccessionAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1588,9 +1499,8 @@
             <definition>AccessionAgent</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AccessionAgent"
             type="form"
-            name="AccessionAgent"
             class="edu.ku.brc.specify.datamodel.AccessionAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1598,7 +1508,7 @@
             <enableRules/>
 
             <columnDef>80px,2px,340px,5px,50px,2px,145px,200px,p:g</columnDef>
-   <!--columnDef>80px,2px,340px,5px,50px,2px,145px,243px,p:g</columnDef-->
+            <!--columnDef>80px,2px,340px,5px,50px,2px,145px,243px,p:g</columnDef-->
             <columnDef os="lnx">135px,2px,230px,5px,98px,2px,155px,290px,p:g</columnDef>
             <columnDef os="mac">130px,2px,215px,5px,153px,2px,189px,336px,p:g</columnDef>
             <columnDef os="exp">p,2px,p,5px,85px,2px,p:g(2),p:g</columnDef>
@@ -1615,7 +1525,8 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -1626,13 +1537,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="AccessionAuthorization"
             type="form"
-            name="AccessionAuthorization"
             class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1655,7 +1566,8 @@
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="remarks" uitype="textareabrief" rows="2" colspan="2"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -1666,13 +1578,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="AccessionItems Table"
             type="formtable"
-            name="AccessionItems Table"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1681,23 +1593,22 @@
             <definition>AccessionItems</definition>
         </viewdef>
         
-        <viewdef
-              type="form"
-              name="AccessionItems"
-              class="edu.ku.brc.specify.datamodel.CollectionObject"
-              gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
-              settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
-              
-              <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
-              <enableRules/>
-              
-              <columnDef>105px,2px,120px,5px,100px,2px,95px,5px,102px,2px,95px,5px,97px,2px,95px,p:g</columnDef>
-              <columnDef os="lnx">135px,2px,113px,5px,110px,2px,105px,5px,116px,2px,105px,5px,110px,2px,100px,p:g</columnDef>
-              <columnDef os="mac">130px,2px,130px,5px,120px,2px,126px,5px,126px,2px,126px,5px,125px,2px,126px,p:g</columnDef>
-              <columnDef os="exp">p,2px,min(p;175px),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2)</columnDef>
-              <rowDef auto="true" cell="p" sep="2px"/>
-		  
-                <rows>
+        <viewdef name="AccessionItems"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.CollectionObject"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            
+            <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
+            <enableRules/>
+            
+            <columnDef>105px,2px,120px,5px,100px,2px,95px,5px,102px,2px,95px,5px,97px,2px,95px,p:g</columnDef>
+            <columnDef os="lnx">135px,2px,113px,5px,110px,2px,105px,5px,116px,2px,105px,5px,110px,2px,100px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,130px,5px,120px,2px,126px,5px,126px,2px,126px,5px,125px,2px,126px,p:g</columnDef>
+            <columnDef os="exp">p,2px,min(p;175px),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2)</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+        
+            <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="catalogNumber" uitype="formattedtext"/>
@@ -1708,12 +1619,11 @@
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="projectNumber" uitype="text"/>
                 </row>
-             </rows>
+            </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="AddressOfRecord"
             type="form"
-            name="AddressOfRecord"
             class="edu.ku.brc.specify.datamodel.AddressOfRecord"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1746,7 +1656,8 @@
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="country" uitype="text"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="remarks" uitype="textareabrief" rows="2" colspan="2"/>
                 </row>
@@ -1761,13 +1672,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef 
+        <viewdef name="Appraisal"
             type="form"
-            name="Appraisal"
             class="edu.ku.brc.specify.datamodel.Appraisal"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1803,7 +1714,8 @@
                 <row> 
                     <cell type="subview" viewname="CollectionObjectSub" id="25" desc="Collection Object" name="collectionObjects" colspan="13" initialize="addsearch=true"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -1814,13 +1726,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="Borrow"
             type="form"
-            name="Borrow"
             class="edu.ku.brc.specify.datamodel.Borrow"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1863,7 +1775,8 @@
                 <row>
                     <cell type="subview" viewname="BorrowMaterial" id="10" name="borrowMaterials" defaulttype="table" colspan="15"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                 	<cell type="label" labelfor="29"/>
                 	<cell type="field" id="29" name="number1" uitype="text"/>
                 	<cell type="label" labelfor="30"/>
@@ -1895,13 +1808,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="BorrowAgent Table"
             type="formtable"
-            name="BorrowAgent Table"
             class="edu.ku.brc.specify.datamodel.BorrowAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1910,9 +1823,8 @@
             <definition>BorrowAgent</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="BorrowAgent"
             type="form"
-            name="BorrowAgent"
             class="edu.ku.brc.specify.datamodel.BorrowAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1936,7 +1848,8 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -1947,13 +1860,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="BorrowMaterial"
             type="form"
-            name="BorrowMaterial"
             class="edu.ku.brc.specify.datamodel.BorrowMaterial"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1981,7 +1894,8 @@
                     <cell type="field" id="3" name="description" uitype="text" colspan="12"/>
                    <cell type="subview" id="5" viewname="BorrowReturnMaterial" name="borrowReturnMaterials" initialize="btn=true;align=right"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="ic"/>
                     <cell type="field" id="ic" name="inComments" uitype="text" colspan="12"/>
                 </row>
@@ -2000,13 +1914,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef  name="BorrowReturnMaterial"
             type="form"
-            name="BorrowReturnMaterial"
             class="edu.ku.brc.specify.datamodel.BorrowReturnMaterial"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2029,7 +1943,8 @@
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="remarks" uitype="textareabrief" colspan="6" rows="2"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -2040,13 +1955,14 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
              
-        <viewdef
+        <viewdef name="CollectingEventSubform"
             type="form"
-            name="CollectingEventSubform"
+            
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2084,9 +2000,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectingTrip"
             type="form"
-            name="CollectingTrip"
             class="edu.ku.brc.specify.datamodel.CollectingTrip"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2117,9 +2032,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectingTripForm"
             type="form"
-            name="CollectingTripForm"
             class="edu.ku.brc.specify.datamodel.CollectingTrip"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2150,7 +2064,8 @@
                 <row>
                     <cell type="subview" viewname="FundingAgents" id="8" name="fundingAgents" colspan="10" rows="3"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="sp"/>
                     <cell type="field" id="sp" name="sponsor" uitype="text"/>
                     <cell type="label" labelfor="edv"/>
@@ -2175,13 +2090,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Collector"
             type="form"
-            name="Collector"
             class="edu.ku.brc.specify.datamodel.Collector"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2203,7 +2118,8 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -2219,13 +2135,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Collectors Table"
             type="formtable"
-            name="Collectors Table"
             class="edu.ku.brc.specify.datamodel.Collector"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2233,18 +2149,16 @@
             <definition>Collectors</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectorsIconView"
             type="iconview"
-            name="CollectorsIconView"
             class="edu.ku.brc.specify.datamodel.Collector"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Collectors Icon Viewer]]></desc>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Collectors"
             type="form"
-            name="Collectors"
             class="edu.ku.brc.specify.datamodel.Collector"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2259,28 +2173,29 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="agent.lastName" uitype="text" colspan="3"/>
                 </row>
- <row>
+                <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="agent.firstName" uitype="text" colspan="3"/>
                 </row>
-                <!--row>
+                <!--
+                <row>
                     <cell type="label" labelfor="init"/>
                     <cell type="field" id="init" name="agent.middleInitial" uitype="text" colspan="3"/>
-                </row-->
-    <row>
+                </row>
+                -->
+                <row>
                     <cell type="label" labelfor="title"/>
                     <cell type="field" id="title" name="agent.title" uitype="text" colspan="3"/>
                 </row>
-    <row>
+                <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="remarks" uitype="text" colspan="3"/>
                 </row>
             </rows>
         </viewdef>
                  
-        <viewdef 
+        <viewdef name="CollectionObjectCitation" 
             type="form" 
-            name="CollectionObjectCitation" 
             class="edu.ku.brc.specify.datamodel.CollectionObjectCitation" 
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2302,7 +2217,8 @@
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="remarks" uitype="textareabrief" rows="2" colspan="4"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -2313,13 +2229,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
                  
-        <viewdef
+        <viewdef name="Collection Object Search"
             type="form"
-            name="Collection Object Search"
             class="java.util.Hashtable"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForHashMap"
             settable="edu.ku.brc.af.ui.forms.DataSetterForHashMap">
@@ -2348,9 +2264,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectionObjectSub Table"
             type="formtable"
-            name="CollectionObjectSub Table"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2359,22 +2274,21 @@
             <definition>CollectionObjectSub</definition>
         </viewdef>
         
-        <viewdef
-              type="form"
-              name="CollectionObjectSub"
-              class="edu.ku.brc.specify.datamodel.CollectionObject"
-              gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
-              settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
-              <desc><![CDATA[The Collection Object Subform for appraisal and project forms.]]></desc>
-              <enableRules/>
-              
-              <columnDef>100px,2px,120px,5px,100px,2px,95px,5px,102px,2px,95px,5px,97px,2px,95px,p:g</columnDef>
-              <columnDef os="lnx">115px,2px,117px,5px,110px,2px,105px,5px,121px,2px,105px,5px,115px,2px,105px,p:g</columnDef>
-              <columnDef os="mac">130px,2px,140px,5px,120px,2px,126px,5px,121px,2px,126px,5px,120px,2px,126px,p:g</columnDef>
-              <columnDef os="exp">p,2px,min(p;200px),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2)</columnDef>
-              <rowDef auto="true" cell="p" sep="2px"/>
-		  
-                <rows>
+        <viewdef name="CollectionObjectSub"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.CollectionObject"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[The Collection Object Subform for appraisal and project forms.]]></desc>
+            <enableRules/>
+            
+            <columnDef>100px,2px,120px,5px,100px,2px,95px,5px,102px,2px,95px,5px,97px,2px,95px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,117px,5px,110px,2px,105px,5px,121px,2px,105px,5px,115px,2px,105px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,140px,5px,120px,2px,126px,5px,121px,2px,126px,5px,120px,2px,126px,p:g</columnDef>
+            <columnDef os="exp">p,2px,min(p;200px),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2)</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+        
+            <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="catalogNumber" uitype="formattedtext"/>
@@ -2385,12 +2299,11 @@
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="projectNumber" uitype="text"/>
                 </row>
-             </rows>
+            </rows>
         </viewdef>
         
-        <viewdef 
+        <viewdef name="CommonNameTx"
             type="form"
-            name="CommonNameTx"
             class="edu.ku.brc.specify.datamodel.CommonNameTx"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2413,7 +2326,8 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="country" uitype="text" colspan="10"/>
                 </row> 
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="au"/>
                     <cell type="field" id="au" name="author" uitype="text"/>
                     <cell type="label" labelfor="var"/>
@@ -2433,13 +2347,13 @@
                 </row>
                 <row>
                     <cell type="subview" id="10" viewname="CommonNameTXCitation" name="citations" colspan="12"/>
-                </row> -->
+                </row> 
+                -->
             </rows>
         </viewdef>
        
-        <viewdef
+        <viewdef name="ConservDescription"
             type="form"
-            name="ConservDescription"
             class="edu.ku.brc.specify.datamodel.ConservDescription"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2486,7 +2400,8 @@
                 <row>
                     <cell type="subview" id="17" name="conservDescriptionAttachments" viewname="ObjectAttachment" initialize="btn=true;icon=ConservDescriptionAttachment;addsearch=true"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="com"/>
                     <cell type="field" id="com" name="composition" uitype="textareabrief" rows="2" colspan="14"/>
                 </row>
@@ -2525,13 +2440,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-       <viewdef
+        <viewdef name="ConservEvent"
             type="form"
-            name="ConservEvent"
             class="edu.ku.brc.specify.datamodel.ConservEvent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2569,7 +2484,8 @@
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="conditionReport" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="ate"/>
                     <cell type="field" id="ate" name="advTestingExam" uitype="textareabrief" rows="2" colspan="14"/>
                 </row>
@@ -2608,13 +2524,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="ConservDescriptionSub"
             type="form"
-            name="ConservDescriptionSub"
             class="edu.ku.brc.specify.datamodel.ConservDescription"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2654,9 +2570,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="Container"
             type="form"
-            name="Container"
             class="edu.ku.brc.specify.datamodel.Container"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
@@ -2699,9 +2614,8 @@
            </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="ContainerBrief Table"
             type="formtable"
-            name="ContainerBrief Table"
             class="edu.ku.brc.specify.datamodel.Container"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2709,9 +2623,8 @@
             <definition>ContainerBrief</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="ContainerBrief"
             type="form"
-            name="ContainerBrief"
             class="edu.ku.brc.specify.datamodel.Container"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
@@ -2751,9 +2664,8 @@
            </rows>
         </viewdef>
        
-        <viewdef
+        <viewdef name="Deaccession"
             type="form"
-            name="Deaccession"
             class="edu.ku.brc.specify.datamodel.Deaccession"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2779,9 +2691,11 @@
                 <row>
                     <cell type="iconview" viewname="DeaccessionAgent" id="8" name="deaccessionAgents" desc="Agents" colspan="12"/>
                 </row> 
-                <!--   <row>
+                <!--   
+                <row>
                     <cell type="subview" viewname="DeaccessionPreparation" id="4" name="deaccessionPreparations" colspan="12"/>
-                    </row> --> 
+                </row> 
+                --> 
                 <row>
                     <cell type="separator" label="" colspan="12"/>
                 </row>
@@ -2795,9 +2709,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="DeaccessionAgent"
             type="form"
-            name="DeaccessionAgent"
             class="edu.ku.brc.specify.datamodel.DeaccessionAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2821,9 +2734,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Determination Table"
             type="formtable"
-            name="Determination Table"
             class="edu.ku.brc.specify.datamodel.Determination"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2832,8 +2744,7 @@
             <definition>Determination</definition>
         </viewdef>
         
-        <viewdef
-            name="Determination"
+        <viewdef name="Determination"
             type="form"
             class="edu.ku.brc.specify.datamodel.Determination"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -2868,9 +2779,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="DeterminationCitation"
             type="form"
-            name="DeterminationCitation"
             class="edu.ku.brc.specify.datamodel.DeterminationCitation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2891,7 +2801,8 @@
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -2902,12 +2813,12 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef 
-            name="DNASequence"
+        <viewdef name="DNASequence"
             type="form"
             class="edu.ku.brc.specify.datamodel.DNASequence" 
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
@@ -2943,49 +2854,50 @@
                 </row>
                 <row>
                     <cell type="panel" id="16" name="outerPanel" coldef="100px,2px,76px" rowdef="p,2px,p,2px,p,2px,p,2px,p,2px,p,2px" colspan="3">
-                      <rows>
-	                      <row>
-	                          <cell type="label" label="Total Residues:" initialize="align=right"/>
-	                          <cell type="field" id="residues" name="totalResidues" uitype="text" readonly="true"/>
-	                      </row>
-	                      <row>
-	                          <cell type="label" label="Comp A:" initialize="align=right;fg=0,190,0"/>
-	                          <cell type="field" id="compA" name="compA" uitype="text" readonly="true"/>
-	                      </row>
-	                      <row>
-	                          <cell type="label" label="Comp G:" initialize="align=right;fg=200,70,0"/>
-	                          <cell type="field" id="compG" name="compG" uitype="text" readonly="true"/>
-	                      </row>
-	                      <row>
-	                          <cell type="label" label="Comp C:" initialize="align=right;fg=0,0,190"/>
-	                          <cell type="field" id="compC" name="compC" uitype="text" readonly="true"/>
-	                      </row>
-	                      <row>
-	                          <cell type="label" label="Comp T:" initialize="align=right;fg=190,0,0"/>
-	                          <cell type="field" id="compT" name="compT" uitype="text" readonly="true"/>
-	                      </row>
-	                      <row>
-	                          <cell type="label" label="Ambiguous:" initialize="align=right"/>
-	                          <cell type="field" id="ambiguous" name="ambiguousResidues" uitype="text" readonly="true"/>
-	                      </row>
-	                  </rows>
-	              </cell>
+                        <rows>
+                            <row>
+                                <cell type="label" label="Total Residues:" initialize="align=right"/>
+                                <cell type="field" id="residues" name="totalResidues" uitype="text" readonly="true"/>
+                            </row>
+                            <row>
+                                <cell type="label" label="Comp A:" initialize="align=right;fg=0,190,0"/>
+                                <cell type="field" id="compA" name="compA" uitype="text" readonly="true"/>
+                            </row>
+                            <row>
+                                <cell type="label" label="Comp G:" initialize="align=right;fg=200,70,0"/>
+                                <cell type="field" id="compG" name="compG" uitype="text" readonly="true"/>
+                            </row>
+                            <row>
+                                <cell type="label" label="Comp C:" initialize="align=right;fg=0,0,190"/>
+                                <cell type="field" id="compC" name="compC" uitype="text" readonly="true"/>
+                            </row>
+                            <row>
+                                <cell type="label" label="Comp T:" initialize="align=right;fg=190,0,0"/>
+                                <cell type="field" id="compT" name="compT" uitype="text" readonly="true"/>
+                            </row>
+                            <row>
+                                <cell type="label" label="Ambiguous:" initialize="align=right"/>
+                                <cell type="field" id="ambiguous" name="ambiguousResidues" uitype="text" readonly="true"/>
+                            </row>
+                        </rows>
+	                </cell>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="geneSequence" uitype="textareabrief" colspan="7" rows="10"/>
-	              </row>
-                  <row>
+                </row>
+                <row>
                     <cell type="subview" viewname="DNASequenceRun" id="21" name="dnaSequencingRuns" colspan="15"/>
-                  </row>
-                  <row>
+                </row>
+                <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="attachments" initialize="btn=true;icon=DNASequenceAttachment;align=right"/>
-                  </row>
-	              <!--<row>
+                </row>
+	            <!--
+                <row>
                     <cell type="separator" label="Illustrative Barcode" colspan="8"/>
                 </row>
                 <row>
                     <cell type="field" id="8" name="this" uitype="plugin" initialize="name=IllustrativeBarCodeUI" readonly="true" colspan="8"/>
-                </row>-->
-                <!-- <row>
+                </row>
+                <row>
                     <cell type="panel" id="20" name="outerPanel2" coldef="f:p:g,0px,p,10px,p,f:p:g" rowdef="p" colspan="8">
                 <rows>
                 <row>
@@ -2995,8 +2907,10 @@
                 </row>
                 </rows>
                      </cell>
-                </row> -->               
-                <!--<row>
+                </row> 
+                -->               
+                <!--
+                <row>
                     <cell type="label" labelfor="btm"/>
                     <cell type="field" id="btm" name="boldTranslationMatrix" uitype="text"/>
                     <cell type="label" labelfor="gan"/>
@@ -3036,12 +2950,12 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
        
-        <viewdef
-            name="DNASequenceRun"
+        <viewdef name="DNASequenceRun"
             type="form"
             class="edu.ku.brc.specify.datamodel.DNASequencingRun"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
@@ -3093,7 +3007,8 @@
                     <cell type="field" id="41" name="remarks" uitype="textareabrief" rows="2" colspan="8"/>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="attachments" initialize="btn=true;icon=DNASequencingRunAttachment;align=right"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="pcp"/>
                     <cell type="field" id="pcp" name="pcrCocktailPrimer" uitype="text"/>
                     <cell type="label" labelfor="scp"/>
@@ -3132,15 +3047,15 @@
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
                 </row>
-                 <row>
+                <row>
                     <cell type="subview" id="10" viewname="DNASequencingRunCitation" name="citations" colspan="12"/>
-                    </row> -->
+                </row> 
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="DNASequencingRunCitation"
             type="form"
-            name="DNASequencingRunCitation"
             class="edu.ku.brc.specify.datamodel.DNASequencingRunCitation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3161,7 +3076,8 @@
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
                     <cell type="label" labelfor="n2"/>
@@ -3188,12 +3104,12 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef 
-            name="DNASequenceSubView"
+        <viewdef name="DNASequenceSubView"
             type="form"
             class="edu.ku.brc.specify.datamodel.DNASequence" 
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
@@ -3264,9 +3180,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="ExchangeIn"
             type="form"
-            name="ExchangeIn"
             class="edu.ku.brc.specify.datamodel.ExchangeIn"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3300,7 +3215,8 @@
                 <row>
                     <cell type="subview" id="6" name="addressOfRecord" viewname="AddressOfRecord" colspan="13"/>
                 </row>
-                <!-- <row>
+                <!-- 
+                <row>
                      <cell type="subview" viewname="ExchangeInPrep" id="10" name="exchangeInPreps" defaulttype="table" colspan="13" rows="4"/>
                 </row>
                 <row>
@@ -3340,13 +3256,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="ExchangeInPrep Table"
             type="formtable"
-            name="ExchangeInPrep Table"
             class="edu.ku.brc.specify.datamodel.ExchangeInPrep"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3355,9 +3271,8 @@
             <definition>ExchangeInPrep</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="ExchangeInPrep"
             type="form"
-            name="ExchangeInPrep"
             class="edu.ku.brc.specify.datamodel.ExchangeInPrep"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3382,7 +3297,8 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="descriptionOfMaterial" uitype="text" colspan="11"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
                     <cell type="label" labelfor="t2"/>
@@ -3403,13 +3319,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="ExchangeOut"
             type="form"
-            name="ExchangeOut"
             class="edu.ku.brc.specify.datamodel.ExchangeOut"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3446,7 +3362,8 @@
                 <row>
                     <cell type="subview" id="8" name="shipments" viewname="Shipment" colspan="13"/>
                 </row>
-                <!-- <row>
+                <!-- 
+                <row>
                      <cell type="subview" viewname="ExchangeOutPrep" id="10" name="exchangeOutPreps" defaulttype="table" colspan="13" rows="4"/>
                 </row>
                 <row>
@@ -3454,10 +3371,10 @@
                     <cell type="field" id="dom" name="descriptionOfMaterial" uitype="text" colspan="10"/>
                 </row>
                 <row>
-			              <cell type="label" labelfor="18"/>
-			              <cell type="field" id="18" name="srcGeography" uitype="text"/>
-			              <cell type="label" labelfor="19"/>
-			              <cell type="field" id="19" name="srcTaxonomy" uitype="text"/>
+                    <cell type="label" labelfor="18"/>
+                    <cell type="field" id="18" name="srcGeography" uitype="text"/>
+                    <cell type="label" labelfor="19"/>
+                    <cell type="field" id="19" name="srcTaxonomy" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="n1"/>
@@ -3486,13 +3403,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="ExchangeOutPrep Table"
             type="formtable"
-            name="ExchangeOutPrep Table"
             class="edu.ku.brc.specify.datamodel.ExchangeOutPrep"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3501,9 +3418,8 @@
             <definition>ExchangeOutPrep</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="ExchangeOutPrep"
             type="form"
-            name="ExchangeOutPrep"
             class="edu.ku.brc.specify.datamodel.ExchangeOutPrep"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3528,7 +3444,8 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="descriptionOfMaterial" uitype="text" colspan="11"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
                     <cell type="label" labelfor="t1"/>
@@ -3551,13 +3468,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef 
+        <viewdef name="FieldNotebook" 
             type="form" 
-            name="FieldNotebook" 
             class="edu.ku.brc.specify.datamodel.FieldNotebook" 
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3596,7 +3513,8 @@
                 <row>
                     <cell type="subview" id="6" name="attachments" viewname="ObjectAttachment" initialize="btn=true;icon=FieldNotebookAttachment;addsearch=true"/>
                 </row>
-                <!--<row>
+                <!-- 
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -3607,13 +3525,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
                 
-        <viewdef 
+        <viewdef name="FieldNotebookPageSet" 
             type="form" 
-            name="FieldNotebookPageSet" 
             class="edu.ku.brc.specify.datamodel.FieldNotebookPageSet" 
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3643,7 +3561,8 @@
                 <row>
                     <cell type="separator" label="" colspan="11"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="orderNumber" uitype="spinner" initialize="max=2000"/>
                 </row>
@@ -3666,13 +3585,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef 
+        <viewdef name="FieldNotebookPage" 
             type="form" 
-            name="FieldNotebookPage" 
             class="edu.ku.brc.specify.datamodel.FieldNotebookPage" 
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3696,7 +3615,8 @@
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="description" uitype="textareabrief" rows="2" colspan="8"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -3707,13 +3627,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="FieldNotebookPage Table"
             type="formtable"
-            name="FieldNotebookPage Table"
             class="edu.ku.brc.specify.datamodel.FieldNotebookPage"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3722,50 +3642,53 @@
             <definition>FieldNotebookPage</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="GeoCoordDetail"
             type="form"
-            name="GeoCoordDetail"
             class="edu.ku.brc.specify.datamodel.GeoCoordDetail"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Sub Collecting Event]]></desc>
             
             <!--columnDef>120px,2px,350px,5px,130px,2px,209px,5px,1px,2px,1px,p:g</columnDef-->
-<columnDef>100px,2px,195px,5px,115px,2px,131px,5px,100px,2px,150px,p:g</columnDef>
+            <columnDef>100px,2px,195px,5px,115px,2px,131px,5px,100px,2px,150px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,200px,5px,138px,2px,140px,5px,168px,2px,140px,p:g</columnDef>
             <columnDef os="mac">130px,2px,220px,5px,158px,2px,160px,5px,188px,2px,160px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2)</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
             
             <rows>
-                <!--row>
+                <!--
+                <row>
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="namedPlaceExtent" uitype="text"/>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="maxUncertaintyEst" uitype="text"/>
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="maxUncertaintyEstUnit" uitype="text"/>
-                </row-->
-                
-<row>
+                </row>
+                -->
+                <row>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="geoRefDetBy" uitype="querycbx" initialize="name=Agent"/>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="geoRefDetDate" uitype="formattedtext" uifieldformatter="Date" />
-                    <!--cell type="label" labelfor="4"/>
-                    <cell type="field" id="4" name="geoRefDetRef" uitype="text"/-->
-<cell type="label" labelfor="5"/>
+                    <!--
+                    <cell type="label" labelfor="4"/>
+                    <cell type="field" id="4" name="geoRefDetRef" uitype="text"/>
+                    -->
+                    <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="geoRefVerificationStatus" uitype="combobox" picklist="georefVerification"/>               
- </row>
-<row>
+                </row>
+                <row>
                     <cell type="label" labelfor="10"/>
                     <cell type="field" id="10" name="text1" uitype="textareabrief" rows="3" colspan="10"/>
                 </row>
-<row>
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="noGeoRefBecause" uitype="text" colspan="10"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="source"/>
                     <cell type="field" id="source" name="source" uitype="text"/>
                     <cell type="label" labelfor="val"/>
@@ -3804,13 +3727,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="Gift"
             type="form"
-            name="Gift"
             class="edu.ku.brc.specify.datamodel.Gift"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3854,7 +3777,8 @@
                         </rows>
                     </cell>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="dateReceived" uitype="formattedtext" uifieldformatter="Date"/>
                     <cell type="label" labelfor="pog"/>
@@ -3867,10 +3791,10 @@
                     <cell type="field" id="sc" name="specialConditions" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
                 <row>
-			              <cell type="label" labelfor="18"/>
-			              <cell type="field" id="18" name="srcGeography" uitype="text"/>
-			              <cell type="label" labelfor="19"/>
-			              <cell type="field" id="19" name="srcTaxonomy" uitype="text"/>
+                    <cell type="label" labelfor="18"/>
+                    <cell type="field" id="18" name="srcGeography" uitype="text"/>
+                    <cell type="label" labelfor="19"/>
+                    <cell type="field" id="19" name="srcTaxonomy" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="n1"/>
@@ -3902,13 +3826,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="GiftAgent Table"
             type="formtable"
-            name="GiftAgent Table"
             class="edu.ku.brc.specify.datamodel.GiftAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3917,9 +3841,8 @@
             <definition>GiftAgent</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="GiftAgent"
             type="form"
-            name="GiftAgent"
             class="edu.ku.brc.specify.datamodel.GiftAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3943,7 +3866,8 @@
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -3954,13 +3878,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="GiftItems Table"
             type="formtable"
-            name="GiftItems Table"
             class="edu.ku.brc.specify.datamodel.GiftPreparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3969,9 +3893,8 @@
             <definition>GiftItems</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="GiftItems"
             type="form"
-            name="GiftItems"
             class="edu.ku.brc.specify.datamodel.GiftPreparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3998,7 +3921,8 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="descriptionOfMaterial" uitype="text" colspan="14"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="ic"/>
                     <cell type="field" id="ic" name="inComments" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
@@ -4021,13 +3945,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="InfoRequest"
             type="form"
-            name="InfoRequest"
             class="edu.ku.brc.specify.datamodel.InfoRequest"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4061,7 +3985,8 @@
                 <row>
                     <cell type="field" uitype="checkbox" id="5" name="sendEMail" label="Send Email on Save" ignore="true" default="true" colspan="6"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="email"/>
                     <cell type="field" id="email" name="email" uitype="text" />
                     <cell type="label" labelfor="fn"/>
@@ -4084,13 +4009,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="InfoRequestColObj"
             type="rstable"
-            name="InfoRequestColObj"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4122,13 +4047,8 @@
             </rows>
         </viewdef>
 
-
-
-
-
-        <viewdef
+        <viewdef name="Loan"
             type="form"
-            name="Loan"
             class="edu.ku.brc.specify.datamodel.Loan"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4146,8 +4066,7 @@
                     <cell type="field" id="1" name="loanNumber" uitype="formattedtext"/>
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="loanDate" uitype="formattedtext" uifieldformatter="Date" default="today"/>
-<cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>                    
-
+                    <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>                    
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="currentDueDate" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
@@ -4156,31 +4075,32 @@
                     <cell type="field" id="21" name="originalDueDate" uitype="formattedtext" uifieldformatter="Date"/>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="dateClosed" uitype="formattedtext" uifieldformatter="Date"/>
- <cell type="field" id="2" name="isClosed" uitype="checkbox" initialize="editable=true"/>                   
+                    <cell type="field" id="2" name="isClosed" uitype="checkbox" initialize="editable=true"/>                   
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="overdueNotiSentDate" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
                 <row>
- 
-<!--cell type="label" labelfor="approvedby"/>
+                    <!--
+                    <cell type="label" labelfor="approvedby"/>
                     <cell type="field" id="approvedby" name="text1" uitype="combobox" picklist="Loanapprovedby" colspan="5" />
-<cell type="field" id="typ" name="yesNo2" uitype="checkbox" initialize="editable=true"/-->      
-
- </row>
- <row>
+                    <cell type="field" id="typ" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
+                    -->      
+                </row>
+                <row>
                      <cell type="label" labelfor="5"/>
                      <cell type="field" id="5" name="remarks" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
-<!--row>
+                <!--
+                <row>
                      <cell type="label" labelfor="mat"/>
                      <cell type="field" id="mat" name="text2" uitype="textareabrief" rows="2" colspan="12"/>
-                </row-->
-  <!--row>
+                </row>
+                <row>
                      <cell type="label" labelfor="purposeOfLoan"/>
                      <cell type="field" id="purposeOfLoan" name="purposeOfLoan" uitype="combobox" picklist="LoanPurpose" colspan="5" />
-                </row-->              
-
-<row>
+                </row>
+                -->              
+                <row>
                     <cell type="subview" viewname="LoanAgent" id="8" name="loanAgents" colspan="15" rows="3"/>
                 </row>
                 <row>
@@ -4215,7 +4135,8 @@
                         </rows>
                     </cell>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="subview" id="6" name="addressOfRecord" viewname="AddressOfRecord" colspan="13"/>
                 </row>
                 <row>
@@ -4260,13 +4181,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="LoanAgent Table"
             type="formtable"
-            name="LoanAgent Table"
             class="edu.ku.brc.specify.datamodel.LoanAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4275,9 +4196,8 @@
             <definition>LoanAgent</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="LoanAgent"
             type="form"
-            name="LoanAgent"
             class="edu.ku.brc.specify.datamodel.LoanAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4301,7 +4221,8 @@
                      <cell type="label" labelfor="5"/>
                      <cell type="field" id="5" name="remarks" uitype="textareabrief" rows="1" colspan="6"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -4312,13 +4233,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="LoanItems Table"
             type="formtable"
-            name="LoanItems Table"
             class="edu.ku.brc.specify.datamodel.LoanPreparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4327,9 +4248,8 @@
             <definition>LoanItems</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="LoanItems"
             type="form"
-            name="LoanItems"
             class="edu.ku.brc.specify.datamodel.LoanPreparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4365,18 +4285,17 @@
                     <cell type="field" id="3" name="descriptionOfMaterial" uitype="text" colspan="11"/>
                 </row>
                 <row>
-<cell type="label" labelfor="oc"/>
+                    <cell type="label" labelfor="oc"/>
                     <cell type="field" id="oc" name="outComments" uitype="textareabrief" rows="1" colspan="12"/>         
-</row>
-  <row>
+                </row>
+                <row>
                     <cell type="label" labelfor="rc"/>
                     <cell type="field" id="rc" name="receivedComments" uitype="textareabrief" rows="1" colspan="3"/>
                 </row>
                 <row>           
-<cell type="label" labelfor="ic"/>
+                    <cell type="label" labelfor="ic"/>
                     <cell type="field" id="ic" name="inComments" uitype="textareabrief" rows="1" colspan="12"/>
                 </row>
-                       
                 <row>
                     <cell type="label" labelfor="cr"/>
                     <cell type="field" id="cr" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
@@ -4384,18 +4303,16 @@
                     <cell type="field" id="mo" name="modifiedByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
                 </row>
                 <row>
-        <cell type="label" labelfor="12"/>
+                    <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>            
- <cell type="label" labelfor="11"/>
+                    <cell type="label" labelfor="11"/>
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
-                   
                 </row>
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="LoanReturnPreparation"
             type="form"
-            name="LoanReturnPreparation"
             class="edu.ku.brc.specify.datamodel.LoanReturnPreparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4425,7 +4342,8 @@
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="remarks" uitype="textareabrief" colspan="6" rows="2"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -4436,20 +4354,20 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
              
-        <viewdef
+        <viewdef name="Locality"
             type="form"
-            name="Locality"
             class="edu.ku.brc.specify.datamodel.Locality"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Locality]]></desc>
             
             <columnDef>120px,2px,190px,5px,120px,2px,150px,5px,125px,2px,126px,5px,105px,2px,70px,0px,15px,p:g</columnDef>
-<!--columnDef>100px,2px,90px,5px,90px,2px,90px,5px,105px,2px,126px,5px,105px,2px,98px,0px,15px,p:g</columnDef-->
+            <!--columnDef>100px,2px,90px,5px,90px,2px,90px,5px,105px,2px,126px,5px,105px,2px,98px,0px,15px,p:g</columnDef-->
             <columnDef os="lnx">115px,2px,120px,5px,94px,2px,100px,5px,115px,2px,110px,5px,125px,2px,115px,0px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,120px,5px,116px,2px,120px,5px,137px,2px,120px,5px,146px,2px,120px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(3),5px:g,p,2px,p:g(3),5px:g,p,2px,p:g(3),5px:g,p,2px,p:g(3),0px,p,p:g</columnDef>
@@ -4469,46 +4387,38 @@
                     <cell type="label" labelfor="geography"/>
                     <cell type="field" id="geography" name="geography" uitype="querycbx" initialize="name=Geography" colspan="6"/>
                 </row>
-<!--row>
+                <!--
+                <row>
                     <cell type="label" labelfor="text1"/>
                     <cell type="field" id="text1" name="text1" uitype="text" colspan="12"/>
-<cell type="field" id="text1" name="text1" uitype="text" readonly="true" colspan="12"/>
-                </row-->
+                    <cell type="field" id="text1" name="text1" uitype="text" readonly="true" colspan="12"/>
+                </row>
+                -->
                 <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="this" uitype="plugin" initialize="name=LatLonUI" colspan="11"/>
                 </row>
                 <row>
-<cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="datum" uitype="combobox" picklist="Datum" />
-
-
-                                       
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="datum" uitype="combobox" picklist="Datum" />              
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="latLongMethod" uitype="combobox" colspan="5"/>
-   </row>
-                <row>
- <cell type="label" labelfor="precision"/>
-                    <cell type="field" id="precision" name="shortName" uitype="combobox" />
-
-
- 
                 </row>
-   <row>
-<cell type="label" labelfor="namedPl"/>
-                    <cell type="field" id="namedPl" name="namedPlace" uitype="text" />
-
-                                       
+                <row>
+                    <cell type="label" labelfor="precision"/>
+                    <cell type="field" id="precision" name="shortName" uitype="combobox" />
+                </row>
+                <row>
+                    <cell type="label" labelfor="namedPl"/>
+                    <cell type="field" id="namedPl" name="namedPlace" uitype="text" />             
                     <cell type="label" labelfor="rel2NP"/>
                     <cell type="field" id="rel2NP" name="relationToNamedPlace" uitype="text" colspan="5"/>
-</row>             
-
-<row>    
-<cell type="label" labelfor="rems"/>
+                </row>             
+                <row>    
+                    <cell type="label" labelfor="rems"/>
                 	<cell type="field" id="rems" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
-</row>             
-
-<row>  
+                </row>             
+                <row>  
                     <cell type="subview" id="7" name="geoCoordDetails" viewname="GeoCoordDetail" colspan="17"/> 
                 </row>
                 <row>
@@ -4523,10 +4433,12 @@
                     <cell type="label" labelfor="10"/>
                     <cell type="field" id="10" name="maxElevation" uitype="text"/>
                     <cell type="label" labelfor="verbElev"/>
-<cell type="field" id="verbElev" name="verbatimElevation" uitype="text" colspan="4"/>
-                    <!--cell type="field" id="11" name="elevationMethod" uitype="text"/>
+                    <cell type="field" id="verbElev" name="verbatimElevation" uitype="text" colspan="4"/>
+                    <!--
+                    <cell type="field" id="11" name="elevationMethod" uitype="text"/>
                     <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="elevationAccuracy" uitype="text"/-->
+                    <cell type="field" id="1" name="elevationAccuracy" uitype="text"/>
+                    -->
                 </row>
                 <row>
                     <cell type="separator" label="Plugins" colspan="17"/>
@@ -4549,7 +4461,8 @@
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="localityAttachments" colspan="17" initialize="btn=true;icon=LocalityAttachment"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="subview" id="10" viewname="LocalityCitation" name="localityCitations" colspan="12"/>
                 </row>
                 <row>
@@ -4593,13 +4506,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="LocalityCitation"
             type="form"
-            name="LocalityCitation"
             class="edu.ku.brc.specify.datamodel.LocalityCitation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4620,7 +4533,8 @@
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -4631,26 +4545,25 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="LocalityDetail"
             type="form"
-            name="LocalityDetail"
             class="edu.ku.brc.specify.datamodel.LocalityDetail"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[LocalityDetail subform for Locality]]></desc>
             
             <columnDef>100px,2px,100px,5px,80px,2px,120px,5px,120px,2px,140px,5px,90px,2px,1px,p:g</columnDef>
-  <!--columnDef>100px,2px,100px,5px,80px,2px,120px,5px,65px,2px,116px,5px,105px,2px,118px,p:g</columnDef-->
+            <!--columnDef>100px,2px,100px,5px,80px,2px,120px,5px,65px,2px,116px,5px,105px,2px,118px,p:g</columnDef-->
             <columnDef os="lnx">113px,2px,125px,5px,90px,2px,125px,5px,89px,2px,115px,5px,120px,2px,115px,0px,p:g</columnDef>
             <columnDef os="mac">130px,2px,120px,5px,116px,2px,140px,5px,117px,2px,120px,5px,146px,2px,120px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2)</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
             
-
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
@@ -4659,8 +4572,8 @@
                     <cell type="field" id="region" name="text4" uitype="text" /> 
                     <cell type="label" labelfor="nationalParkName"/>
                     <cell type="field" id="nationalParkName" name="nationalParkName" uitype="text"  />
-      </row>
-<row>
+                </row>
+                <row>
                     <cell type="label" labelfor="area"/>
                     <cell type="field" id="area" name="text3" uitype="text" />
                     <cell type="label" labelfor="island"/>
@@ -4668,17 +4581,17 @@
                     <cell type="label" labelfor="section"/>
                     <cell type="field" id="section" name="section" uitype="text"  />
 
-</row>
-<row>
+                </row>
+                <row>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="text2" uitype="combobox" picklist="designation" />
                 </row>
-<row>
+                <row>
                     <cell type="label" labelfor="legloc"/>
                     <cell type="field" id="legloc" name="text5" readonly="true"  uitype="text" colspan="11"/>
-</row>
-
-                <!--<row>
+                </row>
+                <!--
+                <row>
                     <cell type="label" labelfor="bm"/>
                     <cell type="field" id="bm" name="baseMeridian" uitype="text"/>
                     <cell type="label" labelfor="dra"/>
@@ -4769,13 +4682,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
                 
-        <viewdef
+        <viewdef name="LocalitySubForm"
             type="form"
-            name="LocalitySubForm"
             class="edu.ku.brc.specify.datamodel.Locality"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4806,10 +4719,8 @@
             </rows>
         </viewdef>
         
-        
-        <viewdef
+        <viewdef name="LocalityMapper"
             type="form"
-            name="LocalityMapper"
             class="java.util.Hashtable"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForHashMap"
             settable="edu.ku.brc.af.ui.forms.DataSetterForHashMap">
@@ -4846,9 +4757,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="OtherIdentifiers Table"
             type="formtable"
-            name="OtherIdentifiers Table"
             class="edu.ku.brc.specify.datamodel.OtherIdentifier"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4857,9 +4767,8 @@
             <definition>OtherIdentifiers</definition>
         </viewdef>
                 
-        <viewdef
+        <viewdef name="OtherIdentifiers"
             type="form"
-            name="OtherIdentifiers"
             class="edu.ku.brc.specify.datamodel.OtherIdentifier"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
@@ -4884,7 +4793,8 @@
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -4895,13 +4805,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Permit"
             type="form"
-            name="Permit"
             class="edu.ku.brc.specify.datamodel.Permit"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4948,7 +4858,8 @@
                 <row>
                     <cell type="subview" viewname="ObjectAttachment" id="10" name="permitAttachments" colspan="13" initialize="btn=true;icon=PermitAttachment"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
                     <cell type="label" labelfor="n2"/>
@@ -4975,13 +4886,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="PermitForAccessions"
             type="form"
-            name="PermitForAccessions"
             class="edu.ku.brc.specify.datamodel.Permit"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5024,9 +4935,8 @@
             </rows>
         </viewdef>
                  
-        <viewdef
+        <viewdef name="Preparation Table"
             type="formtable"
-            name="Preparation Table"
             class="edu.ku.brc.specify.datamodel.Preparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5035,9 +4945,8 @@
             <definition>Preparation</definition>
         </viewdef>
                 
-        <viewdef
+        <viewdef name="Preparation"
             type="form"
-            name="Preparation"
             class="edu.ku.brc.specify.datamodel.Preparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
@@ -5057,8 +4966,8 @@
                     <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date"/>
-                   <cell type="label" label="  "/>
-                   <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="ISONLOAN" readonly="true"/>
+                    <cell type="label" label="  "/>
+                    <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="ISONLOAN" readonly="true"/>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
                 </row>
                 <row>
@@ -5072,9 +4981,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="PreparationAttributes"
             type="form"
-            name="PreparationAttributes"
             class="edu.ku.brc.specify.datamodel.PreparationAttribute"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5092,7 +5000,8 @@
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="text"/>
                 </row>    
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="ad"/>
                     <cell type="field" id="ad" name="attrDate" uitype="formattedtext" uifieldformatter="Date"/>
                     <cell type="label" labelfor="t3"/>
@@ -5199,13 +5108,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
                  
-        <viewdef 
+        <viewdef name="Project" 
             type="form" 
-            name="Project" 
             class="edu.ku.brc.specify.datamodel.Project" 
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5248,7 +5157,8 @@
                     <cell type="subview" viewname="CollectionObjectSub" id="11" colspan="17" name="collectionObjects" initialize="addsearch=true"/>
                 </row>
             </rows>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
                     <cell type="label" labelfor="n2"/>
@@ -5277,12 +5187,12 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
         </viewdef>
         
-        <viewdef
+        <viewdef name="ProjectSub Table"
             type="formtable"
-            name="ProjectSub Table"
             class="edu.ku.brc.specify.datamodel.Project"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5290,9 +5200,8 @@
             <definition>ProjectSub</definition>
         </viewdef>
         
-        <viewdef 
+        <viewdef name="ProjectSub" 
             type="form" 
-            name="ProjectSub" 
             class="edu.ku.brc.specify.datamodel.Project" 
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5316,14 +5225,12 @@
                       <cell type="field" id="8" name="startDate" uitype="formattedtext" uifieldformatter="Date"/>                   
                       <cell type="label" labelfor="1"/>
                       <cell type="field" id="1" name="endDate" uitype="formattedtext"  uifieldformatter="Date"/>
-                 </row>
-                
+                 </row> 
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="RepositoryAgreement"
             type="form"
-            name="RepositoryAgreement"
             class="edu.ku.brc.specify.datamodel.RepositoryAgreement"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5378,7 +5285,8 @@
                     <cell type="label" labelfor="11"/>
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="subview" id="6" name="addressOfRecord" viewname="AddressOfRecord" colspan="10"/>
                 </row>
                 <row>
@@ -5404,13 +5312,13 @@
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
                 
-        <viewdef
+        <viewdef name="AgreementAgent"
             type="form"
-            name="AgreementAgent"
             class="edu.ku.brc.specify.datamodel.AccessionAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5434,7 +5342,8 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -5445,13 +5354,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="AgreementAuthorization"
             type="form"
-            name="AgreementAuthorization"
             class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5472,7 +5381,8 @@
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="remarks" uitype="textareabrief" rows="2" colspan="2"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
                     <cell type="label" labelfor="10"/>
@@ -5483,20 +5393,20 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
                 
-        <viewdef
+        <viewdef name="Shipment"
             type="form"
-            name="Shipment"
             class="edu.ku.brc.specify.datamodel.Shipment"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Shipment form.]]></desc>
             
             <columnDef>125px,2px,100px,5px,113px,2px,160px,5px,103px,2px,195px,0px,p:g</columnDef> 
-      <!--columnDef>105px,2px,140px,5px,123px,2px,140px,5px,113px,2px,195px,0px,p:g</columnDef--> 
+            <!--columnDef>105px,2px,140px,5px,123px,2px,140px,5px,113px,2px,195px,0px,p:g</columnDef--> 
             <columnDef os="lnx">131px,2px,172px,5px,118px,2px,170px,5px,106px,2px,210px,0px,p:g</columnDef> 
             <columnDef os="mac">130px,2px,195px,5px,136px,2px,195px,5px,120px,2px,240px,0px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g,0px</columnDef> 
@@ -5522,7 +5432,8 @@
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="insuredForAmount" uitype="text"/>
                     <cell type="label" labelfor="n1"/>
@@ -5555,12 +5466,12 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef
-            name="TaxonLabelFormattingPlugin"
+        <viewdef name="TaxonLabelFormattingPlugin"
             type="form"
             class="edu.ku.brc.specify.datamodel.Taxon"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -5578,8 +5489,7 @@
             </rows>
         </viewdef>
         
-        <viewdef
-            name="SubPaleoContext"
+        <viewdef name="SubPaleoContext"
             type="form"
             class="edu.ku.brc.specify.datamodel.PaleoContext"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -5606,7 +5516,8 @@
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>                    
                 </row>
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="bd"/>
                     <cell type="field" id="bd" name="bottomDistance" uitype="text"/>
                     <cell type="label" labelfor="2"/>
@@ -5649,13 +5560,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>
         </viewdef>
         
-        <viewdef 
+        <viewdef name="TreatmentEvent" 
             type="form" 
-            name="TreatmentEvent" 
             class="edu.ku.brc.specify.datamodel.TreatmentEvent" 
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5695,7 +5606,8 @@
                     <cell type="label" labelfor="10"/>
                     <cell type="field" id="10" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>          
-                <!--<row>
+                <!--
+                <row>
                     <cell type="label" labelfor="db"/>
                     <cell type="field" id="db" name="dateBoxed" uitype="formattedtext" uifieldformatter="Date"/> 
                     <cell type="label" labelfor="dc"/>
@@ -5718,13 +5630,13 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
+                </row>
+                -->
             </rows>           
         </viewdef> 
         
-        <viewdef 
+        <viewdef name="TreatmentEventSub" 
             type="form" 
-            name="TreatmentEventSub" 
             class="edu.ku.brc.specify.datamodel.TreatmentEvent" 
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5767,9 +5679,8 @@
             </rows>           
         </viewdef> 
         
-        <viewdef
+        <viewdef name="Institution"
             type="form"
-            name="Institution"
             class="edu.ku.brc.specify.datamodel.Institution"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5789,8 +5700,10 @@
                 <row>
                     <cell type="label" label=""/>
                     <cell type="field" id="10" name="isSecurityOn" uitype="checkbox"/> 
-                    <!--<cell type="label" label=""/>
-                    <cell type="field" id="11" name="isAccessionsGlobal" uitype="checkbox"/>-->
+                    <!--
+                    <cell type="label" label=""/>
+                    <cell type="field" id="11" name="isAccessionsGlobal" uitype="checkbox"/>
+                    -->
                 </row>
                 <row>
                     <cell type="label" labelfor="2"/>
@@ -5847,8 +5760,7 @@
             </rows>
         </viewdef>
         
-        <viewdef
-            name="DivisionOnly"
+        <viewdef name="DivisionOnly"
             type="form"
             class="edu.ku.brc.specify.datamodel.Division"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -5890,8 +5802,7 @@
             </rows>
         </viewdef>
           
-        <viewdef
-            name="Division"
+        <viewdef name="Division"
             type="form"
             class="edu.ku.brc.specify.datamodel.Division"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -5927,10 +5838,12 @@
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="description" uitype="textareabrief" colspan="10" rows="2"/>
                 </row>
-                <!-- <row>
+                <!-- 
+                <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="remarks" uitype="textarea" colspan="10"/>
-                </row>  -->
+                </row>  
+                -->
                 <row>
                     <cell type="subview" viewname="DisciplineViewOnlyCollections" id="9" name="disciplines" colspan="13"/>
                 </row>
@@ -5940,9 +5853,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="DisciplineViewOnlyCollections"
             type="form"
-            name="DisciplineViewOnlyCollections"
             class="edu.ku.brc.specify.datamodel.Discipline"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5969,9 +5881,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="DisciplineWithoutCollections"
             type="form"
-            name="DisciplineWithoutCollections"
             class="edu.ku.brc.specify.datamodel.Discipline"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -5999,9 +5910,8 @@
             </rows>
         </viewdef>
 
-         <viewdef
+         <viewdef name="AddressDiv"
             type="form"
-            name="AddressDiv"
             class="edu.ku.brc.specify.datamodel.Address"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -6033,8 +5943,10 @@
                     <cell type="field" id="7" name="country" uitype="text"/>
                 </row>
                 <row>
-                    <!--cell type="label" labelfor="11"/>
-                    <cell type="field" id="11" name="roomOrBuilding" uitype="text"/-->
+                    <!--
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="roomOrBuilding" uitype="text"/>
+                    -->
                     <cell type="label" labelfor="8"/>
                     <cell type="field" id="8" name="phone1" uitype="text"/>
                     <cell type="label" labelfor="9"/>
@@ -6045,9 +5957,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Discipline"
             type="form"
-            name="Discipline"
             class="edu.ku.brc.specify.datamodel.Discipline"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -6074,9 +5985,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectionSub"
             type="form"
-            name="CollectionSub"
             class="edu.ku.brc.specify.datamodel.Collection"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -6148,9 +6058,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectionGridViewOnly"
             type="formtable"
-            name="CollectionGridViewOnly"
             class="edu.ku.brc.specify.datamodel.Collection"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -6159,9 +6068,8 @@
             <definition>CollectionForGrid</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectionGrid"
             type="formtable"
-            name="CollectionGrid"
             class="edu.ku.brc.specify.datamodel.Collection"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -6170,9 +6078,8 @@
             <definition>CollectionForGrid</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectionForGrid"
             type="form"
-            name="CollectionForGrid"
             class="edu.ku.brc.specify.datamodel.Collection"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -6203,9 +6110,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="Collection"
             type="form"
-            name="Collection"
             class="edu.ku.brc.specify.datamodel.Collection"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -6281,9 +6187,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="FundingAgent"
             type="form"
-            name="FundingAgent"
             class="edu.ku.brc.specify.datamodel.FundingAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -6308,9 +6213,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="FundingAgents Table"
             type="formtable"
-            name="FundingAgents Table"
             class="edu.ku.brc.specify.datamodel.FundingAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -6318,18 +6222,16 @@
             <definition>FundingAgents</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="FundingAgentsIconView"
             type="iconview"
-            name="FundingAgentsIconView"
             class="edu.ku.brc.specify.datamodel.FundingAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The FundingAgents Icon Viewer]]></desc>
         </viewdef>
 
-        <viewdef
+        <viewdef name="FundingAgents"
             type="form"
-            name="FundingAgents"
             class="edu.ku.brc.specify.datamodel.FundingAgent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -6355,6 +6257,5 @@
             </rows>
         </viewdef>
         
-
     </viewdefs>
 </viewset>
