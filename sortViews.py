@@ -1,47 +1,62 @@
+#sorts the views and viewdefs in a views.xml file
+#note this replaces the original file, so commit first...
 
 fileName = 'common/common.views.xml'
-newFileName = 'common/common.views.sorted.xml'
 
-def getViewName(viewStr):
-  nameAttrStart = viewStr.index('name')
+def getElemName(xmlStr):
+  nameAttrStart = xmlStr.index('name')
   #now we need the closing quote
-  nameStart = viewStr.index('"', nameAttrStart) + 1
-  nameEnd = viewStr.index('"', nameStart)
-  name = viewStr[nameStart:nameEnd]
+  nameStart = xmlStr.index('"', nameAttrStart) + 1
+  nameEnd = xmlStr.index('"', nameStart)
+  name = xmlStr[nameStart:nameEnd]
   return name
 
-with open(fileName, 'r') as f:
-    xml = f.read()
+def sortxmlElems(xmlstr, section):
 
-    viewsStart = xml.index('<views>')
-    viewsEnd = xml.index('</views>') + len('</views>')
-    viewsString = xml[viewsStart:viewsEnd]
+  openingtag = '<' + section + '>'
+  closingtag = '</' + section + '>'
 
-    #split into individual views
-    views = []
-    searchStart = len('<views>') + 1
-    while searchStart < len(viewsString):
-      try:
-        viewStart = viewsString.index('<view', searchStart)
-      except:
-        break
+  xmlStart = xmlstr.index(openingtag)
+  xmlEnd = xmlstr.index(closingtag) + len(closingtag)
+  xmlString = xmlstr[xmlStart:xmlEnd]
 
-      viewEnd = viewsString.index('</view>', searchStart) + len('</view>')
-      view = viewsString[viewStart:viewEnd]
-      viewName = getViewName(view)
-      views.append(view)
+  #split into individual views
+  elements = []
+  searchStart = len(openingtag) + 1
+  elemOpeningTag = '<' + section[:-1]
+  elemClosingTag = '</' + section[:-1] + '>'
+  while searchStart < len(xmlString):
+    try:
+      elemStart = xmlString.index(elemOpeningTag, searchStart)
+    except:
+      break
+
+    elemEnd = xmlString.index(elemClosingTag, searchStart) + len(elemClosingTag)
+    elem = xmlString[elemStart:elemEnd]
+    elements.append(elem)
+
+    searchStart = elemEnd + 1
   
-      searchStart = viewEnd + 1
-    
-views.sort(key=getViewName)
+  elements.sort(key=getElemName)
 
-#strings are immutable so we have to do this
-firstxml = xml[0:viewsStart]
-lastxml = xml[viewsEnd:]
-newxml = firstxml + '<views>\n\n\t\t' + '\n\n\t\t'.join(views) + '\n\n\t</views>' + lastxml
+  #strings are immutable so we have to do this
+  firstxml = xmlstr[0:xmlStart]
+  lastxml = xmlstr[xmlEnd:]
+  print('sorting', len(elements), section)
+  newxml = firstxml + openingtag + '\n\n\t\t' + '\n\n\t\t'.join(elements) + '\n\n\t' + closingtag + lastxml
 
-with open(newFileName, 'w') as f:
-  f.write(newxml)
+  return newxml
+
+###the actual script ###
+
+with open(fileName, 'r') as f:
+  xml = f.read()
+
+sortedviewsxml = sortxmlElems(xml, 'views')
+sortedviewdefsxml = sortxmlElems(sortedviewsxml, 'viewdefs')
+
+with open(fileName, 'w') as f:
+  f.write(sortedviewdefsxml)
 
 print('all done')
 
