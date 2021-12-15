@@ -940,9 +940,9 @@
     <!--First row-->
     <field column="Prep Text6 1" name="prep1Text6" type="java.lang.String" length="500"/>
     <field column="Prep YesNo 1" name="prepYesNo1" type="boolean" />
-
+    
     <!--Second row-->
-    <field column="Prep Text5 1" name="prep1Text5" type="java.lang.String" length="500"/>
+    <field column="Prep Type 1" name="prepType1" type="text" length="64"/>
     <field column="Prepared By First Name 1" name="preparedBy1FirstName" type="java.lang.String" length="50"/>
     <field column="Prepared By Last Name 1" name="preparedBy1LastName" type="java.lang.String" length="120"/>
     <!-- <field column="Prepared By Middle Initials 1" name="preparedBy1Middle" type="java.lang.String" length="50"/> -->
