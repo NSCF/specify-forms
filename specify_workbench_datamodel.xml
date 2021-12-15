@@ -832,6 +832,7 @@
   <table classname="edu.ku.brc.specify.datamodel.Locality" table="locality" tableid="2" lazy="true" >
     <display objtitle="Locality" view="Locality" dataobjformatter="Locality" searchdlg="LocalitySearch" newobjdlg="LocalityDisplay"/>
    	<field column="Locality Name" name="localityName" type="java.lang.String" length="255"/>
+    <field column="Verbatim locality" name="text1" type="java.lang.String" length="65535"/>
     <field column="Named Place" name="namedPlace" type="java.lang.String" length="255"/>
     <field column="Short Name" name="shortName" type="java.lang.String"  length="32" />
     <field column="Relation To Named Place" name="relationToNamedPlace" type="java.lang.String" length="120"/>
