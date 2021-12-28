@@ -60,14 +60,17 @@
     <field table="CollectingEvent" name="collectorLastName3" onetomanysequence="2" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="lastName"/>
     <field table="CollectingEvent" name="collectorMiddle3" onetomanysequence="2" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="middleInitial"/>
     <field table="CollectingEvent" name="collectorTitle3" onetomanysequence="2" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="title"/>
+    <field table="CollectingEvent" name="collectorInitials3" onetomanysequence="1" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="initials"/>
     <field table="CollectingEvent" name="collectorFirstName4" onetomanysequence="3" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="firstName"/>
     <field table="CollectingEvent" name="collectorLastName4" onetomanysequence="3" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="lastName"/>
     <field table="CollectingEvent" name="collectorMiddle4" onetomanysequence="3" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="middleInitial"/>
     <field table="CollectingEvent" name="collectorTitle4" onetomanysequence="3" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="title"/>
+    <field table="CollectingEvent" name="collectorInitials4" onetomanysequence="1" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="initials"/>
     <field table="CollectingEvent" name="collectorFirstName5" onetomanysequence="4" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="firstName"/>
     <field table="CollectingEvent" name="collectorLastName5" onetomanysequence="4" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="lastName"/>
     <field table="CollectingEvent" name="collectorMiddle5" onetomanysequence="4" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="middleInitial"/>
     <field table="CollectingEvent" name="collectorTitle5" onetomanysequence="4" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="title"/>
+    <field table="CollectingEvent" name="collectorInitials5" onetomanysequence="1" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="initials"/>
     <field table="CollectingEvent" name="collectorFirstName6" onetomanysequence="5" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="firstName"/>
     <field table="CollectingEvent" name="collectorLastName6" onetomanysequence="5" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="lastName"/>
     <field table="CollectingEvent" name="collectorMiddle6" onetomanysequence="5" sequencefield="orderNumber" actualtable="collector" relationshipname="agent" relatedfieldname="middleInitial"/>
