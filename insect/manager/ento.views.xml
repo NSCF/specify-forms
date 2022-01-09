@@ -661,8 +661,8 @@
                     <cell type="field" id="3" name="countAmt" uitype="text"/>
                 </row>
                 <row>
-                    <!-- <cell type="label" labelfor="t8"/> -->
-                    <!-- <cell type="field" id="t8" name="text8" uitype="text"/> -->
+                    <cell type="label" labelfor="t8"/>
+                    <cell type="field" id="t8" name="text8" uitype="text"/>
                     <!-- <cell type="label" labelfor="4"/> -->
                     <!-- <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3"/> -->
                 </row>
