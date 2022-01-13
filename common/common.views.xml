@@ -2238,8 +2238,8 @@
                 <row>
                     <cell type="label" labelfor="Habitat"/>
                     <cell type="field" id="Habitat" name="text1" uitype="text"  colspan="5"/>
-                    <!-- <cell type="label" labelfor="Behaviour"/> -->
-                    <!-- <cell type="field" id="Behaviour" name="text2" uitype="text"  colspan="5"/> -->
+                    <cell type="label" labelfor="VerbatimHost"/> 
+                    <cell type="field" id="VerbatimHost" name="text6" uitype="text"  colspan="5"/>
                 </row>    
                 <row>
                     <cell type="label" labelfor="VegetationType"/>
