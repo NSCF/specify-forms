@@ -494,8 +494,8 @@
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="stationFieldNumber" uitype="text"/>
                     <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="method" uitype="combobox"/>
-                    <cell type="label" label=""/>
+                    <!-- <cell type="field" id="3" name="method" uitype="combobox"/> -->
+                    <!-- <cell type="label" label=""/> -->
                     <cell type="subview" id="1" viewname="ObjectAttachment" name="collectingEventAttachments" initialize="align=right;btn=true;icon=CollectingEventAttachment"/>
                 </row>
                 <row>
