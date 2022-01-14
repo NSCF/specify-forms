@@ -83,43 +83,47 @@
     <field column="Integer 1" name="integer1" type="java.lang.Integer" length="10"/>
     <field column="Integer 2" name="integer2" type="java.lang.Integer" length="10"/>
     <field column="Verbatim Locality" name="verbatimLocality" type="text" length="2048"/>
+    
     <field column="Collector First Name 1" name="collectorFirstName1" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 1"  name="collectorLastName1" type="java.lang.String" length="120"/>
-    <field column="Collector Middle Initials 1" name="collectorMiddle1" type="java.lang.String" length="50"/>
     <field column="Collector Title 1"  name="collectorTitle1" type="java.lang.String" length="50"/>
     <field column="Collector Initials 1"  name="collectorInitials1" type="java.lang.String" length="50"/>
+    
     <field column="Collector First Name 2" name="collectorFirstName2" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 2"  name="collectorLastName2" type="java.lang.String" length="120"/>
-    <field column="Collector Middle Initials 2" name="collectorMiddle2" type="java.lang.String" length="50"/>
     <field column="Collector Title 2"  name="collectorTitle2" type="java.lang.String" length="50"/>
     <field column="Collector Initials 2"  name="collectorInitials2" type="java.lang.String" length="50"/>
+    
     <field column="Collector First Name 3" name="collectorFirstName3" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 3"  name="collectorLastName3" type="java.lang.String" length="120"/>
-    <field column="Collector Middle Initials 3" name="collectorMiddle3" type="java.lang.String" length="50"/>
     <field column="Collector Title 3"  name="collectorTitle3" type="java.lang.String" length="50"/>
     <field column="Collector Initials 3"  name="collectorInitials3" type="java.lang.String" length="50"/>
+    
     <field column="Collector First Name 4" name="collectorFirstName4" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 4"  name="collectorLastName4" type="java.lang.String" length="120"/>
-    <field column="Collector Middle Initials 4" name="collectorMiddle4" type="java.lang.String" length="50"/>
     <field column="Collector Title 4"  name="collectorTitle4" type="java.lang.String" length="50"/>
     <field column="Collector Initials 4"  name="collectorInitials4" type="java.lang.String" length="50"/>
+    
     <field column="Collector First Name 5" name="collectorFirstName5" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 5"  name="collectorLastName5" type="java.lang.String" length="120"/>
-    <field column="Collector Middle Initials 5" name="collectorMiddle5" type="java.lang.String" length="50"/>
     <field column="Collector Title 5"  name="collectorTitle5" type="java.lang.String" length="50"/>
     <field column="Collector Initials 5"  name="collectorInitials5" type="java.lang.String" length="50"/>
+    
     <field column="Collector First Name 6" name="collectorFirstName6" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 6"  name="collectorLastName6" type="java.lang.String" length="120"/>
-    <field column="Collector Middle Initials 6" name="collectorMiddle6" type="java.lang.String" length="50"/>
     <field column="Collector Title 6"  name="collectorTitle6" type="java.lang.String" length="50"/>
+    <field column="Collector Initials 6"  name="collectorInitials6" type="java.lang.String" length="50"/>
+    
     <field column="Collector First Name 7" name="collectorFirstName7" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 7"  name="collectorLastName7" type="java.lang.String" length="120"/>
-    <field column="Collector Middle Initials 7" name="collectorMiddle7" type="java.lang.String" length="50"/>
     <field column="Collector Title 7"  name="collectorTitle7" type="java.lang.String" length="50"/>
+    <field column="Collector Initials 7"  name="collectorInitials7" type="java.lang.String" length="50"/>
+    
     <field column="Collector First Name 8" name="collectorFirstName8" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 8"  name="collectorLastName8" type="java.lang.String" length="120"/>>
-    <field column="Collector Middle Initials 8" name="collectorMiddle8" type="java.lang.String" length="50"/>
     <field column="Collector Title 8"  name="collectorTitle8" type="java.lang.String" length="50"/>
+    <field column="Collector Initials 8"  name="collectorInitials8" type="java.lang.String" length="50"/>
+
     <field column="Remarks (Collecting Event)" name="collectingEventRemarks" type="text" length="4096"/>
     <field column="Permit 1" name="cePermit1" type="java.lang.String" length="64"/>
     <field column="Permit 2" name="cePermit2" type="java.lang.String" length="64"/>
@@ -189,59 +193,59 @@
       <field column="Permit 5" name="ctPermit5" type="java.lang.String" length="64"/>
   </table>
 
-    <table classname="edu.ku.brc.specify.datamodel.CollectingTripAttribute" table="collectingtripattribute" tableid="157" lazy="true" query="false">
-        <field column="Remarks (CollectingTrip Attribute)" name="collectingTripAttributeRemarks" type="java.lang.String" length="4096"/>    <field column="Integer 1 (CollectingTrip Attribute)" name="collectingTripAttributeInteger1" type="java.lang.Integer" />
-        <field column="Integer 1 (CollectingTrip Attribute)" name="collectingTrip AttributeInteger1" type="java.lang.Integer" />
-        <field column="Integer 2 (CollectingTrip Attribute)" name="collectingTripAttributeInteger2" type="java.lang.Integer" />
-        <field column="Integer 3 (CollectingTrip Attribute)" name="collectingTripAttributeInteger3" type="java.lang.Integer" />
-        <field column="Integer 4 (CollectingTrip Attribute)" name="collectingTripAttributeInteger4" type="java.lang.Integer" />
-        <field column="Integer 5 (CollectingTrip Attribute)" name="collectingTripAttributeInteger5" type="java.lang.Integer" />
-        <field column="Integer 6 (CollectingTrip Attribute)" name="collectingTripAttributeInteger6" type="java.lang.Integer" />
-        <field column="Integer 7 (CollectingTrip Attribute)" name="collectingTripAttributeInteger7" type="java.lang.Integer" />
-        <field column="Integer 8 (CollectingTrip Attribute)" name="collectingTripAttributeInteger8" type="java.lang.Integer" />
-        <field column="Integer 9 (CollectingTrip Attribute)" name="collectingTripAttributeInteger9" type="java.lang.Integer" />
-        <field column="Integer 10 (CollectingTrip Attribute)" name="collectingTripAttributeInteger10" type="java.lang.Integer" />
+  <table classname="edu.ku.brc.specify.datamodel.CollectingTripAttribute" table="collectingtripattribute" tableid="157" lazy="true" query="false">
+    <field column="Remarks (CollectingTrip Attribute)" name="collectingTripAttributeRemarks" type="java.lang.String" length="4096"/>    <field column="Integer 1 (CollectingTrip Attribute)" name="collectingTripAttributeInteger1" type="java.lang.Integer" />
+    <field column="Integer 1 (CollectingTrip Attribute)" name="collectingTrip AttributeInteger1" type="java.lang.Integer" />
+    <field column="Integer 2 (CollectingTrip Attribute)" name="collectingTripAttributeInteger2" type="java.lang.Integer" />
+    <field column="Integer 3 (CollectingTrip Attribute)" name="collectingTripAttributeInteger3" type="java.lang.Integer" />
+    <field column="Integer 4 (CollectingTrip Attribute)" name="collectingTripAttributeInteger4" type="java.lang.Integer" />
+    <field column="Integer 5 (CollectingTrip Attribute)" name="collectingTripAttributeInteger5" type="java.lang.Integer" />
+    <field column="Integer 6 (CollectingTrip Attribute)" name="collectingTripAttributeInteger6" type="java.lang.Integer" />
+    <field column="Integer 7 (CollectingTrip Attribute)" name="collectingTripAttributeInteger7" type="java.lang.Integer" />
+    <field column="Integer 8 (CollectingTrip Attribute)" name="collectingTripAttributeInteger8" type="java.lang.Integer" />
+    <field column="Integer 9 (CollectingTrip Attribute)" name="collectingTripAttributeInteger9" type="java.lang.Integer" />
+    <field column="Integer 10 (CollectingTrip Attribute)" name="collectingTripAttributeInteger10" type="java.lang.Integer" />
 
-        <field column="Number 1 (CollectingTrip Attribute)" name="collectingTripAttributeNumber1" type="java.lang.Float" length="24"/>
-        <field column="Number 2 (CollectingTrip Attribute)" name="collectingTripAttributeNumber2" type="java.lang.Float" length="24"/>
-        <field column="Number 3 (CollectingTrip Attribute)" name="collectingTripAttributeNumber3" type="java.lang.Float" length="24"/>
-        <field column="Number 4 (CollectingTrip Attribute)" name="collectingTripAttributeNumber4" type="java.lang.Float" length="24"/>
-        <field column="Number 5 (CollectingTrip Attribute)" name="collectingTripAttributeNumber5" type="java.lang.Float" length="24"/>
-        <field column="Number 6 (CollectingTrip Attribute)" name="collectingTripAttributeNumber6" type="java.lang.Float" length="24"/>
-        <field column="Number 7 (CollectingTrip Attribute)" name="collectingTripAttributeNumber7" type="java.lang.Float" length="24"/>
-        <field column="Number 8 (CollectingTrip Attribute)" name="collectingTripAttributeNumber8" type="java.lang.Float" length="24"/>
-        <field column="Number 9 (CollectingTrip Attribute)" name="collectingTripAttributeNumber9" type="java.lang.Float" length="24"/>
-        <field column="Number 10 (CollectingTrip Attribute)" name="collectingTripAttributeNumber10" type="java.lang.Float" length="24"/>
-        <field column="Number 11 (CollectingTrip Attribute)" name="collectingTripAttributeNumber11" type="java.lang.Float" length="24"/>
-        <field column="Number 12 (CollectingTrip Attribute)" name="collectingTripAttributeNumber12" type="java.lang.Float" length="24"/>
-        <field column="Number 13 (CollectingTrip Attribute)" name="collectingTripAttributeNumber13" type="java.lang.Float" length="24"/>
+    <field column="Number 1 (CollectingTrip Attribute)" name="collectingTripAttributeNumber1" type="java.lang.Float" length="24"/>
+    <field column="Number 2 (CollectingTrip Attribute)" name="collectingTripAttributeNumber2" type="java.lang.Float" length="24"/>
+    <field column="Number 3 (CollectingTrip Attribute)" name="collectingTripAttributeNumber3" type="java.lang.Float" length="24"/>
+    <field column="Number 4 (CollectingTrip Attribute)" name="collectingTripAttributeNumber4" type="java.lang.Float" length="24"/>
+    <field column="Number 5 (CollectingTrip Attribute)" name="collectingTripAttributeNumber5" type="java.lang.Float" length="24"/>
+    <field column="Number 6 (CollectingTrip Attribute)" name="collectingTripAttributeNumber6" type="java.lang.Float" length="24"/>
+    <field column="Number 7 (CollectingTrip Attribute)" name="collectingTripAttributeNumber7" type="java.lang.Float" length="24"/>
+    <field column="Number 8 (CollectingTrip Attribute)" name="collectingTripAttributeNumber8" type="java.lang.Float" length="24"/>
+    <field column="Number 9 (CollectingTrip Attribute)" name="collectingTripAttributeNumber9" type="java.lang.Float" length="24"/>
+    <field column="Number 10 (CollectingTrip Attribute)" name="collectingTripAttributeNumber10" type="java.lang.Float" length="24"/>
+    <field column="Number 11 (CollectingTrip Attribute)" name="collectingTripAttributeNumber11" type="java.lang.Float" length="24"/>
+    <field column="Number 12 (CollectingTrip Attribute)" name="collectingTripAttributeNumber12" type="java.lang.Float" length="24"/>
+    <field column="Number 13 (CollectingTrip Attribute)" name="collectingTripAttributeNumber13" type="java.lang.Float" length="24"/>
 
-        <field column="Text 1 (CollectingTrip Attribute)" name="collectingTripAttributeText1" type="java.lang.String" length="300"/>
-        <field column="Text 2 (CollectingTrip Attribute)" name="collectingTripAttributeText2" type="java.lang.String" length="300"/>
-        <field column="Text 3 (CollectingTrip Attribute)" name="collectingTripAttributeText3" type="java.lang.String" length="300"/>
-        <field column="Text 4 (CollectingTrip Attribute)" name="collectingTripAttributeText4" type="java.lang.String" length="100"/>
-        <field column="Text 5 (CollectingTrip Attribute)" name="collectingTripAttributeText5" type="java.lang.String" length="100"/>
-        <field column="Text 6 (CollectingTrip Attribute)" name="collectingTripAttributeText6" type="java.lang.String" length="50"/>
-        <field column="Text 7 (CollectingTrip Attribute)" name="collectingTripAttributeText7" type="java.lang.String" length="50"/>
-        <field column="Text 8 (CollectingTrip Attribute)" name="collectingTripAttributeText8" type="java.lang.String" length="50"/>
-        <field column="Text 9 (CollectingTrip Attribute)" name="collectingTripAttributeText9" type="java.lang.String" length="50"/>
-        <field column="Text 10 (CollectingTrip Attribute)" name="collectingTripAttributeText10" type="java.lang.String" length="50"/>
-        <field column="Text 11 (CollectingTrip Attribute)" name="collectingTripAttributeText11" type="java.lang.String" length="50"/>
-        <field column="Text 12 (CollectingTrip Attribute)" name="collectingTripAttributeText12" type="java.lang.String" length="50"/>
-        <field column="Text 13 (CollectingTrip Attribute)" name="collectingTripAttributeText13" type="java.lang.String" length="50"/>
-        <field column="Text 14 (CollectingTrip Attribute)" name="collectingTripAttributeText14" type="java.lang.String" length="50"/>
-        <field column="Text 15 (CollectingTrip Attribute)" name="collectingTripAttributeText15" type="java.lang.String" length="50"/>
-        <field column="Text 16 (CollectingTrip Attribute)" name="collectingTripAttributeText16" type="java.lang.String" length="50"/>
-        <field column="Text 17 (CollectingTrip Attribute)" name="collectingTripAttributeText17" type="java.lang.String" length="50"/>
+    <field column="Text 1 (CollectingTrip Attribute)" name="collectingTripAttributeText1" type="java.lang.String" length="300"/>
+    <field column="Text 2 (CollectingTrip Attribute)" name="collectingTripAttributeText2" type="java.lang.String" length="300"/>
+    <field column="Text 3 (CollectingTrip Attribute)" name="collectingTripAttributeText3" type="java.lang.String" length="300"/>
+    <field column="Text 4 (CollectingTrip Attribute)" name="collectingTripAttributeText4" type="java.lang.String" length="100"/>
+    <field column="Text 5 (CollectingTrip Attribute)" name="collectingTripAttributeText5" type="java.lang.String" length="100"/>
+    <field column="Text 6 (CollectingTrip Attribute)" name="collectingTripAttributeText6" type="java.lang.String" length="50"/>
+    <field column="Text 7 (CollectingTrip Attribute)" name="collectingTripAttributeText7" type="java.lang.String" length="50"/>
+    <field column="Text 8 (CollectingTrip Attribute)" name="collectingTripAttributeText8" type="java.lang.String" length="50"/>
+    <field column="Text 9 (CollectingTrip Attribute)" name="collectingTripAttributeText9" type="java.lang.String" length="50"/>
+    <field column="Text 10 (CollectingTrip Attribute)" name="collectingTripAttributeText10" type="java.lang.String" length="50"/>
+    <field column="Text 11 (CollectingTrip Attribute)" name="collectingTripAttributeText11" type="java.lang.String" length="50"/>
+    <field column="Text 12 (CollectingTrip Attribute)" name="collectingTripAttributeText12" type="java.lang.String" length="50"/>
+    <field column="Text 13 (CollectingTrip Attribute)" name="collectingTripAttributeText13" type="java.lang.String" length="50"/>
+    <field column="Text 14 (CollectingTrip Attribute)" name="collectingTripAttributeText14" type="java.lang.String" length="50"/>
+    <field column="Text 15 (CollectingTrip Attribute)" name="collectingTripAttributeText15" type="java.lang.String" length="50"/>
+    <field column="Text 16 (CollectingTrip Attribute)" name="collectingTripAttributeText16" type="java.lang.String" length="50"/>
+    <field column="Text 17 (CollectingTrip Attribute)" name="collectingTripAttributeText17" type="java.lang.String" length="50"/>
 
-        <field column="YesNo 1 (CollectingTrip Attribute)" name="collectingTripAttributeYesNo1" type="boolean"/>
-        <field column="YesNo 2 (CollectingTrip Attribute)" name="collectingTripAttributeYesNo2" type="boolean"/>
-        <field column="YesNo 3 (CollectingTrip Attribute)" name="collectingTripAttributeYesNo3" type="boolean"/>
-        <field column="YesNo 4 (CollectingTrip Attribute)" name="collectingTripAttributeYesNo4" type="boolean"/>
-        <field column="YesNo 5 (CollectingTrip Attribute)" name="collectingTripAttributeYesNo5" type="boolean"/>
-    </table>
+    <field column="YesNo 1 (CollectingTrip Attribute)" name="collectingTripAttributeYesNo1" type="boolean"/>
+    <field column="YesNo 2 (CollectingTrip Attribute)" name="collectingTripAttributeYesNo2" type="boolean"/>
+    <field column="YesNo 3 (CollectingTrip Attribute)" name="collectingTripAttributeYesNo3" type="boolean"/>
+    <field column="YesNo 4 (CollectingTrip Attribute)" name="collectingTripAttributeYesNo4" type="boolean"/>
+    <field column="YesNo 5 (CollectingTrip Attribute)" name="collectingTripAttributeYesNo5" type="boolean"/>
+  </table>
 
-    <table classname="edu.ku.brc.specify.datamodel.CollectionObject" table="collectionobject" tableid="1" lazy="true">
+  <table classname="edu.ku.brc.specify.datamodel.CollectionObject" table="collectionobject" tableid="1" lazy="true">
     <display objtitle="Collection Object" view="CollectionObject" dataobjformatter="CollectionObject"/>
     <field column="Cataloged Date" name="catalogedDate" type="calendar_date"/>
     <field column="Cataloged Date Verbatim" name="catalogedDateVerbatim" type="java.lang.String" length="32"/>
@@ -366,7 +370,6 @@
     <field column="YesNo 6 (Col. Obj. Attribute)" name="colObjAttributeYesNo6" type="boolean"/>
     <field column="YesNo 7 (Col. Obj. Attribute)" name="colObjAttributeYesNo7" type="boolean"/>
   </table>
-
 
   <table classname="edu.ku.brc.specify.datamodel.CollectionObjectProperty" table="collectionobjectproperty" tableid="153" lazy="true" >
 
@@ -519,7 +522,6 @@
       <field column="YesNo3" name="yesNo3" type="java.lang.Boolean" updatable="true" required="false" unique="false" indexed="false" partialDate="false"/>
   </table>
 
-  
   <table classname="edu.ku.brc.specify.datamodel.Determination" table="determination" tableid="9" lazy="true">
     <field column="Determined Date 1"       	name="determinedDate1" type="calendar_date"/>
     <field column="Determiner Last Name 1"  	name="determinerLastName1" type="java.lang.String" length="120"/>
@@ -722,7 +724,7 @@
 
   </table>
   
-   <table classname="edu.ku.brc.specify.datamodel.FieldNotebook" table="fieldnotebook" tableid="83" >
+  <table classname="edu.ku.brc.specify.datamodel.FieldNotebook" table="fieldnotebook" tableid="83" >
     <field column="Description" name="description" type="text" length="2048" />
     <field column="EndDate" name="endDate" type="java.util.Calendar" />
     <field column="Storage" name="location" type="java.lang.String" length="64" />
