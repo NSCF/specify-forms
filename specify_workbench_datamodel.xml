@@ -494,7 +494,7 @@
       <field column="YesNo3 2" name="yesNo32" type="java.lang.Boolean" updatable="true" required="false" unique="false" indexed="false" partialDate="false"/>
 
   </table>
- 
+  
   <table classname="edu.ku.brc.specify.datamodel.DNASequencingRun" table="dnasequencingrun" tableid="88" searchable="true" abbrv="dnar">
       <field column="Number1" name="number1" type="java.lang.Float" updatable="true" required="false" unique="false" indexed="false" partialDate="false"/>
       <field column="Number2" name="number2" type="java.lang.Float" updatable="true" required="false" unique="false" indexed="false" partialDate="false"/>
