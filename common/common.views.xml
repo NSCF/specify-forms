@@ -2247,6 +2247,10 @@
                     <cell type="label" labelfor="HostAge"/>
                     <cell type="field" id="HostAge" name="text4" uitype="text"  colspan="5"/>
                 </row>
+                <row>
+                    <cell type="label" labelfor="HostCertainty"/>
+                    <cell type="field" id="HostCertainty" name="text7" uitype="combobox"  colspan="5"/>
+                </row>
             </rows>
         </viewdef>
 
