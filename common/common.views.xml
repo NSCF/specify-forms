@@ -2122,13 +2122,13 @@
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="referenceWork" uitype="querycbx" initialize="name=ReferenceWork;title=ReferenceWork" colspan="5"/>
                     <cell type="label" labelfor="page"/>
-                    <cell type="field" id="page" name="PageNumber" uitype="text" />
+                    <cell type="field" id="page" name="pageNumber" uitype="text" />
                 </row>
                 <row>
                     <cell type="label" />
                     <cell type="field" id="isfigured" name="isFigured" uitype="checkbox" initialize="editable=true" colspan="5"/>
                     <cell type="label" labelfor="fignum" label="Fig. Num"/>
-                    <cell type="field" id="fignum" name="FigureNumber" uitype="text" />
+                    <cell type="field" id="fignum" name="figureNumber" uitype="text" />
                 </row>
                 <row>
                     <cell type="label" labelfor="1"/>
