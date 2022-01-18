@@ -2,8 +2,7 @@
 <viewset name="Global" i18nresname="global_views" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <views>
-        <view
-                name="GBIFCollection"
+        <view name="GBIFCollection"
                 class="java.util.Hashtable"
                 usedefbusrule="false"
                 resourcelabels="false">
@@ -13,18 +12,18 @@
                 <altview name="GBIFCollection Edit" viewdef="GBIFCollection" mode="edit"/>
             </altviews>
         </view>
+
         <view name="MailingAddress"
-              class="java.util.Hashtable"
-        >
+              class="java.util.Hashtable" >
             <desc><![CDATA[The  gbif collection mailingaddress form.]]></desc>
             <altviews>
                 <altview name="MailingAddress View" viewdef="MailingAddress" mode="view" validated="false" default="true"/>
                 <altview name="MailingAddress Edit" viewdef="MailingAddress" mode="edit" validated="false"/>
             </altviews>
         </view>
+
         <view name="Identifier"
-               class="java.util.Hashtable"
-        >
+               class="java.util.Hashtable" >
             <desc><![CDATA[The  gbif collection identifiers form.]]></desc>
             <altviews>
                 <altview name="Identifier View" viewdef="Identifier" mode="view" validated="false" default="true"/>
@@ -90,16 +89,16 @@
             </altviews>
         </view>
 
-       <view name="GroupPersons"
-            class="edu.ku.brc.specify.datamodel.GroupPerson"
-            busrules="edu.ku.brc.specify.datamodel.busrules.GroupPersonBusRules"
-            resourcelabels="false">
-            <desc><![CDATA[GroupPerson form.]]></desc>
-            <altviews>
-                <altview name="GroupPersons Table View" viewdef="GroupPersons Table"   mode="view"/>
-                <altview name="GroupPersons Table Edit" viewdef="GroupPersons Table"   mode="edit"/>
-            </altviews>
-       </view>
+        <view name="GroupPersons"
+                class="edu.ku.brc.specify.datamodel.GroupPerson"
+                busrules="edu.ku.brc.specify.datamodel.busrules.GroupPersonBusRules"
+                resourcelabels="false">
+                <desc><![CDATA[GroupPerson form.]]></desc>
+                <altviews>
+                    <altview name="GroupPersons Table View" viewdef="GroupPersons Table"   mode="view"/>
+                    <altview name="GroupPersons Table Edit" viewdef="GroupPersons Table"   mode="edit"/>
+                </altviews>
+        </view>
         
         <view name="GroupPerson"
             class="edu.ku.brc.specify.datamodel.GroupPerson"
@@ -241,14 +240,14 @@
             </altviews>
         </view>
 
-  		  <view name="ReportProperties"
-			      class="java.util.prefs.Preferences"
-			      useresourcelabels="false">
-			      <desc><![CDATA[Report Properties Form.]]></desc>
-			      <altviews>
-				        <altview name="Report Properties" viewdef="ReportProperties" label="Properties" mode="edit" validated="true"/>
-			      </altviews>
-		    </view>
+        <view name="ReportProperties"
+                class="java.util.prefs.Preferences"
+                useresourcelabels="false">
+                <desc><![CDATA[Report Properties Form.]]></desc>
+                <altviews>
+                    <altview name="Report Properties" viewdef="ReportProperties" label="Properties" mode="edit" validated="true"/>
+                </altviews>
+        </view>
 		
         <view name="Query"
             class="edu.ku.brc.specify.datamodel.SpQuery"
@@ -628,11 +627,12 @@
 -->
          
     <viewdefs>
-        <viewdef type="form"
-                 name="GBIFCollection"
-                 class="java.util.Hashtable"
-                 gettable="edu.ku.brc.af.ui.forms.DataGetterForHashMap"
-                 settable="edu.ku.brc.af.ui.forms.DataSetterForHashMap">
+
+        <viewdef name="GBIFCollection"
+            type="form"
+            class="java.util.Hashtable"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForHashMap"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForHashMap">
 
             <desc><![CDATA[GBIF Collection Registration Form]]></desc>
             <enableRules/>
@@ -676,9 +676,9 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="MailingAddress"
                 type="form"
-                name="MailingAddress"
+
                 class="java.util.Hashtable"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForHashMap"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForHashMap">
@@ -704,9 +704,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Identifier"
                 type="form"
-                name="Identifier"
                 class="java.util.Hashtable"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForHashMap"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForHashMap">
@@ -732,9 +731,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Address Table"
             type="formtable"
-            name="Address Table"
             class="edu.ku.brc.specify.datamodel.Address"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -836,9 +834,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="Agent"
             type="form"
-            name="Agent"
             class="edu.ku.brc.specify.datamodel.Agent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -929,9 +926,8 @@
                   </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AgentSpecialty Table"
             type="formtable"
-            name="AgentSpecialty Table"
             class="edu.ku.brc.specify.datamodel.AgentSpecialty"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -939,9 +935,8 @@
             <definition>Collectors</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AgentSpecialty"
             type="form"
-            name="AgentSpecialty"
             class="edu.ku.brc.specify.datamodel.AgentSpecialty"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -958,11 +953,9 @@
                 </row>
             </rows>
         </viewdef>
-        
-                
-        <viewdef
+
+        <viewdef name="AgentVariant Table"
             type="formtable"
-            name="AgentVariant Table"
             class="edu.ku.brc.specify.datamodel.AgentVariant"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -970,9 +963,8 @@
             <definition>AgentVariant</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="AgentVariant"
             type="form"
-            name="AgentVariant"
             class="edu.ku.brc.specify.datamodel.AgentVariant"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1013,9 +1005,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Organization"
             type="form"
-            name="Organization"
             class="edu.ku.brc.specify.datamodel.Agent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1040,8 +1031,7 @@
             </rows>
         </viewdef>
 
-        <viewdef
-            name="GroupPersons Table"
+        <viewdef name="GroupPersons Table"
             type="formtable"
             class="edu.ku.brc.specify.datamodel.GroupPerson"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -1050,9 +1040,8 @@
             <definition>GroupPersons</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="GroupPersons"
             type="form"
-            name="GroupPersons"
             class="edu.ku.brc.specify.datamodel.GroupPerson"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1092,9 +1081,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="GroupPerson"
             type="form"
-            name="GroupPerson"
             class="edu.ku.brc.specify.datamodel.GroupPerson"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2196,8 +2184,7 @@
             </rows>
         </viewdef>
         
-        <viewdef
-            name="Storage"
+        <viewdef name="Storage"
             type="form"
             class="edu.ku.brc.specify.datamodel.Storage"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
