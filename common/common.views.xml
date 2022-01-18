@@ -850,6 +850,18 @@
             </altviews>
         </view>
 
+        <view name="Storage"
+            class="edu.ku.brc.specify.datamodel.Storage"
+            busrules="edu.ku.brc.specify.datamodel.busrules.StorageBusRules"
+            isinternal="false"
+            resourcelabels="false">
+            <desc><![CDATA[Storage data entry form.]]></desc>
+            <altviews>
+                <altview name="Storage View" viewdef="Storage" mode="view"/>
+                <altview name="Storage Edit" viewdef="Storage" mode="edit" default="true"/>
+            </altviews>
+        </view>
+
         <view name="TaxonCitation"
             class="edu.ku.brc.specify.datamodel.TaxonCitation"
             resourcelabels="false">
@@ -4232,6 +4244,88 @@
                 <row>
                     <cell type="field" id="1" name="this" uitype="plugin" initialize="name=TaxonLabelFormatting;title=Taxon" colspan="3"/>
                 </row>
+            </rows>
+        </viewdef>
+
+        <viewdef name="Storage"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.Storage"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
+            useresourcelabels="true">
+            <desc><![CDATA[New Storage Node Form]]></desc>
+            <enableRules>
+                <rule id="definitionItem"><![CDATA[parent.getValue() != null]]></rule>
+             <!--   <rule id="acceptedParent"><![CDATA[!isAccepted.isSelected()]]></rule> -->
+            </enableRules>
+
+            <columnDef>100px,2px,355px,5px,120px,2px,253px,0px,15px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,375px,5px,130px,2px,288px,0px,15px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,458px,5px,145px,2px,290px,0px,15px,p:g</columnDef>
+            <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),0px,p,p:g</columnDef>
+            <rowDef auto="true" cell="p" sep="2dlu"/>
+
+            <rows>
+                <row>
+                    <cell type="label" labelfor="parent"/>
+                	<cell type="field" id="parent" uitype="querycbx" isrequired="true" initialize="name=Storage;title=Storage;editbtn=false;newbtn=false;editoncreate=true" name="parent"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="name"/>
+                    <cell type="field" id="name" uitype="text" name="name" isrequired="true"/> 
+                    <cell type="label" labelfor="definitionItem"/>
+                  	<cell type="field" id="definitionItem" uitype="combobox" name="definitionItem"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="combobox"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="remarks"/>
+                    <cell type="field" id="remarks" uitype="textareabrief" rows="2" name="remarks" colspan="6"/>
+                </row>
+                <row>
+                    <cell type="subview" viewname="StorageSubform" id="children" name="children" colspan="9"/>
+                </row>
+		            <row>
+			              <cell type="separator" label="ATTACHMENTS" colspan="10"/>
+                </row>
+                <row>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="storageAttachments" colspan="10" initialize="btn=true;icon=StorageAttachment"/>
+                </row>
+                <!-- <row>
+                    <cell type="label" labelfor="abb"/>
+                    <cell type="field" id="abb" name="abbrev" uitype="text"/>
+                </row>
+                <row>
+                	<cell type="label" labelfor="fullName"/>
+                	<cell type="field" id="fullName"  uitype="text" name="fullName" colspan="3" readonly="true"/>
+                </row>
+                <row>
+                    <cell type="field" id="ia" name="isAccepted" uitype="checkbox" initialize="editable=true"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="n1"/>
+                    <cell type="field" id="n1" name="number1" uitype="text"/>
+                    <cell type="label" labelfor="n2"/>
+                    <cell type="field" id="n2" name="number2" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="t2"/>
+                    <cell type="field" id="t2" name="text2" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
+                    <cell type="label" labelfor="12"/>
+                    <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
+                </row>-->
             </rows>
         </viewdef>
         

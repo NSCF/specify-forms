@@ -2226,7 +2226,7 @@
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="storageAttachments" colspan="10" initialize="btn=true;icon=StorageAttachment"/>
                 </row>
-                <!--<row>
+                <!-- <row>
                     <cell type="label" labelfor="abb"/>
                     <cell type="field" id="abb" name="abbrev" uitype="text"/>
                 </row>
