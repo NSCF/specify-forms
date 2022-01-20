@@ -1547,6 +1547,10 @@
                     -->
                 </row>
                 <row>
+                    <cell type="label" labelfor="11" />
+                    <cell type="field" id="11" name="guid" uitype="text" colspan="5"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="8"/>
                     <cell type="field" id="8" name="abbreviation" uitype="text"/>
                     <cell type="label" labelfor="7"/>
