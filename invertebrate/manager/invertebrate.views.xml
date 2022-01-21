@@ -420,7 +420,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="methd"/>
-                    <cell type="field" id="methd" name="method" uitype="text"/>
+                    <cell type="field" id="methd" name="method" uitype="combobox"/>
                     <cell type="label" labelfor="refused4"/>
                     <cell type="field" id="refused4" name="text2" uitype="text" colspan="6"/>            
                 </row>
