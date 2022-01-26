@@ -798,12 +798,12 @@
                     <cell type="field" id="t3" name="text3" uitype="text" colspan="8"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="t4"/>
+                    <!-- <cell type="label" labelfor="t4"/>
                     <cell type="field" id="t4" name="text4" uitype="combobox"/>
                     <cell type="label" labelfor="t5"/>
-                    <cell type="field" id="t5" name="text5" uitype="combobox"/>
+                    <cell type="field" id="t5" name="text5" uitype="combobox"/> -->
                     <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="countAmt" uitype="text" colspan="3"/>
+                    <cell type="field" id="3" name="countAmt" uitype="text" colspan="12"/>
                 </row>
                 <row>
 				    <cell type="label" labelfor="storagedetailsspace1"/>
