@@ -88,34 +88,42 @@
     <field column="Collector Last Name 1"  name="collectorLastName1" type="java.lang.String" length="120"/>
     <field column="Collector Middle Initials 1" name="collectorMiddle1" type="java.lang.String" length="50"/>
     <field column="Collector Title 1"  name="collectorTitle1" type="java.lang.String" length="50"/>
+    <field column="Collector Initials 1" name="collectorInitials1" type="java.lang.String" length="50"/>
     <field column="Collector First Name 2" name="collectorFirstName2" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 2"  name="collectorLastName2" type="java.lang.String" length="120"/>
     <field column="Collector Middle Initials 2" name="collectorMiddle2" type="java.lang.String" length="50"/>
     <field column="Collector Title 2"  name="collectorTitle2" type="java.lang.String" length="50"/>
+    <field column="Collector Initials 2" name="collectorInitials2" type="java.lang.String" length="50"/>
     <field column="Collector First Name 3" name="collectorFirstName3" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 3"  name="collectorLastName3" type="java.lang.String" length="120"/>
     <field column="Collector Middle Initials 3" name="collectorMiddle3" type="java.lang.String" length="50"/>
     <field column="Collector Title 3"  name="collectorTitle3" type="java.lang.String" length="50"/>
+    <field column="Collector Initials 3" name="collectorInitials3" type="java.lang.String" length="50"/>
     <field column="Collector First Name 4" name="collectorFirstName4" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 4"  name="collectorLastName4" type="java.lang.String" length="120"/>
     <field column="Collector Middle Initials 4" name="collectorMiddle4" type="java.lang.String" length="50"/>
     <field column="Collector Title 4"  name="collectorTitle4" type="java.lang.String" length="50"/>
+    <field column="Collector Initials 4" name="collectorInitials4" type="java.lang.String" length="50"/>
     <field column="Collector First Name 5" name="collectorFirstName5" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 5"  name="collectorLastName5" type="java.lang.String" length="120"/>
     <field column="Collector Middle Initials 5" name="collectorMiddle5" type="java.lang.String" length="50"/>
     <field column="Collector Title 5"  name="collectorTitle5" type="java.lang.String" length="50"/>
+    <field column="Collector Initials 5" name="collectorInitials5" type="java.lang.String" length="50"/>
     <field column="Collector First Name 6" name="collectorFirstName6" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 6"  name="collectorLastName6" type="java.lang.String" length="120"/>
     <field column="Collector Middle Initials 6" name="collectorMiddle6" type="java.lang.String" length="50"/>
     <field column="Collector Title 6"  name="collectorTitle6" type="java.lang.String" length="50"/>
+    <field column="Collector Initials 6" name="collectorInitials6" type="java.lang.String" length="50"/>
     <field column="Collector First Name 7" name="collectorFirstName7" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 7"  name="collectorLastName7" type="java.lang.String" length="120"/>
     <field column="Collector Middle Initials 7" name="collectorMiddle7" type="java.lang.String" length="50"/>
     <field column="Collector Title 7"  name="collectorTitle7" type="java.lang.String" length="50"/>
+    <field column="Collector Initials 7" name="collectorInitials7" type="java.lang.String" length="50"/>
     <field column="Collector First Name 8" name="collectorFirstName8" type="java.lang.String" length="50"/>
     <field column="Collector Last Name 8"  name="collectorLastName8" type="java.lang.String" length="120"/>
     <field column="Collector Middle Initials 8" name="collectorMiddle8" type="java.lang.String" length="50"/>
     <field column="Collector Title 8"  name="collectorTitle8" type="java.lang.String" length="50"/>
+    <field column="Collector Initials 8" name="collectorInitials8" type="java.lang.String" length="50"/>
     <field column="Permit 1" name="cePermit1" type="java.lang.String" length="64"/>
     <field column="Permit 2" name="cePermit2" type="java.lang.String" length="64"/>
     <field column="Permit 3" name="cePermit3" type="java.lang.String" length="64"/>
