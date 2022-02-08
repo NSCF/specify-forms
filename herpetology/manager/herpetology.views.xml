@@ -458,7 +458,7 @@
             <desc><![CDATA[Preparation subform table for Collection Object form.]]></desc>
             <definition>Preparation</definition>
         </viewdef>
-                
+               
         <viewdef name="Preparation"
             type="form"
             class="edu.ku.brc.specify.datamodel.Preparation"
