@@ -170,6 +170,19 @@
                     <!--<cell type="label" labelfor="proj"/>
                     <cell type="field" id="proj" name="project" uitype="querycbx" initialize="name=ProjectSub;title=ProjectSub" isrequired="false"/ >-->
                 </row>
+
+                <row>
+                    <cell type="label" labelfor="fn"/>
+                    <cell type="field" id="fn" name="fieldNumber" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="inventorizedBy"/>
+                    <cell type="field" id="inventorizedBy" name="inventorizedBy" uitype="querycbx" initialize="name=Agent;title=Inv. by" />
+                    <cell type="label" labelfor="InventoryDate"/>
+                    <cell type="field" id="InventoryDate"  uitype="plugin" name="this" initialize="name=PartialDateUI;df=InventoryDate;tp=InventoryDatePrecision" uifieldformatter="Date"/>
+                    <cell type="label" />
+                    <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
+                </row>
 	
                 <row>
                     <cell type="label" labelfor="COrem"/>
