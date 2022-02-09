@@ -248,6 +248,7 @@
   <table classname="edu.ku.brc.specify.datamodel.CollectionObject" table="collectionobject" tableid="1" lazy="true">
     <display objtitle="Collection Object" view="CollectionObject" dataobjformatter="CollectionObject"/>
     <field column="Cataloged Date" name="catalogedDate" type="calendar_date"/>
+    <field column="Submitted Date" name="date1" type="calendar_date"/>
     <field column="Cataloged Date Verbatim" name="catalogedDateVerbatim" type="java.lang.String" length="32"/>
     <field column="Catalog Number" name="catalogNumber" type="java.lang.String" length="32"/>
     <field column="Alternate Catalog Number" name="altCatalogNumber" type="java.lang.String" length="32"/>
