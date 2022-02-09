@@ -2464,20 +2464,32 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" name="agent.firstName" uitype="text" colspan="3"/>
+                    <cell type="field" id="5" name="agent.initials" uitype="text" colspan="3"/>
                 </row>
+                <row>
+                    <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" name="agent.firstname" uitype="text" colspan="3"/>
+                </row>
+                <!-- <row>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="agent.lastName" uitype="text" colspan="3"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" name="agent.firstName" uitype="text" colspan="3"/>
+                </row> -->
                 <!-- <row>
                     <cell type="label" labelfor="init"/>
                     <cell type="field" id="init" name="agent.middleInitial" uitype="text" colspan="3"/>
                 </row> -->
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="title"/>
                     <cell type="field" id="title" name="agent.title" uitype="text" colspan="3"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="remarks" uitype="text" colspan="3"/>
-                </row>
+                </row> -->
             </rows>
         </viewdef>
 
