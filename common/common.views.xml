@@ -197,6 +197,18 @@
                 <altview name="CollectingEventSubform View" viewdef="CollectingEventSubform" mode="view" default="true"/>
                 <altview name="CollectingEventSubform Edit" viewdef="CollectingEventSubform" mode="edit"/>
             </altviews>
+        </view>
+
+        <view name="CollectingEventAuthorization"
+            objtitle="Accession Authorization"
+            class="edu.ku.brc.specify.datamodel.CollectingEventAuthorization"
+            busrules="edu.ku.brc.specify.datamodel.busrules.AccessionAuthorizationBusRules"
+            resourcelabels="false">
+            <desc><![CDATA[Permit subform within the Accession form.]]></desc>
+            <altviews>
+                <altview name="CollectingEventAuthorization View" viewdef="CollectingEventAuthorization" mode="view" default="true"/>
+                <altview name="CollectingEventAuthorization Edit" viewdef="CollectingEventAuthorization" mode="edit"/>
+            </altviews>
         </view>            
 
 		<view name="CollectingTrip"
