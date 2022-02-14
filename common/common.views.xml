@@ -5096,7 +5096,8 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[LocalityDetail subform for Locality]]></desc>
             
-            <columnDef>100px,2px,100px,5px,80px,2px,120px,5px,120px,2px,140px,5px,90px,2px,1px,p:g</columnDef>
+            <columnDef>100px,2px,140px,5px,80px,2px,120px,5px,120px,2px,140px,5px,90px,2px,1px,p:g</columnDef>
+            <!-- <columnDef>100px,2px,100px,5px,80px,2px,120px,5px,120px,2px,140px,5px,90px,2px,1px,p:g</columnDef> -->
             <!--columnDef>100px,2px,100px,5px,80px,2px,120px,5px,65px,2px,116px,5px,105px,2px,118px,p:g</columnDef-->
             <columnDef os="lnx">113px,2px,125px,5px,90px,2px,125px,5px,89px,2px,115px,5px,120px,2px,115px,0px,p:g</columnDef>
             <columnDef os="mac">130px,2px,120px,5px,116px,2px,140px,5px,117px,2px,120px,5px,146px,2px,120px,p:g</columnDef>
