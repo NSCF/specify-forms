@@ -301,8 +301,10 @@
                 <row>
                     <cell type="label"/>
                     <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
-                    <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="t2" name="text2" uitype="text" colspan="6"/>
+                    <cell type="label" labelfor="date1"/>
+                    <cell type="field" id="date1" name="date1" uitype="formattedtext" uifieldformatter="Date"/>
+                    <!-- <cell type="label" labelfor="t2"/>
+                    <cell type="field" id="t2" name="text2" uitype="text" colspan="6"/> -->
                     <!-- <cell type="label" labelfor="SortingStatus"/>
                     <cell type="field" id="SortingStatus" name="name" uitype="text" colspan="2"/> -->
                 </row>
