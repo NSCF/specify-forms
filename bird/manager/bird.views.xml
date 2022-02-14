@@ -117,9 +117,8 @@
     
     <viewdefs>
         
-        <viewdef
+        <viewdef name="Collection Object"
             type="form"
-            name="Collection Object"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -312,9 +311,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="Determination Table"
             type="formtable"
-            name="Determination Table"
             class="edu.ku.brc.specify.datamodel.Determination"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -323,8 +321,7 @@
             <definition>Determination</definition>
         </viewdef>
         
-        <viewdef
-            name="Determination"
+        <viewdef name="Determination"
             type="form"
             class="edu.ku.brc.specify.datamodel.Determination"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -416,9 +413,8 @@
             </rows>           
         </viewdef>
                 
-        <viewdef
+        <viewdef name="CollectingEventSub"
             type="form"
-            name="CollectingEventSub"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -461,9 +457,8 @@
             </rows>
         </viewdef>        
 
-        <viewdef
+        <viewdef name="CollectingEvent"
             type="form"
-            name="CollectingEvent"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -546,9 +541,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="BirdAttributes"
             type="form"
-            name="BirdAttributes"
             class="edu.ku.brc.specify.datamodel.CollectionObjectAttribute"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -733,9 +727,8 @@
             </rows>
         </viewdef>
                  
-        <viewdef
+        <viewdef name="Preparation Table"
             type="formtable"
-            name="Preparation Table"
             class="edu.ku.brc.specify.datamodel.Preparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -743,9 +736,8 @@
             <definition>Preparation</definition>
         </viewdef>
                 
-        <viewdef
+        <viewdef name="Preparation"
             type="form"
-            name="Preparation"
             class="edu.ku.brc.specify.datamodel.Preparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
@@ -834,9 +826,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="AccessionItems Table"
             type="formtable"
-            name="AccessionItems Table"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -844,9 +835,8 @@
             <definition>AccessionItems</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="AccessionItems"
             type="form"
-            name="AccessionItems"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -873,9 +863,8 @@
            </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectionObjectSub Table"
             type="formtable"
-            name="CollectionObjectSub Table"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -883,9 +872,8 @@
             <definition>CollectionObjectSub</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectionObjectSub"
             type="form"
-            name="CollectionObjectSub"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
