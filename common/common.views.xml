@@ -4134,7 +4134,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="source" />
-                    <cell type="field" id="source" name="source" uitype="text" colspan="10"/>
+                    <cell type="field" id="source" name="source" uitype="text" colspan="9"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="1"/>
@@ -4145,7 +4145,7 @@
                 
                 <row>
                     <cell type="label" labelfor="10"/>
-                    <cell type="field" id="10" name="text1" uitype="textareabrief" rows="2" colspan="10"/>
+                    <cell type="field" id="10" name="text1" uitype="textareabrief" rows="2" colspan="9"/>
                 </row>
                 <row>
                     <!-- <cell type="label" labelfor="4"/>
