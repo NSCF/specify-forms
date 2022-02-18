@@ -97,6 +97,21 @@
             <altviews>
                 <altview name="Determination View"       viewdef="Determination" mode="view" default="true"/>
             </altviews>
+       
+       
+       
+        <view name="Locality"
+
+        		
+            class="edu.ku.brc.specify.datamodel.Locality"
+            busrules="edu.ku.brc.specify.datamodel.busrules.LocalityBusRules"
+            isinternal="false"
+            >
+            <desc><![CDATA[Locality form.]]></desc>
+            <altviews>
+                <altview name="Locality View" viewdef="Locality" mode="view"/>
+                <altview name="Locality Edit" viewdef="Locality" mode="edit" default="true"/>
+            </altviews>
         </view>
 
         <view name="Preparation"
@@ -111,6 +126,7 @@
                 <altview name="Preparation Edit" viewdef="Preparation" mode="edit" default="true"/>
             </altviews>
         </view>
+
         
     </views>
     
@@ -771,6 +787,160 @@
                     <cell type="field" id="yn5" name="yesNo5" uitype="checkbox" initialize="editable=true"/>
                     <cell type="field" id="yn6" name="yesNo6" uitype="checkbox" initialize="editable=true"/>
                     <cell type="field" id="yn7" name="yesNo7" uitype="checkbox" initialize="editable=true"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
+                    <cell type="label" labelfor="12"/>
+                    <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
+                </row>-->
+            </rows>
+        </viewdef>
+
+        <viewdef name="Locality"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.Locality"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[Locality]]></desc>
+            
+            <columnDef>120px,2px,190px,5px,120px,2px,150px,5px,125px,2px,126px,5px,105px,2px,70px,0px,15px,p:g</columnDef>
+            <!--columnDef>100px,2px,90px,5px,90px,2px,90px,5px,105px,2px,126px,5px,105px,2px,98px,0px,15px,p:g</columnDef-->
+            <columnDef os="lnx">115px,2px,120px,5px,94px,2px,100px,5px,115px,2px,110px,5px,125px,2px,115px,0px,15px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,120px,5px,116px,2px,120px,5px,137px,2px,120px,5px,146px,2px,120px,0px,15px,p:g</columnDef>
+            <columnDef os="exp">p,2px,p:g(3),5px:g,p,2px,p:g(3),5px:g,p,2px,p:g(3),5px:g,p,2px,p:g(3),0px,p,p:g</columnDef>
+            <rowDef auto="true" cell="p" sep="2dlu"/>
+            <enableRules>
+                <rule id="georef"><![CDATA[localityName.isNotEmpty() && geography.isNotEmpty()]]></rule>
+            </enableRules>
+            
+            <rows>
+                <row>
+                    <cell type="label" labelfor="geography"/>
+                    <cell type="field" id="geography" name="geography" uitype="querycbx" initialize="name=Geography" colspan="12"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="localityName"/>
+                    <cell type="field" id="localityName" name="localityName" uitype="text" colspan="12"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="namedPl"/>
+                    <cell type="field" id="namedPl" name="namedPlace" uitype="text" />                 
+                    <cell type="label" labelfor="rel2NP"/>
+                    <cell type="field" id="rel2NP" name="relationToNamedPlace" uitype="text" colspan="7"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="elevationMethod"/>
+                    <cell type="field" id="elevationMethod" name="elevationMethod" uitype="text" colspan="5"/>
+                </row>
+                <!--<row>
+                    <cell type="label" labelfor="text1"/>
+                    <cell type="field" id="text1" name="text1" uitype="text" colspan="12"/>
+                    <cell type="field" id="text1" name="text1" uitype="text" readonly="true" colspan="12"/>
+                </row> -->
+                <row>
+                    <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" name="this" uitype="plugin" initialize="name=LatLonUI" colspan="11"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="6"/>
+                    <cell type="field" id="6" name="latLongMethod" uitype="combobox"/>
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="datum" uitype="combobox" picklist="Datum2"/>
+                    <cell type="label" labelfor="precision"/>
+                    <cell type="field" id="precision" name="shortName" uitype="text" />               
+                </row>
+                <row>
+                   
+                </row>
+                             
+
+                <row>    
+                    <cell type="label" labelfor="rems"/>
+                	<cell type="field" id="rems" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
+                </row>
+
+                  <row>
+                    <cell type="separator" label="Elevation" colspan="17"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="minElevation" uitype="text"/>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="maxElevation" uitype="text"/>
+                    <cell type="label" labelfor="verbElev"/>
+                    <cell type="field" id="verbElev" name="verbatimElevation" uitype="text" colspan="4"/>
+                    <!--<cell type="field" id="11" name="elevationMethod" uitype="text"/>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="elevationAccuracy" uitype="text"/> -->
+                </row>           
+
+                <row>  
+                    <cell type="subview" id="7" name="geoCoordDetails" viewname="GeoCoordDetail" colspan="17"/> 
+                </row>
+                <row>
+                    <!-- <cell type="subview" id="8" name="localityDetails" viewname="LocalityDetail" colspan="17"/>  -->
+                </row>
+                
+                <row>
+                    <cell type="separator" label="Plugins" colspan="17"/>
+                </row>
+                <row>
+                    <cell type="panel" id="outerPanel" name="outerPanel" coldef="p,f:p:g,p,f:p:g,p,f:p:g,p,f:p:g" rowdef="p" colspan="12">
+                        <rows>
+                            <row>
+                                <cell type="label" label=" "/>
+                                <cell type="field" id="georef" name="this" uitype="plugin" initialize="name=LocalityGeoRef;title=Geo Ref;geoid=geography;locid=localityName;llid=5" colspan="1"/>
+                                <cell type="field" id="ww" name="this" uitype="plugin" initialize="name=LocalityWorldWind;title=World Wind;watch=5" colspan="1"/>
+                                <cell type="field" id="ge" name="this" uitype="plugin" initialize="name=LocalityGoogleEarth;title=Google Earth;watch=5" colspan="1"/>
+                            </row>
+                        </rows>
+                    </cell>
+                </row>
+                <row>
+                    <cell type="separator" label="Attachments" colspan="17"/>
+                </row>
+                <row>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="localityAttachments" colspan="17" initialize="btn=true;icon=LocalityAttachment"/>
+                </row>
+                <!--<row>
+                    <cell type="subview" id="10" viewname="LocalityCitation" name="localityCitations" colspan="12"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="gml"/>
+                    <cell type="field" id="gml" name="gml" uitype="text"/>
+                    <cell type="label" labelfor="guid"/>
+                    <cell type="field" id="guid" name="guid" uitype="text"/>
+                    <cell type="label" labelfor="lla"/>
+                    <cell type="field" id="lla" name="latLongAccuracy" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="np"/>
+                    <cell type="field" id="np" name="namedPlace" uitype="text"/>
+                    <cell type="label" labelfor="rnp"/>
+                    <cell type="field" id="rnp" name="relationToNamedPlace" uitype="text"/>
+                    <cell type="label" labelfor="oeu"/>
+                    <cell type="field" id="oeu" name="originalElevationUnit" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="rem"/>
+                    <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="14"/>
+                    <cell type="label" labelfor="sn"/>
+                    <cell type="field" id="sn" name="shortName" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="text"/>
+                    <cell type="label" labelfor="t2"/>
+                    <cell type="field" id="t2" name="text2" uitype="text"/>
+                    <cell type="label" labelfor="ve"/>
+                    <cell type="field" id="ve" name="verbatimElevation" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="9"/>
