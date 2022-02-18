@@ -99,6 +99,16 @@
             </altviews>
         </view>
 
+        <view name="LocalityDetail"
+            class="edu.ku.brc.specify.datamodel.LocalityDetail"
+            >
+            <desc><![CDATA[LocalityDetail form.]]></desc>
+            <altviews>
+                <altview name="LocalityDetail View" viewdef="LocalityDetail" mode="view"/>
+                <altview name="LocalityDetail Edit" viewdef="LocalityDetail" mode="edit" default="true"/>
+            </altviews>
+        </view>
+
         <view name="Preparation"
               class="edu.ku.brc.specify.datamodel.Preparation"
               busrules="edu.ku.brc.specify.datamodel.busrules.PreparationBusRules"
@@ -126,8 +136,9 @@
             <desc><![CDATA[The Collection Object form.]]></desc>
             <enableRules/>
             
-            
-            <columnDef>100px,2px,195px,5px,96px,2px,50px,10px,170px,5px,94px,2px,176px,15px,p:g</columnDef>
+            <columnDef>100px,2px,5px,5px,96px,2px,50px,10px,170px,5px,94px,2px,176px,15px,p:g</columnDef>
+            <!-- <columnDef>100px,2px,225px,5px,91px,2px,210px,5px,94px,2px,106px,15px,p:g</columnDef> -->
+            <!-- <columnDef>100px,2px,195px,5px,96px,2px,50px,10px,170px,5px,94px,2px,176px,15px,p:g</columnDef> -->
             <columnDef os="lnx">115px,2px,195px,5px,125px,2px,60px,10px,140px,5px,125px,2px,181px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,215px,5px,128px,2px,105px,10px,145px,5px,138px,2px,195px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,min(p;250px),5px:g,p,2px,p:g(2),10px,p:g(2),5px:g,p,2px,p:g,p,p:g</columnDef>
