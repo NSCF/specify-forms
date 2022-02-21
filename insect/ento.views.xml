@@ -51,18 +51,18 @@
             </altviews>
         </view>
         
-         <view name="CollectionObjectSub"
-              class="edu.ku.brc.specify.datamodel.CollectionObject"
-              usedefbusrule="false"
-              resourcelabels="false">
-              <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
-              <altviews>
-                  <altview name="COS View"       viewdef="CollectionObjectSub" mode="view"/>
-                  <altview name="COS Edit"       viewdef="CollectionObjectSub" mode="edit" default="true"/>
-                  <!-- <altview name="COS Table Edit" viewdef="CollectionObjectSub Table" mode="edit"/>
-                  <altview name="COS Table View" viewdef="CollectionObjectSub Table" mode="view"/>  -->
-              </altviews>      
-         </view>
+        <view name="CollectionObjectSub"
+            class="edu.ku.brc.specify.datamodel.CollectionObject"
+            usedefbusrule="false"
+            resourcelabels="false">
+            <desc><![CDATA[The Collection Object Subform for Accessions.]]></desc>
+            <altviews>
+                <altview name="COS View"       viewdef="CollectionObjectSub" mode="view"/>
+                <altview name="COS Edit"       viewdef="CollectionObjectSub" mode="edit" default="true"/>
+                <!-- <altview name="COS Table Edit" viewdef="CollectionObjectSub Table" mode="edit"/>
+                <altview name="COS Table View" viewdef="CollectionObjectSub Table" mode="view"/>  -->
+            </altviews>      
+        </view>
 
         <view name="Determination"
               class="edu.ku.brc.specify.datamodel.Determination"
