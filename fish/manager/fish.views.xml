@@ -134,7 +134,8 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Collection Object form.]]></desc>
             <enableRules/>
-            
+
+            <!-- <columnDef>100px,2px,195px,5px,96px,2px,210px,5px,94px,2px,116px,15px,p:g</columnDef> -->
             <!-- <columnDef>100px,2px,225px,5px,91px,2px,210px,5px,94px,2px,106px,15px,p:g</columnDef> -->
             <columnDef>100px,2px,195px,5px,96px,2px,50px,10px,150px,5px,94px,2px,176px,15px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,195px,5px,125px,2px,60px,10px,140px,5px,125px,2px,181px,15px,p:g</columnDef>
