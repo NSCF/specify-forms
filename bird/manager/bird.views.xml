@@ -1209,6 +1209,9 @@
                     <cell type="field" id="t6" name="text6" uitype="text"/>
                     <cell type="label"/>
                     <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true" colspan="1"/>
+                    <!-- <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/> -->
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="7"/>
@@ -1219,9 +1222,7 @@
 					<cell type="field" id="ti" name="actualCountAmt" uitype="text" readonly="true"/>
                 </row>
                 <row>
-                    <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true" colspan="1"/>
-                    <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
+                    
                 </row>
                 <row>
                     <cell type="label" labelfor="2"/>
