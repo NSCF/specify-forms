@@ -1340,9 +1340,8 @@
 
     <viewdefs>
 
-        <viewdef
+        <viewdef name="Accession"
                 type="form"
-                name="Accession"
                 class="edu.ku.brc.specify.datamodel.Accession"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1468,9 +1467,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AccessionCO"
                 type="form"
-                name="AccessionCO"
                 class="edu.ku.brc.specify.datamodel.Accession"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1528,9 +1526,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AccessionDeaccession Table"
                 type="formtable"
-                name="AccessionDeaccession Table"
                 class="edu.ku.brc.specify.datamodel.Accession"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1538,9 +1535,8 @@
             <definition>AccessionDeaccession</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AccessionDeaccession"
                 type="form"
-                name="AccessionDeaccession"
                 class="edu.ku.brc.specify.datamodel.Accession"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1569,9 +1565,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AccessionAgent Table"
                 type="formtable"
-                name="AccessionAgent Table"
                 class="edu.ku.brc.specify.datamodel.AccessionAgent"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1579,9 +1574,8 @@
             <definition>AccessionAgent</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AccessionAgent"
                 type="form"
-                name="AccessionAgent"
                 class="edu.ku.brc.specify.datamodel.AccessionAgent"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1620,9 +1614,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AccessionAuthorization"
                 type="form"
-                name="AccessionAuthorization"
                 class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1660,9 +1653,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AccessionItems Table"
                 type="formtable"
-                name="AccessionItems Table"
                 class="edu.ku.brc.specify.datamodel.CollectionObject"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
@@ -1672,9 +1664,8 @@
             <definition>AccessionItems</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AccessionItems"
                 type="form"
-                name="AccessionItems"
                 class="edu.ku.brc.specify.datamodel.CollectionObject"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
@@ -1703,9 +1694,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="AddressOfRecord"
                 type="form"
-                name="AddressOfRecord"
                 class="edu.ku.brc.specify.datamodel.AddressOfRecord"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1757,9 +1747,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Appraisal"
                 type="form"
-                name="Appraisal"
                 class="edu.ku.brc.specify.datamodel.Appraisal"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1809,9 +1798,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Borrow"
                 type="form"
-                name="Borrow"
                 class="edu.ku.brc.specify.datamodel.Borrow"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1897,9 +1885,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="BorrowAgent Table"
                 type="formtable"
-                name="BorrowAgent Table"
                 class="edu.ku.brc.specify.datamodel.BorrowAgent"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1908,9 +1895,8 @@
             <definition>BorrowAgent</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="BorrowAgent"
                 type="form"
-                name="BorrowAgent"
                 class="edu.ku.brc.specify.datamodel.BorrowAgent"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1949,9 +1935,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="BorrowMaterial Table"
                 type="formtable"
-                name="BorrowMaterial Table"
                 class="edu.ku.brc.specify.datamodel.BorrowMaterial"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1960,9 +1945,8 @@
             <definition>BorrowMaterial</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="BorrowMaterial"
                 type="form"
-                name="BorrowMaterial"
                 class="edu.ku.brc.specify.datamodel.BorrowMaterial"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2013,9 +1997,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="BorrowReturnMaterial Table"
                 type="formtable"
-                name="BorrowReturnMaterial Table"
                 class="edu.ku.brc.specify.datamodel.BorrowReturnMaterial"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2024,9 +2007,8 @@
             <definition>BorrowReturnMaterial</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="BorrowReturnMaterial"
                 type="form"
-                name="BorrowReturnMaterial"
                 class="edu.ku.brc.specify.datamodel.BorrowReturnMaterial"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2064,9 +2046,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectingEventSubform"
                 type="form"
-                name="CollectingEventSubform"
                 class="edu.ku.brc.specify.datamodel.CollectingEvent"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2090,9 +2071,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectingTrip"
                 type="form"
-                name="CollectingTrip"
                 class="edu.ku.brc.specify.datamodel.CollectingTrip"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2133,9 +2113,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectingTripForm"
                 type="form"
-                name="CollectingTripForm"
                 class="edu.ku.brc.specify.datamodel.CollectingTrip"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2205,9 +2184,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectionObjectProperty Table"
                 type="formtable"
-                name="CollectionObjectProperty Table"
                 class="edu.ku.brc.specify.datamodel.CollectionObjectProperty"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2216,9 +2194,8 @@
             <definition>CollectionObjectProperty</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectionObjectProperty"
                 type="form"
-                name="CollectionObjectProperty"
                 class="edu.ku.brc.specify.datamodel.CollectionObjectProperty"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2361,9 +2338,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Collector"
                 type="form"
-                name="Collector"
                 class="edu.ku.brc.specify.datamodel.Collector"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2405,9 +2381,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Collectors Table"
                 type="formtable"
-                name="Collectors Table"
                 class="edu.ku.brc.specify.datamodel.Collector"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2415,18 +2390,16 @@
             <definition>Collectors</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectorsIconView"
                 type="iconview"
-                name="CollectorsIconView"
                 class="edu.ku.brc.specify.datamodel.Collector"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Collectors Icon Viewer]]></desc>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Collectors"
                 type="form"
-                name="Collectors"
                 class="edu.ku.brc.specify.datamodel.Collector"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2452,9 +2425,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectionObjectCitation"
                 type="form"
-                name="CollectionObjectCitation"
                 class="edu.ku.brc.specify.datamodel.CollectionObjectCitation"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2491,9 +2463,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Collection Object Search"
                 type="form"
-                name="Collection Object Search"
                 class="java.util.Hashtable"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForHashMap"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForHashMap">
@@ -2522,9 +2493,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectionObjectSub Table"
                 type="formtable"
-                name="CollectionObjectSub Table"
                 class="edu.ku.brc.specify.datamodel.CollectionObject"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2533,9 +2503,8 @@
             <definition>CollectionObjectSub</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CollectionObjectSub"
                 type="form"
-                name="CollectionObjectSub"
                 class="edu.ku.brc.specify.datamodel.CollectionObject"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2562,9 +2531,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="CommonNameTx"
                 type="form"
-                name="CommonNameTx"
                 class="edu.ku.brc.specify.datamodel.CommonNameTx"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2611,9 +2579,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ConservDescription"
                 type="form"
-                name="ConservDescription"
                 class="edu.ku.brc.specify.datamodel.ConservDescription"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2703,9 +2670,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ConservEvent"
                 type="form"
-                name="ConservEvent"
                 class="edu.ku.brc.specify.datamodel.ConservEvent"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2784,9 +2750,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ConservDescriptionSub"
                 type="form"
-                name="ConservDescriptionSub"
                 class="edu.ku.brc.specify.datamodel.ConservDescription"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2826,9 +2791,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Container"
                 type="form"
-                name="Container"
                 class="edu.ku.brc.specify.datamodel.Container"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
@@ -2871,9 +2835,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ContainerBrief Table"
                 type="formtable"
-                name="ContainerBrief Table"
                 class="edu.ku.brc.specify.datamodel.Container"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2881,9 +2844,8 @@
             <definition>ContainerBrief</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ContainerBrief"
                 type="form"
-                name="ContainerBrief"
                 class="edu.ku.brc.specify.datamodel.Container"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
@@ -2923,9 +2885,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Deaccession"
                 type="form"
-                name="Deaccession"
                 class="edu.ku.brc.specify.datamodel.Deaccession"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -2995,9 +2956,8 @@
                 </row-->
         </viewdef>
 
-        <viewdef
+        <viewdef name="DeaccessionAccession Table"
                 type="formtable"
-                name="DeaccessionAccession Table"
                 class="edu.ku.brc.specify.datamodel.Deccession"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3005,9 +2965,8 @@
             <definition>DeaccessionAccession</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DeaccessionAccession"
                 type="form"
-                name="DeaccessionAccession"
                 class="edu.ku.brc.specify.datamodel.Deaccession"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3076,9 +3035,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DeaccessionDialog"
                 type="form"
-                name="DeaccessionDialog"
                 class="edu.ku.brc.specify.datamodel.Deaccession"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3131,9 +3089,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DeaccessionAgent Table"
                 type="formtable"
-                name="DeaccessionAgent Table"
                 class="edu.ku.brc.specify.datamodel.DeaccessionAgent"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3141,9 +3098,8 @@
             <definition>DeaccessionAgent</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DeaccessionAgent"
                 type="form"
-                name="DeaccessionAgent"
                 class="edu.ku.brc.specify.datamodel.DeaccessionAgent"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3170,9 +3126,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Disposal"
                 type="form"
-                name="Disposal"
                 class="edu.ku.brc.specify.datamodel.Disposal"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3227,9 +3182,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DisposalSub"
                 type="form"
-                name="DisposalSub"
                 class="edu.ku.brc.specify.datamodel.Disposal"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3257,9 +3211,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DisposalAgent Table"
                 type="formtable"
-                name="DisposalAgent Table"
                 class="edu.ku.brc.specify.datamodel.DisposalAgent"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3267,9 +3220,8 @@
             <definition>DeaccessionAgent</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DisposalAgent"
                 type="form"
-                name="DisposalAgent"
                 class="edu.ku.brc.specify.datamodel.DisposalAgent"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3296,9 +3248,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DisposalPreparation Table"
                 type="formtable"
-                name="DisposalPreparation Table"
                 class="edu.ku.brc.specify.datamodel.DisposalPreparation"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3306,9 +3257,8 @@
             <definition>DisposalPreparation</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DisposalPreparation"
                 type="form"
-                name="DisposalPreparation"
                 class="edu.ku.brc.specify.datamodel.DisposalPreparation"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3337,9 +3287,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DisposalDeaccSub"
                 type="form"
-                name="DisposalDeaccSub"
                 class="edu.ku.brc.specify.datamodel.Disposal"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3367,9 +3316,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DisposalDeaccPreparation Table"
                 type="formtable"
-                name="DisposalDeaccPreparation Table"
                 class="edu.ku.brc.specify.datamodel.DisposalPreparation"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3377,9 +3325,8 @@
             <definition>DisposalDeaccPreparation</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DisposalDeaccPreparation"
                 type="form"
-                name="DisposalDeaccPreparation"
                 class="edu.ku.brc.specify.datamodel.DisposalPreparation"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3406,9 +3353,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DisposalPreparation2"
                 type="form"
-                name="DisposalPreparation2"
                 class="edu.ku.brc.specify.datamodel.DisposalPreparation"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3435,9 +3381,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Determination Table"
                 type="formtable"
-                name="Determination Table"
                 class="edu.ku.brc.specify.datamodel.Determination"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3446,8 +3391,8 @@
             <definition>Determination</definition>
         </viewdef>
 
-        <viewdef
-                name="Determination"
+        <viewdef name="Determination"
+                
                 type="form"
                 class="edu.ku.brc.specify.datamodel.Determination"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -3482,9 +3427,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DeterminationCitation"
                 type="form"
-                name="DeterminationCitation"
                 class="edu.ku.brc.specify.datamodel.DeterminationCitation"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3520,8 +3464,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
-                name="DNAPrimer"
+        <viewdef name="DNAPrimer"
+                
                 type="form"
                 class="edu.ku.brc.specify.datamodel.DNAPrimer"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -3638,8 +3582,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
-                name="DNASequence"
+        <viewdef name="DNASequence"
+                
                 type="form"
                 class="edu.ku.brc.specify.datamodel.DNASequence"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -3782,8 +3726,7 @@
             </rows>
         </viewdef>
 
-        <viewdef
-                name="DNASequenceRun"
+        <viewdef name="DNASequenceRun"
                 type="form"
                 class="edu.ku.brc.specify.datamodel.DNASequencingRun"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -3898,9 +3841,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="DNASequencingRunCitation"
                 type="form"
-                name="DNASequencingRunCitation"
                 class="edu.ku.brc.specify.datamodel.DNASequencingRunCitation"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -3952,8 +3894,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
-                name="DNASequenceSubView"
+        <viewdef name="DNASequenceSubView"
+                
                 type="form"
                 class="edu.ku.brc.specify.datamodel.DNASequence"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -4024,9 +3966,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ExchangeIn"
                 type="form"
-                name="ExchangeIn"
                 class="edu.ku.brc.specify.datamodel.ExchangeIn"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4108,9 +4049,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ExchangeInPrep Table"
                 type="formtable"
-                name="ExchangeInPrep Table"
                 class="edu.ku.brc.specify.datamodel.ExchangeInPrep"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4119,9 +4059,8 @@
             <definition>ExchangeInPrep</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ExchangeInPrep"
                 type="form"
-                name="ExchangeInPrep"
                 class="edu.ku.brc.specify.datamodel.ExchangeInPrep"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4171,9 +4110,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ExchangeOut"
                 type="form"
-                name="ExchangeOut"
                 class="edu.ku.brc.specify.datamodel.ExchangeOut"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4270,9 +4208,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ExchangeOutSub"
                 type="form"
-                name="ExchangeOutSub"
                 class="edu.ku.brc.specify.datamodel.ExchangeOut"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4345,9 +4282,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ExchangeOutPrep Table"
                 type="formtable"
-                name="ExchangeOutPrep Table"
                 class="edu.ku.brc.specify.datamodel.ExchangeOutPrep"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4356,9 +4292,8 @@
             <definition>ExchangeOutPrep</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ExchangeOutPrep"
                 type="form"
-                name="ExchangeOutPrep"
                 class="edu.ku.brc.specify.datamodel.ExchangeOutPrep"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4410,9 +4345,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ExchangeOutDeaccSub"
                 type="form"
-                name="ExchangeOutDeaccSub"
                 class="edu.ku.brc.specify.datamodel.ExchangeOut"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4485,9 +4419,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ExchangeOutDeaccPrep Table"
                 type="formtable"
-                name="ExchangeOutDeaccPrep Table"
                 class="edu.ku.brc.specify.datamodel.ExchangeOutPrep"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4496,9 +4429,8 @@
             <definition>ExchangeOutDeaccPrep</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ExchangeOutDeaccPrep"
                 type="form"
-                name="ExchangeOutDeaccPrep"
                 class="edu.ku.brc.specify.datamodel.ExchangeOutPrep"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4548,9 +4480,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Extractor"
                 type="form"
-                name="Extractor"
                 class="edu.ku.brc.specify.datamodel.Extractor"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4592,9 +4523,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Extractors Table"
                 type="formtable"
-                name="Extractors Table"
                 class="edu.ku.brc.specify.datamodel.Extractor"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -4602,18 +4532,16 @@
             <definition>PcrPersons</definition>
         </viewdef>
 
-        <viewdef
+        <viewdef name="ExtractorsIconView"
                 type="iconview"
-                name="ExtractorsIconView"
                 class="edu.ku.brc.specify.datamodel.Extractor"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Extractors Icon Viewer]]></desc>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Extractors"
                 type="form"
-                name="Extractors"
                 class="edu.ku.brc.specify.datamodel.Extractor"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
