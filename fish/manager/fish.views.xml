@@ -873,14 +873,14 @@
                 </row>
                 
                 <row>
-                    <cell type="subview" viewname="CollectingEventAuthorization" id="cepermits" desc="Authorization" name="collectingEventAuthorizations" colspan="10"/>
+                    <cell type="subview" viewname="CollectingEventAuthorization" id="cepermits" desc="Authorization" name="collectingEventAuthorizations" colspan="11" />
                 </row>
                 
                 <row>
                  <cell type="subview" id="8" name="collectingEventAttribute" viewname="CollectingEventAttribute" colspan="13" rows="2"/>
                 </row>
                 <row>
-                    <cell type="subview" viewname="Collectors" id="5" name="collectors" colspan="13" rows="3"/>
+                    <cell type="subview" viewname="Collectors" id="5" name="collectors" colspan="11"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="CollectionObjectSub" id="11" colspan="13" rows="3" name="collectionObjects" initialize="addsearch=true"/>
