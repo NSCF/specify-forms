@@ -127,16 +127,17 @@
 
 
     <viewdefs>
-        <viewdef
+        <viewdef name="Collection Object"
             type="form"
-            name="Collection Object"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Collection Object form.]]></desc>
             <enableRules/>
-            
-            <columnDef>100px,2px,195px,5px,96px,2px,50px,10px,150px,5px,94px,2px,176px,15px,p:g</columnDef>
+
+            <!-- <columnDef>100px,2px,195px,5px,96px,2px,210px,5px,94px,2px,116px,15px,p:g</columnDef> -->
+            <!-- <columnDef>100px,2px,225px,5px,91px,2px,210px,5px,94px,2px,106px,15px,p:g</columnDef> -->
+            <columnDef>100px,2px,195px,5px,96px,2px,80px,10px,150px,5px,94px,2px,176px,15px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,195px,5px,125px,2px,60px,10px,140px,5px,125px,2px,181px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,215px,5px,128px,2px,105px,10px,145px,5px,138px,2px,195px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,min(p;250px),5px:g,p,2px,p:g(2),10px,p:g,5px:g,p,2px,p:g,p,p:g</columnDef>
@@ -156,8 +157,31 @@
                     <cell type="field" id="4" name="cataloger" uitype="querycbx" initialize="name=Agent;title=Catalog Agent" isrequired="true"/>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" uitype="plugin" name="this" initialize="name=PartialDateUI;df=catalogedDate;tp=catalogedDatePrecision" uifieldformatter="Date" colspan="3"/>
-                    <cell type="label" labelfor="2"/>
+                    <cell type="label" labelfor="2"/> 
                     <cell type="field" id="2" name="projectNumber" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="fn"/>
+                    <cell type="field" id="fn" name="fieldNumber" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="inventorizedBy"/>
+                    <cell type="field" id="inventorizedBy" name="inventorizedBy" uitype="querycbx" initialize="name=Agent;title=Inv. by" />
+                    <cell type="label" labelfor="InventoryDate"/>
+                    <cell type="field" id="InventoryDate"  uitype="plugin" name="this" initialize="name=PartialDateUI;df=InventoryDate;tp=InventoryDatePrecision" uifieldformatter="Date" colspan="4"/>
+                    <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true" colspan="2"/>
+                </row>
+                <row>
+                    <!-- <cell type="label" labelfor="date1"/> -->
+                    <!-- <cell type="field" id="date1"  uitype="plugin" name="this" initialize="name=PartialDateUI;df=date1;tp=date1Precision" uifieldformatter="Date"/> -->
+                </row>
+                <row>
+                    <cell type="label" labelfor="rem"/>
+                    <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
+                </row>
+                <row>
+                    <cell type="label" label="Attachments:" />
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments"  initialize="btn=true;icon=CollectionObjectAttachment"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="14" rows="5"/>
@@ -173,10 +197,10 @@
                     <cell type="subview" id="15" viewname="FishAttributes" name="collectionObjectAttribute" colspan="14"/>
                 </row>
                 <row>
-                    <cell type="separator" label="Attachments" colspan="14"/>
+                    <!-- <cell type="separator" label="Attachments" colspan="14"/> -->
                 </row>
                 <row>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments" colspan="7" initialize="icon=CollectionObjectAttachment" defaulttype="icon"/>
+                    <!-- <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments" colspan="7" initialize="icon=CollectionObjectAttachment" defaulttype="icon"/> -->
                     <cell type="panel" id="116" name="outerPanel" coldef="p,2px,p:g,5px,p:g" rowdef="p,4px,p,4px,p,4px,p,4px,p,4px,p" colspan="5">
                         <rows>
 							<row>
@@ -325,9 +349,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="Determination Table"
             type="formtable"
-            name="Determination Table"
             class="edu.ku.brc.specify.datamodel.Determination"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -335,8 +358,7 @@
             <definition>Determination</definition>
         </viewdef>
         
-        <viewdef
-            name="Determination"
+        <viewdef name="Determination"
             type="form"
             class="edu.ku.brc.specify.datamodel.Determination"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -352,21 +374,70 @@
 
             <rows>
                 <row>
-                    <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="taxon" uitype="querycbx" initialize="name=Taxon" colspan="7"/>
+                    <!-- <cell type="label" labelfor="1"/> -->
+                    <!-- <cell type="field" id="1" name="taxon" uitype="querycbx" initialize="name=Taxon" colspan="7"/> -->
+                    <!-- <cell type="field" id="3" name="isCurrent" uitype="checkbox"/> -->
+                </row>
+                <row>
+                    <cell type="label"/>
                     <cell type="field" id="3" name="isCurrent" uitype="checkbox"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="13"/>
-                    <cell type="field" id="13" name="preferredTaxon" uitype="text" readonly="true" colspan="9"/>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="text" colspan="5"/>
+                    <cell type="label" labelfor="6"/>
+                    <cell type="field" id="6" name="typeStatusName" uitype="combobox" colspan="2"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="7"/>
-                    <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date"/>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="taxon" uitype="querycbx" initialize="name=Taxon" colspan="5"/>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="nameUsage" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="8"/>
+                    <cell type="field" id="8" name="qualifier" uitype="combobox"/>
+                    <cell type="label" labelfor="9"/> 
+                    <cell type="field" id="9" name="addendum" uitype="text"/>
+                    <cell type="label" labelfor="con"/>
+                    <cell type="field" id="con" name="confidence" uitype="combobox"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="t3"/>
+                    <cell type="field" id="t3" name="text3" uitype="text" colspan="3"/>
+                    <!-- <cell type="label" labelfor="13"/> -->
+                    <!-- <cell type="field" id="13" name="preferredTaxon" uitype="text" readonly="true" colspan="3"/> -->
+                    <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="field" id="21" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="field" id="22" name="yesNo3" uitype="checkbox" initialize="editable=true"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="determiner" uitype="querycbx" initialize="name=Agent"/>
-                    <cell type="label" labelfor="6"/>
-                    <cell type="field" id="6" name="typeStatusName" uitype="combobox"/>
+                    <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date" colspan="4"/>
+                </row>     
+                <row> 
+                    <cell type="label" labelfor="mtd"/>
+                    <cell type="field" id="mtd" name="method" uitype="combobox"/>  
+                    <cell type="label" labelfor="t2"/>
+                    <cell type="field" id="t2" name="text2" uitype="text" colspan="6"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="12"/>
+                    <cell type="field" id="12" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
+                </row>
+                <row>
+                    <!-- <cell type="label" labelfor="13"/> -->
+                    <!-- <cell type="field" id="13" name="preferredTaxon" uitype="text" readonly="true" colspan="9"/> -->
+                </row>
+                <row>
+                    <!-- <cell type="label" labelfor="7"/> -->
+                    <!-- <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date"/> -->
+                    <!-- <cell type="label" labelfor="5"/> -->
+                    <!-- <cell type="field" id="5" name="determiner" uitype="querycbx" initialize="name=Agent"/> -->
+                    <!-- <cell type="label" labelfor="6"/> -->
+                    <!-- <cell type="field" id="6" name="typeStatusName" uitype="combobox"/> -->
                 </row>
                 <!--<row>
                     <cell type="label" labelfor="9"/>
@@ -428,9 +499,8 @@
             </rows>
         </viewdef>
 
-        <viewdef
+        <viewdef name="FishAttributes"
             type="form"
-            name="FishAttributes"
             class="edu.ku.brc.specify.datamodel.CollectionObjectAttribute"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -615,9 +685,8 @@
             </rows>
         </viewdef>
                  
-        <viewdef
+        <viewdef name="Preparation Table"
             type="formtable"
-            name="Preparation Table"
             class="edu.ku.brc.specify.datamodel.Preparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -625,9 +694,8 @@
             <definition>Preparation</definition>
         </viewdef>
                 
-        <viewdef
+        <viewdef name="Preparation"
             type="form"
-            name="Preparation"
             class="edu.ku.brc.specify.datamodel.Preparation"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
@@ -635,34 +703,85 @@
             <desc><![CDATA[Preparation for Collection Object form.]]></desc>
             <enableRules/>
 
-            <columnDef>100px,2px,195px,5px,91px,2px,60px,5px,83px,2px,60px,5px,85px,2px,123px,2px,70px,p:g</columnDef>
+            <columnDef>100px,2px,195px,5px,91px,2px,240px,5px,120px,2px,120px,5px,p:g</columnDef>
+            <!-- <columnDef>100px,2px,195px,5px,91px,2px,60px,5px,83px,2px,60px,5px,85px,2px,123px,2px,70px,p:g</columnDef> -->
             <columnDef os="lnx">115px,2px,200px,5px,110px,2px,67px,5px,82px,2px,67px,5px,100px,2px,126px,2px,75px,p:g</columnDef>
             <columnDef os="mac">130px,2px,215px,5px,110px,2px,80px,5px,93px,2px,80px,5px,105px,2px,174px,2px,70px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g,5px:g,p,2px,p:g,5px:g,p,2px,p:g,10px,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
 
             <rows>
+                <row>                                                       
+                    <cell type="label" labelfor="t6"/>
+                    <cell type="field" id="t6" name="text6" uitype="text"/>
+                    <cell type="label"/>
+                    <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
+                    <!-- <cell type="label" labelfor="7"/> -->
+                    <!-- <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/> -->
+                    <!-- <cell type="label" labelfor="3"/> -->
+                    <!-- <cell type="field" id="3" name="countAmt" uitype="text"/> -->
+					<!-- <cell type="label" label="Current Count:" initialize="align=right"/> -->
+					<!-- <cell type="field" id="ti" name="actualCountAmt" uitype="text" readonly="true"/> -->
+                    <!-- <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/> -->
+                    <!-- <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/> -->
+                    <!-- <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/> -->
+                </row>
                 <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="countAmt" uitype="text"/>
-					<cell type="label" label="Current Count:" initialize="align=right"/>
-					<cell type="field" id="ti" name="actualCountAmt" uitype="text" readonly="true"/>
-                    <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
-                    <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
+                    <!-- <cell type="label" labelfor="2"/> -->
+                    <!-- <cell type="field" id="2" name="preparedByAgent" uitype="querycbx" initialize="name=Agent"/> -->
+                    <!-- <cell type="label" labelfor="1"/> -->
+                    <!-- <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date" colspan="5"/> -->
+                    <!-- <cell type="label" labelfor="4"/> -->
+                    <!-- <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3"/> -->
                 </row>
                 <row>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="preparedByAgent" uitype="querycbx" initialize="name=Agent"/>
                     <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date" colspan="5"/>
-                    <cell type="label" labelfor="4"/>
-                    <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3"/>
+                    <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="t3"/>
+                    <cell type="field" id="t3" name="text3" uitype="combobox"/>
+                    <cell type="label" labelfor="t4"/>
+                    <cell type="field" id="t4" name="text4" uitype="combobox"/>
                     <cell type="subview" viewname="DeaccessionPreparation2" id="deaccprep" name="deaccessionPreparations" colspan="12"/>
+                </row>
+                <row>
+                    <!-- <cell type="label" labelfor="t9"/> -->
+                    <!-- <cell type="field" id="t9" name="text9" uitype="text" colspan="1"/> -->
+                    <cell type="label"/>
+                    <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
+                </row>
+                <row>
+                    <cell type="separator" label="Storage details" colspan="11"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="4"/>
+                    <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="6"/>
+                    <!-- <cell type="label" labelfor="bottlesize" /> -->
+                    <!-- <cell type="field" id="bottlesize" name="text5" uitype="combobox"/>  -->
+                </row>
+                <row>
+                    <cell type="label" labelfor="storloctn"/>
+                    <cell type="field" id="storloctn" name="storageLocation" uitype="text" colspan="5"/>
+                    <cell type="label" labelfor="storagedate"/>
+                    <cell type="field" id="storagedate" name="date1" uitype="formattedtext" uifieldformatter="Date"/>
+                </row>
+                
+                <row>
+                    <cell type="separator" label="Prep remarks" colspan="12"/>
+                </row>
+                
+                <row>
+                    <!-- <cell type="label" labelfor="rem"/> -->
+                    <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
                 <!--<row>
                     <cell type="label" labelfor="desc"/>
@@ -714,9 +833,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectingEvent"
             type="form"
-            name="CollectingEvent"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -753,11 +871,16 @@
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
+                
                 <row>
-                 <cell type="subview" id="8" name="collectingEventAttribute" viewname="CollectingEventAttribute" colspan="13"/>
+                    <cell type="subview" viewname="CollectingEventAuthorization" id="cepermits" desc="Authorization" name="collectingEventAuthorizations" colspan="11" />
+                </row>
+                
+                <row>
+                 <cell type="subview" id="8" name="collectingEventAttribute" viewname="CollectingEventAttribute" colspan="13" rows="2"/>
                 </row>
                 <row>
-                    <cell type="subview" viewname="Collectors" id="5" name="collectors" colspan="13" rows="3"/>
+                    <cell type="subview" viewname="Collectors" id="5" name="collectors" colspan="11"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="CollectionObjectSub" id="11" colspan="13" rows="3" name="collectionObjects" initialize="addsearch=true"/>
@@ -804,9 +927,8 @@
             </rows>
         </viewdef>
                 
-        <viewdef
+        <viewdef name="CollectingEventAttribute"
             type="form"
-            name="CollectingEventAttribute"
             class="edu.ku.brc.specify.datamodel.CollectingEventAttribute"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -925,9 +1047,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectionObjectSub Table"
             type="formtable"
-            name="CollectionObjectSub Table"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -935,9 +1056,8 @@
             <definition>CollectionObjectSub</definition>
         </viewdef>
         
-        <viewdef
+        <viewdef name="CollectionObjectSub"
               type="form"
-              name="CollectionObjectSub"
               class="edu.ku.brc.specify.datamodel.CollectionObject"
               gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
               settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -964,9 +1084,8 @@
              </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="AccessionItems Table"
             type="formtable"
-            name="AccessionItems Table"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -974,9 +1093,8 @@
             <definition>AccessionItems</definition>
         </viewdef>
         
-        <viewdef
-              type="form"
-              name="AccessionItems"
+        <viewdef name="AccessionItems"
+              type="form"  
               class="edu.ku.brc.specify.datamodel.CollectionObject"
               gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
               settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -1003,9 +1121,8 @@
              </rows>
         </viewdef>
         
-        <viewdef
+        <viewdef name="Locality"
             type="form"
-            name="Locality"
             class="edu.ku.brc.specify.datamodel.Locality"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
