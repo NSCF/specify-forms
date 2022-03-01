@@ -97,7 +97,7 @@
             </altviews>
         </view>
         
-        <view name="Locality"
+        <!-- <view name="Locality"
             class="edu.ku.brc.specify.datamodel.Locality"
             busrules="edu.ku.brc.specify.datamodel.busrules.LocalityBusRules"
             isinternal="false"
@@ -107,7 +107,7 @@
                 <altview name="Locality View" viewdef="Locality" mode="view"/>
                 <altview name="Locality Edit" viewdef="Locality" mode="edit" default="true"/>
             </altviews>
-        </view>
+        </view> -->
 
         <view name="Preparation"
               class="edu.ku.brc.specify.datamodel.Preparation"
@@ -1127,7 +1127,7 @@
              </rows>
         </viewdef>
         
-        <viewdef name="Locality"
+        <!-- <viewdef name="Locality"
             type="form"
             class="edu.ku.brc.specify.datamodel.Locality"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -1190,7 +1190,7 @@
                     <cell type="field" id="guid" name="guid" uitype="text" colspan="3" readonly="true"/>
                 </row>
             </rows>
-        </viewdef>
+        </viewdef> -->
         
     </viewdefs>
 </viewset>
