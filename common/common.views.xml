@@ -4534,8 +4534,8 @@
                     
                 </row>
                 <row>
-                    <cell type="label" labelfor="t1"/>
-                    <cell type="field" id="t1" name="text1" uitype="text" colspan="14"/>
+                    <!-- <cell type="label" labelfor="t1"/> -->
+                    <!-- <cell type="field" id="t1" name="text1" uitype="text" colspan="14"/> -->
                 </row>
 				<row>
                     <cell type="label" labelfor="np"/>
