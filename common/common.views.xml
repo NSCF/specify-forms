@@ -3796,7 +3796,8 @@
             <desc><![CDATA[Sub Collecting Event]]></desc>
 
             <!-- <columnDef>100px,2px,195px,5px,115px,2px,131px,5px,140px,2px,130px,p:g</columnDef> -->
-            <columnDef>120px,2px,100px,5px,100px,2px,210px,5px,100px,2px,190px,p:g</columnDef>
+            <!-- <columnDef>120px,2px,100px,5px,100px,2px,210px,5px,100px,2px,190px,p:g</columnDef> -->
+            <columnDef>120px,2px,195px,5px,100px,2px,195px,5px,100px,2px,190px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,200px,5px,138px,2px,140px,5px,168px,2px,140px,p:g</columnDef>
             <columnDef os="mac">130px,2px,220px,5px,158px,2px,160px,5px,188px,2px,160px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2)</columnDef>
