@@ -3684,7 +3684,7 @@
 				</row>
                 <row>
                     <cell type="label" labelfor="coordinateprecision"/>
-                    <cell type="field" id="coordinateprecision" name="protocol" uitype="text" colspan="5" />
+                    <cell type="field" id="coordinateprecision" name="protocol" uitype="combobox" colspan="5" />
                     <cell type="label" labelfor="originalCoordSystem"/>
                     <cell type="field" id="originalCoordSystem" name="originalCoordSystem" uitype="combobox" colspan="8" />
                 </row>
