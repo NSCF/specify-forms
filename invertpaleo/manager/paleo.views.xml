@@ -745,10 +745,10 @@
                     <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date" colspan="2"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="t3"/>
-                    <cell type="field" id="t3" name="text3" uitype="combobox"/>
-                    <cell type="label" labelfor="t4"/>
-                    <cell type="field" id="t4" name="text4" uitype="combobox"/>
+                    <!-- <cell type="label" labelfor="t3"/> -->
+                    <!-- <cell type="field" id="t3" name="text3" uitype="combobox"/> -->
+                    <!-- <cell type="label" labelfor="t4"/> -->
+                    <!-- <cell type="field" id="t4" name="text4" uitype="combobox"/> -->
                 </row>
                 <row>
                     <cell type="label" labelfor="t1"/>
