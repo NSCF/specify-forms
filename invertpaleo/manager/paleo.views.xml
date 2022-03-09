@@ -759,6 +759,14 @@
                     <cell type="field" id="t2" name="text2" uitype="combobox"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="t3"/>
+                    <cell type="field" id="t3" name="text3" uitype="combobox"/>
+                    <!-- <cell type="label" labelfor="t5"/> -->
+                    <!-- <cell type="field" id="t5" name="text5" uitype="text"/> -->
+                    <cell type="label" labelfor="t4"/>
+                    <cell type="field" id="t4" name="text4" uitype="combobox"/>
+                </row>
+                <row>
                     <cell type="subview" viewname="DeaccessionPreparation2" id="deaccprep" name="deaccessionPreparations" colspan="12"/>
                 </row>
                 <row>
