@@ -519,6 +519,10 @@
                     <cell type="field" id="7" name="endTime" uitype="text"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="collectingTrip" uitype="querycbx" initialize="name=CollectingTrip;title=CollectingTrip"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="locality" uitype="querycbx" initialize="name=Locality;title=Locality;clonebtn=true" colspan="10"/> 
                 </row>
@@ -534,6 +538,9 @@
                 </row>
                 <row>
                     <cell type="separator" label="Attachments" colspan="13"/>
+                </row>
+                <row>
+                    <cell type="subview" id="8" name="collectingEventAttribute" viewname="CollectingEventAttribute" colspan="13"/>
                 </row>
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectingEventAttachments" colspan="13" initialize="btn=true;icon=CollectingEventAttachment"/>
@@ -603,8 +610,15 @@
                     <cell type="field" id="13" name="verbatimDate" uitype="text" colspan="2"/>   
                 </row>
                 <row>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="collectingTrip" uitype="querycbx" initialize="name=CollectingTrip;title=CollectingTrip"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="locality" uitype="querycbx" initialize="name=Locality;title=Locality;clonebtn=true" colspan="10"/> 
+                </row>
+                <row>
+                    <cell type="subview" id="14" name="collectingEventAttribute" viewname="CollectingEventAttribute" colspan="13"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="6"/>
