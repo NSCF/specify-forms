@@ -147,8 +147,8 @@
                     <cell type="field" id="2" name="projectNumber" uitype="text"/>
                 </row>
                 <row>
-                    <cell type="label"/>
-                    <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
+                    <!-- <cell type="label"/> -->
+                    <!-- <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/> -->
                     <cell type="label" labelfor="date1"/>
                     <cell type="field" id="date1" name="date1" uitype="formattedtext" uifieldformatter="Date" colspan="3"/>
                 </row>
