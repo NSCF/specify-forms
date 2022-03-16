@@ -600,10 +600,13 @@
 				    <cell type="label" labelfor="determinationCitationsspace1"/>
 				</row>
                 <row>
-                    <cell type="subview" id="dc8" name="determinationCitations" viewname="DeterminationCitation" colspan="13"/>                    
+                    <cell type="subview" id="dc8" name="determinationCitations" viewname="DeterminationCitation" colspan="12"/>                    
                 </row>
                 <row>
 				    <cell type="label" labelfor="determinationCitationsspace2"/>
+				</row>
+                <row>
+				    <cell type="label" labelfor="determinationCitationsspace3"/>
 				</row>
                 <!--<row>
                     <cell type="label" labelfor="9"/>
