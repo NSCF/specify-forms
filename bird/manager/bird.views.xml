@@ -409,7 +409,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="12"/>
-                    <cell type="field" id="12" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
+                    <cell type="field" id="12" name="remarks" uitype="textareabrief" rows="2" colspan="11"/>
                 </row>
                 <row>
                     <!-- <cell type="label" labelfor="1"/> -->
@@ -524,7 +524,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="6"/>
-                    <cell type="field" id="6" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
+                    <cell type="field" id="6" name="remarks" uitype="textareabrief" rows="2" colspan="11"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="CollectingEventAuthorization" id="cepermits" desc="Authorization" name="collectingEventAuthorizations" colspan="11" />
@@ -915,12 +915,12 @@
                     <cell type="field" id="storagedate" name="date1" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
                 <row>
-                    <cell type="separator" label="Prep remarks" colspan="12"/>
+                    <cell type="separator" label="Prep remarks" colspan="13"/>
                 </row>
                 
                 <row>
                     <!-- <cell type="label" labelfor="rem"/> -->
-                    <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="12"/>
+                    <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="13"/>
                 </row>
                 <row>
                     <!-- <cell type="label" labelfor="7"/> -->
