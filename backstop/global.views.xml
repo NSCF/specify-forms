@@ -2196,8 +2196,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
-            name="Storage"
+        <viewdef name="Storage"
+            
             type="form"
             class="edu.ku.brc.specify.datamodel.Storage"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -2277,8 +2277,8 @@
             </rows>
         </viewdef>
         
-        <viewdef
-            name="StorageSubform"
+        <viewdef name="StorageSubform"
+            
             type="form"
             class="edu.ku.brc.specify.datamodel.Storage"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
