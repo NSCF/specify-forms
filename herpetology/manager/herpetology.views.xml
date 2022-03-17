@@ -412,6 +412,9 @@
                     <cell type="field" id="12" name="remarks" uitype="textareabrief" rows="2" colspan="11"/>
                 </row>
                 <row>
+                    <cell type="subview" id="14" name="determinationCitations" viewname="DeterminationCitation" colspan="11"/>                    
+                </row>
+                <row>
                     <!-- <cell type="label" labelfor="1"/> -->
                     <!-- <cell type="field" id="1" name="taxon" uitype="querycbx" initialize="name=Taxon" colspan="9"/> -->
                 </row>
