@@ -16,6 +16,18 @@
             </altviews>      
         </view>
 
+        <view name="CollectingEventAuthorization"
+            objtitle="Accession Authorization"
+            class="edu.ku.brc.specify.datamodel.CollectingEventAuthorization"
+            busrules="edu.ku.brc.specify.datamodel.busrules.AccessionAuthorizationBusRules"
+            resourcelabels="false">
+            <desc><![CDATA[Permit subform within the Accession form.]]></desc>
+            <altviews>
+                <altview name="CollectingEventAuthorization View" viewdef="CollectingEventAuthorization" mode="view" default="true"/>
+                <altview name="CollectingEventAuthorization Edit" viewdef="CollectingEventAuthorization" mode="edit"/>
+            </altviews>
+        </view>
+
         <view name="CollectingEvent"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventBusRules"
@@ -62,6 +74,19 @@
             <!-- <altview name="COS Table Edit" viewdef="CollectionObjectSub Table" mode="edit"/>
             <altview name="COS Table View" viewdef="CollectionObjectSub Table" mode="view"/>  -->
             </altviews>      
+        </view>
+
+        <view name="Collectors"
+            class="edu.ku.brc.specify.datamodel.Collector"
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
+            resourcelabels="false">
+            <desc><![CDATA[The Collectors Subform.]]></desc>
+            <altviews>
+                <!-- <altview name="Collectors Icon View"  viewdef="CollectorsIconView" mode="view"/>
+                <altview name="Collectors Icon Edit"  viewdef="CollectorsIconView" mode="edit"/>  -->
+                <altview name="Collectors Table View" viewdef="Collectors Table"   mode="view"/>
+                <altview name="Collectors Table Edit" viewdef="Collectors Table"   mode="edit" default="true"/>
+            </altviews>
         </view>
 
         <view name="Determination"
@@ -161,6 +186,29 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Accession Items]]></desc>
             <definition>AccessionItems</definition>
+        </viewdef>
+
+        <viewdef name="CollectingEventAuthorization"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.CollectingEventAuthorization"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[Permit subform for CollectingEventAuthorization.]]></desc>
+            <enableRules/>
+            <columnDef>80px,2px,200px,4px,80px,2px,200px,4px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,230px,570px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,215px,685px,p:g</columnDef>
+            <columnDef os="exp">p,2px,p,p:g</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+            
+            <rows>
+                <row>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="permit" uitype="querycbx" initialize="name=Permit"/>
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="remarks" uitype="text" />
+                </row>
+            </rows>
         </viewdef>
         
         <viewdef name="Collection Object"
@@ -416,16 +464,27 @@
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="locality" uitype="querycbx" initialize="name=Locality;title=Locality;clonebtn=true" colspan="10"/> 
                 </row>
-                
                 <row>
-                    <cell type="label" labelfor="6"/>
-                    <cell type="field" id="6" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
+				    <cell type="label" labelfor="collectingeventspace1"/>
+				</row>
+                <row>
+                    <cell type="subview" viewname="CollectingEventAuthorization" id="cepermits" desc="Authorization" name="collectingEventAuthorizations" colspan="13"/>
                 </row>
+                <row>
+				    <cell type="label" labelfor="collectingeventspace3"/>
+				</row>
                 <row>
                     <cell type="subview" viewname="Collectors" id="5" name="collectors" colspan="13" rows="3"/>
                 </row>
-                <row>
+                <!--<row>
                     <cell type="subview" viewname="CollectionObjectSub" id="11" colspan="13" rows="3" name="collectionObjects" initialize="addsearch=true"/>
+                </row>
+                <row>
+				    <cell type="label" labelfor="collectingeventspace2"/>
+				</row>-->
+                <row>
+                    <cell type="label" labelfor="6"/>
+                    <cell type="field" id="6" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <row>
                     <cell type="separator" label="Attachments" colspan="13"/>
@@ -547,7 +606,62 @@
             <desc><![CDATA[Collection Object subform table for appraisal and Project forms.]]></desc>
             <definition>CollectionObjectSub</definition>
         </viewdef>
-        
+
+        <viewdef name="Collectors"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.Collector"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+
+            <desc><![CDATA[The Collectors form - UNKNOWN use in database.]]></desc>
+            <enableRules/>
+
+            <columnDef>p,5dlu,p:g,5dlu,p</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+            
+            <rows>
+                <row>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="agent.lastName" uitype="text" cols="20" colspan="3"/>
+                </row>
+				<row>
+                    <cell type="label" labelfor="middleInitial"/>
+                    <cell type="field" id="middleInitial" name="agent.middleInitial" uitype="text" cols="20" colspan="3"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" name="agent.firstName" uitype="text" cols="20" colspan="3"/>
+                </row>
+				<!--
+                    <row>
+                        <cell type="label" labelfor="title"/>
+                        <cell type="field" id="title" name="agent.title" uitype="text" cols="20" colspan="3"/>
+                    </row>
+                -->
+                <!--
+                    <row>
+                        <cell type="label" labelfor="suffix"/>
+                        <cell type="field" id="suffix" name="agent.suffix" uitype="text" cols="20" colspan="3"/>
+                    </row>
+                -->    
+                <!-- <row>
+                    <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" name="agent.email" uitype="text" cols="32"/>
+                    <cell type="field" id="mailto" name="agent" uitype="plugin" initialize="name=WebLinkButton;url=mailto:$email$;label=Send Mail;watch=7"/>
+                </row> -->
+            </rows>
+        </viewdef>
+
+        <viewdef name="Collectors Table"
+            type="formtable"
+            class="edu.ku.brc.specify.datamodel.Collector"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            
+            <desc><![CDATA[Collectors grid view for CollectingEvent form.]]></desc>
+            <definition>Collectors</definition>
+        </viewdef>
+
         <viewdef name="Determination"
             type="form"
             class="edu.ku.brc.specify.datamodel.Determination"
