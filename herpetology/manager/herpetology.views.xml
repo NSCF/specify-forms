@@ -653,13 +653,13 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="text1" uitype="combobox"/>
+                    <cell type="field" id="1" name="text1" uitype="text"/>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="text2" uitype="text"/>
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="text3" uitype="text"/>
                     <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="text4" uitype="combobox"/>
+                    <cell type="field" id="2" name="text4" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="20"/>
@@ -668,8 +668,8 @@
                     <cell type="field" id="21" name="text6" uitype="text"/>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="text7" uitype="text"/>
-                    <cell type="label" labelfor="6"/>
-                    <cell type="field" id="6" name="text8" uitype="text"/>
+                    <!-- <cell type="label" labelfor="6"/> -->
+                    <!-- <cell type="field" id="6" name="text8" uitype="text"/> -->
                 </row>
                 <row>
                     <cell type="label" labelfor="22"/>
