@@ -4334,7 +4334,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="VerbLocalityname"/>
-                    <cell type="field" id="VerbLocalityname" name="text2" uitype="text" colspan="12" readonly="true"/>
+                    <cell type="field" id="VerbLocalityname" name="text2" uitype="text" colspan="12" />
                 </row>
                 <row>
                     <cell type="label" labelfor="localityName"/>
@@ -4348,7 +4348,8 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="verbatimLatitude"/>
-                    <cell type="field" id="verbatimLatitude" name="verbatimLatitude" uitype="text" colspan="12" readonly="true" /><cell type="label" labelfor="space1"/>
+                    <cell type="field" id="verbatimLatitude" name="verbatimLatitude" uitype="text" colspan="12" />
+                    <cell type="label" labelfor="space1"/>
                 </row>
                 <row>
                     <!-- <cell type="label" labelfor="GeogProblem"/> -->
