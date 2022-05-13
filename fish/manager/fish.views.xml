@@ -1213,7 +1213,6 @@
             </rows>
         </viewdef>
 
-
         <viewdef name="Preparation"
             type="form"
             class="edu.ku.brc.specify.datamodel.Preparation"
