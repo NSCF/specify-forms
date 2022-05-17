@@ -1,7 +1,7 @@
 #sorts the views and viewdefs in a views.xml file
 #note this replaces the original file, so commit first...
 
-fileName = 'invertpaleo/manager/paleo.views.xml'
+fileName = 'herpetology/manager/herpetology.views.xml'
 
 def getElemName(xmlStr):
   nameAttrStart = xmlStr.index('name')
