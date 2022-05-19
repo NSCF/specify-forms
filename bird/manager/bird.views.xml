@@ -97,6 +97,19 @@
               </altviews>      
         </view>
 
+        <view name="Collectors"
+            class="edu.ku.brc.specify.datamodel.Collector"
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
+            resourcelabels="false">
+            <desc><![CDATA[The Collectors Subform.]]></desc>
+            <altviews>
+                <!-- <altview name="Collectors Icon View"  viewdef="CollectorsIconView" mode="view"/>
+                <altview name="Collectors Icon Edit"  viewdef="CollectorsIconView" mode="edit"/>  -->
+                <altview name="Collectors Table View" viewdef="Collectors Table"   mode="view"/>
+                <altview name="Collectors Table Edit" viewdef="Collectors Table"   mode="edit" default="true"/>
+            </altviews>
+        </view>
+
         <view name="Determination"
               class="edu.ku.brc.specify.datamodel.Determination"
               busrules="edu.ku.brc.specify.datamodel.busrules.DeterminationBusRules" 
@@ -845,6 +858,56 @@
             <desc><![CDATA[Collection Object subform table for appraisal and Project forms.]]></desc>
             <definition>CollectionObjectSub</definition>
         </viewdef>
+
+        <viewdef name="Collectors"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.Collector"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+
+            <desc><![CDATA[The Collectors form - UNKNOWN use in database.]]></desc>
+            <enableRules/>
+
+            <columnDef>p,5dlu,p:g,5dlu,p</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+            <rows>
+                <row>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="agent.lastName" uitype="text" cols="20" colspan="3"/>
+                </row>
+				<row>
+                    <cell type="label" labelfor="middleInitial"/>
+                    <cell type="field" id="middleInitial" name="agent.middleInitial" uitype="text" cols="20" colspan="3"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" name="agent.firstName" uitype="text" cols="20" colspan="3"/>
+                </row>
+				<row>
+                    <!-- <cell type="label" labelfor="title"/> -->
+                    <!-- <cell type="field" id="title" name="agent.title" uitype="text" cols="20" colspan="3"/> -->
+                </row>
+				<row>
+                    <!-- <cell type="label" labelfor="suffix"/> -->
+                    <!-- <cell type="field" id="suffix" name="agent.suffix" uitype="text" cols="20" colspan="3"/> -->
+                </row>
+                <!--row>
+                    <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" name="agent.email" uitype="text" cols="32"/>
+                    <cell type="field" id="mailto" name="agent" uitype="plugin" initialize="name=WebLinkButton;url=mailto:$email$;label=Send Mail;watch=7"/>
+                </row-->
+            </rows>
+        </viewdef>
+
+        <viewdef name="Collectors Table"
+            type="formtable"
+            class="edu.ku.brc.specify.datamodel.Collector"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            
+            <desc><![CDATA[Collectors grid view for CollectingEvent form.]]></desc>
+            <definition>Collectors</definition>
+        </viewdef>
         
         <viewdef name="Determination"
             type="form"
@@ -1074,9 +1137,11 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="7"/>
-                    <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
-                    <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="countAmt" uitype="text"/>
+                    <cell type="field" id="7" name="prepType" uitype="combobox" picklist="MMK-PrepType"/>
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="preparedByAgent" uitype="querycbx" initialize="name=Agent"/>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date" colspan="3"/>
 					<!-- <cell type="label" label="Current Count:" initialize="align=right"/> -->
 					<!-- <cell type="field" id="ti" name="actualCountAmt" uitype="text" readonly="true"/> -->
                     <!-- <cell type="label" labelfor="2"/> -->
@@ -1087,32 +1152,20 @@
                     <!-- <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3"/> -->
                 </row>
                 <row>
-                    <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="preparedByAgent" uitype="querycbx" initialize="name=Agent"/>
-                    <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date" colspan="2"/>
-                </row>
-                <row>
-                    <!-- <cell type="label" labelfor="t3"/> -->
-                    <!-- <cell type="field" id="t3" name="text3" uitype="combobox"/> -->
-                    <!-- <cell type="label" labelfor="t4"/> -->
-                    <!-- <cell type="field" id="t4" name="text4" uitype="combobox"/> -->
-                </row>
-                <row>
-                    <!-- <cell type="label" labelfor="t1"/> -->
-                    <!-- <cell type="field" id="t1" name="text1" uitype="combobox" picklist="PaleoSex"/> -->
-                    <!-- <cell type="label" labelfor="t5"/> -->
-                    <!-- <cell type="field" id="t5" name="text5" uitype="text"/> -->
-                    <!-- <cell type="label" labelfor="t2"/> -->
-                    <!-- <cell type="field" id="t2" name="text2" uitype="combobox"/> -->
-                </row>
-                <row>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="combobox"/>
                     <cell type="label" labelfor="t3"/>
-                    <cell type="field" id="t3" name="text3" uitype="combobox"/>
-                    <!-- <cell type="label" labelfor="t5"/> -->
-                    <!-- <cell type="field" id="t5" name="text5" uitype="text"/> -->
+                    <cell type="field" id="t3" name="text3" uitype="text"/>
+                    <!--<cell type="label" labelfor="t4"/>
+                    <cell type="field" id="t4" name="text4" uitype="combobox"/> -->
+                    <cell type="label" labelfor="t2"/>
+                    <cell type="field" id="t2" name="text2" uitype="text" colspan="3"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="t4"/>
                     <cell type="field" id="t4" name="text4" uitype="combobox"/>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="countAmt" uitype="text" colspan="7"/>
                 </row>
                 <row>
                     <!-- <cell type="label" labelfor="t9"/> -->
@@ -1130,12 +1183,14 @@
                     <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3"/>
                     <!-- <cell type="label" labelfor="bottlesize" /> -->
                     <!-- <cell type="field" id="bottlesize" name="text5" uitype="combobox"/>  -->
+                    <cell type="label" labelfor="t5"/>
+                    <cell type="field" id="t5" name="text5" uitype="text" colspan="5"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="storloctn"/>
                     <cell type="field" id="storloctn" name="storageLocation" uitype="text" colspan="3"/>
                     <cell type="label" labelfor="storagedate"/>
-                    <cell type="field" id="storagedate" name="date1" uitype="formattedtext" uifieldformatter="Date"/>
+                    <cell type="field" id="storagedate" name="date1" uitype="formattedtext" uifieldformatter="Date" colspan="5"/>
                 </row>
                 <row>
                     <cell type="separator" label="Prep remarks" colspan="13"/>
