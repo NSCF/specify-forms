@@ -281,19 +281,25 @@
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="projectNumber" uitype="text" colspan="2"/>
                 </row>
+                
+                <row>
+                    <cell type="label" labelfor="inventorizedBy"/>
+                    <cell type="field" id="inventorizedBy" name="inventorizedBy" uitype="querycbx" initialize="name=Agent;title=Inv. by"/>
+                    <cell type="label" labelfor="InventoryDate"/>
+                    <cell type="field" id="InventoryDate"  uitype="plugin" name="this" initialize="name=PartialDateUI;df=InventoryDate;tp=InventoryDatePrecision" uifieldformatter="Date"/>
+                    <cell type="label" labelfor="date1"/>
+                    <cell type="field" id="date1" name="date1" uitype="formattedtext" uifieldformatter="Date"/>
+                </row>
                 <row>
                     <cell type="label"/>
                     <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
-                    <cell type="label" labelfor="date1"/>
-                    <cell type="field" id="date1" name="date1" uitype="formattedtext" uifieldformatter="Date"/>
                     <cell type="label"/>
                     <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="label"/>
+                    <cell type="field" id="yn3" name="yesNo3" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="t1"/>
-                    <cell type="field" id="t1" name="text1" uitype="text"/>
-                    <cell type="label" labelfor="id"/>
-                    <cell type="field" id="id" name="inventoryDate" uitype="formattedtext" uifieldformatter="Date" colspan="6"/>
+                    <cell type="subview" id="15" viewname="MammalogyAttributes" name="collectionObjectAttribute" colspan="12"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="rem"/>
@@ -313,9 +319,6 @@
                 </row>
                 <row>
                     <cell type="subview" viewname="Preparation" id="8" name="preparations" defaulttype="table" colspan="12" rows="3"/>
-                </row>
-                <row>
-                    <cell type="subview" id="15" viewname="MammalogyAttributes" name="collectionObjectAttribute" colspan="12"/>
                 </row>
                 <row>
                     <cell type="separator" label="Attachments" colspan="12"/>
@@ -755,8 +758,8 @@
                     <cell type="field" id="5" name="determiner" uitype="querycbx" initialize="name=Agent"/>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date"/>
-                    <cell type="label"/>
                     <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="field" id="21" name="yesNo3" uitype="checkbox" initialize="editable=true"/>
                     <!--<cell type="field" id="20" name="yesNo2" uitype="checkbox" initialize="editable=true"/>-->
                 </row>
                 <row>
@@ -764,6 +767,8 @@
                     <cell type="field" id="mtd" name="method" uitype="combobox"/>
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="text"/>
+                    <cell type="label"/>
+                    <cell type="field" id="22" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="12"/>
@@ -1004,10 +1009,10 @@
                     <cell type="label" labelfor="t11"/>
                     <cell type="field" id="t11" name="text11" uitype="combobox" colspan="5"/>
                 </row>
-                <row>
+                <!--<row>
                     <cell type="label" labelfor="22"/>
                     <cell type="field" id="22" name="remarks" uitype="textareabrief" rows="2" colspan="14"/>
-                </row> 
+                </row> -->
                 <!-- <row>
                     <cell type="label" labelfor="t7"/>
                     <cell type="field" id="t7" name="text7" uitype="text"/>
