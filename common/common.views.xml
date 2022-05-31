@@ -1612,18 +1612,18 @@
                 <row>
                     <cell type="label" labelfor="0"/>
                     <cell type="field" id="0" name="agentType" uitype="combobox" ignore="true"/>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="title" uitype="combobox" picklist="AgentTitles"/>
+                    <cell type="label"/>
+                    <cell type="subview" id="agentAttachments" viewname="ObjectAttachment" name="agentAttachments" initialize="btn=true;icon=AgentAttachment"/>
                 </row>
                 <row>
-				    <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="title" uitype="combobox" picklist="AgentTitles"/>
-				</row>
-                <row>
-					<cell type="label" labelfor="middleInitial"/>
-                    <cell type="field" id="middleInitial" name="middleInitial" uitype="text"/>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="lastName" uitype="text"/>
+					<cell type="label" labelfor="initials"/>
+                    <cell type="field" id="initials" name="initials" uitype="text"/>
 					<cell type="label" labelfor="5"/>
 					<cell type="field" id="5" name="firstName" uitype="text"/>
-                    <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="lastName" uitype="text" colspan="2"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="8"/>
@@ -1631,6 +1631,10 @@
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="email" uitype="text" colspan="5"/>
                     <cell type="field" id="mailto" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=MailTo;icon=EMail;watch=7"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="11" />
+                    <cell type="field" id="11" name="guid" uitype="text" colspan="4"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="Address" id="9" name="addresses" colspan="13"/>
@@ -1641,12 +1645,9 @@
                 <row>
                     <cell type="subview" viewname="AgentVariant" id="10" name="variants" colspan="13"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="separator" label="Attachments" colspan="13"/>
-                </row>
-                <row>
-                    <cell type="subview" id="agentAttachments" viewname="ObjectAttachment" name="agentAttachments" initialize="btn=true;icon=AgentAttachment"/>
-                </row>
+                </row> -->
                 <!--  
                     <row>
                         <cell type="label" labelfor="19" />
@@ -1655,8 +1656,6 @@
                         <cell type="field" id="20" uitype="plugin" name="this" initialize="name=PartialDateUI;df=dateOfDeath;tp=dateOfDeathPrecision" uifieldformatter="Date"/>
                     </row>
                     <row>
-                        <cell type="label" labelfor="11" />
-                        <cell type="field" id="11" name="guid" uitype="text"/>
                         <cell type="label" labelfor="12" />
                         <cell type="field" id="12" name="initials" uitype="text"/>
                         <cell type="label" labelfor="13" />
@@ -5362,7 +5361,7 @@
              <!--   <rule id="acceptedParent"><![CDATA[!isAccepted.isSelected()]]></rule> -->
             </enableRules>
 
-            <columnDef>100px,2px,355px,5px,120px,2px,253px,0px,15px,p:g</columnDef>
+            <columnDef>100px,2px,355px,5px,150px,2px,220px,0px,15px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,375px,5px,130px,2px,288px,0px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,458px,5px,145px,2px,290px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),0px,p,p:g</columnDef>
@@ -5372,6 +5371,8 @@
                 <row>
                     <cell type="label" labelfor="parent"/>
                 	<cell type="field" id="parent" uitype="querycbx" isrequired="true" initialize="name=Storage;title=Storage;editbtn=false;newbtn=false;editoncreate=true" name="parent"/>
+                    <cell type="label" />
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="storageAttachments" initialize="btn=true;icon=StorageAttachment"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="name"/>
@@ -5379,7 +5380,7 @@
                     <cell type="label" labelfor="definitionItem"/>
                   	<cell type="field" id="definitionItem" uitype="combobox" name="definitionItem"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="t1"/>
                     <cell type="field" id="t1" name="text1" usedfor="jar size" uitype="combobox"/>
                     <cell type="label" labelfor="t2"/>
@@ -5390,7 +5391,7 @@
                     <cell type="field" id="abb" name="abbrev" usedfor="alcomon" uitype="combobox"/>
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" usedfor="preservative volume" uitype="text"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="label" labelfor="remarks"/>
                     <cell type="field" id="remarks" uitype="textareabrief" rows="2" name="remarks" colspan="6"/>
@@ -5398,12 +5399,9 @@
                 <row>
                     <cell type="subview" viewname="StorageSubform" id="children" name="children" colspan="9"/>
                 </row>
-		            <row>
-			              <cell type="separator" label="ATTACHMENTS" colspan="10"/>
-                </row>
-                <row>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="storageAttachments" colspan="10" initialize="btn=true;icon=StorageAttachment"/>
-                </row>
+		        <!-- <row>
+			        <cell type="separator" label="ATTACHMENTS" colspan="10"/>
+                </row> -->
                 <!--<row>
                     <cell type="label" labelfor="abb"/>
                     <cell type="field" id="abb" name="abbrev" uitype="text"/>
