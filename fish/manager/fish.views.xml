@@ -475,6 +475,9 @@
                 <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
+                    <cell type="subview" id="15" viewname="FishAttributes" name="collectionObjectAttribute" colspan="14"/>
+                </row>
+                <row>
                     <!-- <cell type="label" labelfor="date1"/> -->
                     <!-- <cell type="field" id="date1"  uitype="plugin" name="this" initialize="name=PartialDateUI;df=date1;tp=date1Precision" uifieldformatter="Date"/> -->
                 </row>
@@ -495,9 +498,6 @@
                 </row>
                 <row>
                     <cell type="subview" viewname="Preparation" id="8" name="preparations" defaulttype="table" colspan="14" rows="3"/>
-                </row>
-                <row>
-                    <cell type="subview" id="15" viewname="FishAttributes" name="collectionObjectAttribute" colspan="14"/>
                 </row>
                 <row>
                     <!-- <cell type="separator" label="Attachments" colspan="14"/> -->
@@ -735,18 +735,18 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t3"/>
-                    <cell type="field" id="t3" name="text3" uitype="text" colspan="3"/>
+                    <cell type="field" id="t3" name="text3" uitype="text" colspan="5"/>
                     <!-- <cell type="label" labelfor="13"/> -->
                     <!-- <cell type="field" id="13" name="preferredTaxon" uitype="text" readonly="true" colspan="3"/> -->
                     <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
                     <cell type="field" id="21" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
-                    <cell type="field" id="22" name="yesNo3" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" name="determiner" uitype="querycbx" initialize="name=Agent" colspan="3"/>
+                    <cell type="field" id="5" name="determiner" uitype="querycbx" initialize="name=Agent"/>
                     <cell type="label" labelfor="7"/>
-                    <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date" colspan="5"/>
+                    <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date" colspan="3"/>
+                    <cell type="field" id="22" name="yesNo3" uitype="checkbox" initialize="editable=true"/>
                 </row>     
                 <row> 
                     <cell type="label" labelfor="mtd"/>
@@ -882,10 +882,10 @@
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="text8" uitype="text"/>
                 </row>
-                <row>
+                <!--<row>
                     <cell type="label" labelfor="22"/>
                     <cell type="field" id="22" name="remarks" uitype="textareabrief" rows="2" colspan="14"/>
-                </row> 
+                </row> -->
               <!--<row>
                     <cell type="label" labelfor="t7"/>
                     <cell type="field" id="t7" name="text7" uitype="text"/>

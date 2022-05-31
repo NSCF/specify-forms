@@ -299,14 +299,25 @@
                     <cell type="field" id="2" name="fieldNumber" uitype="text" colspan="2"/>
                 </row>
                 <row>
-                    <cell type="label"/>
-                    <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="label" labelfor="inventorizedBy"/>
+                    <cell type="field" id="inventorizedBy" name="inventorizedBy" uitype="querycbx" initialize="name=Agent;title=Inv. by"/>
+                    <cell type="label" labelfor="InventoryDate"/>
+                    <cell type="field" id="InventoryDate"  uitype="plugin" name="this" initialize="name=PartialDateUI;df=InventoryDate;tp=InventoryDatePrecision" uifieldformatter="Date"/>
+                    <!--<cell type="label"/>
+                    <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>-->
                     <cell type="label" labelfor="date1"/>
-                    <cell type="field" id="date1" name="date1" uitype="formattedtext" uifieldformatter="Date"/>
+                    <cell type="field" id="date1" name="date1" uitype="formattedtext" uifieldformatter="Date"  colspan="2"/>
                     <!-- <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="text" colspan="6"/> -->
                     <!-- <cell type="label" labelfor="SortingStatus"/>
                     <cell type="field" id="SortingStatus" name="name" uitype="text" colspan="2"/> -->
+                </row>
+                <row>
+                    <cell type="label"/>
+                    <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
+                </row>
+                <row>
+                    <cell type="subview" id="15" viewname="EntoAttributes" name="collectionObjectAttribute" colspan="12"/>
                 </row>
 				<row>
 				    <cell type="label" labelfor="remarks"/>
@@ -344,10 +355,6 @@
                 <row>
                     <cell type="subview" viewname="Preparation" id="8" name="preparations" defaulttype="table" colspan="12"/>
                 </row>
-                <row>
-                    <cell type="subview" id="15" viewname="EntoAttributes" name="collectionObjectAttribute" colspan="12"/>
-                </row>
-                
                 <row>
                     <cell type="separator" label="" colspan="12"/>
                 </row>
@@ -467,6 +474,7 @@
                     <cell type="field" id="13" name="preferredTaxon" uitype="text" readonly="true" colspan="5"/>
                     <cell type="label"/>
                     <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="field" id="22" name="yesNo3" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="5"/>
@@ -592,10 +600,10 @@
                     <cell type="label" labelfor="Sex"/>
                     <cell type="field" id="Sex" name="text10" uitype="combobox" />
                 </row>
-                <row>
+                <!--<row>
 			        <cell type="label" labelfor="Notes"/>
                     <cell type="field" id="Notes" name="remarks" uitype="textareabrief" rows="1" colspan="13"/>
-			    </row>
+			    </row>-->
             </rows>
         </viewdef>
 
@@ -606,7 +614,7 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Sub Collecting Event]]></desc>
             
-			<columnDef>100px,2px,130px,5px,90px,2px,90px,5px,147px,2px,60px,5px,90px,2px,40px,0px,15px,p:g</columnDef>
+			<columnDef>100px,2px,130px,5px,90px,5px,90px,5px,147px,2px,60px,5px,90px,2px,40px,0px,15px,p:g</columnDef>
             <!--columnDef>100px,2px,230px,90px,120px,2px,246px,p:g</columnDef-->
             <columnDef os="lnx">115px,2px,200px,5px,138px,2px,140px,5px,168px,2px,140px,p:g</columnDef>
             <columnDef os="mac">130px,2px,220px,5px,158px,2px,160px,5px,188px,2px,160px,p:g</columnDef>
@@ -641,6 +649,14 @@
 				<row>
                     <cell type="label" labelfor="10"/>
                     <cell type="field" id="10" name="geoRefRemarks" uitype="textareabrief" rows="2" colspan="16" />
+                </row>
+                <row>
+                    <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" name="geoRefVerificationStatus" uitype="combobox" picklist="Verification"/>
+                    <cell type="label" labelfor="8"/>
+                    <cell type="field" id="8" name="geoRefCompiledBy" uitype="querycbx" initialize="name=Agent" colspan="3"/>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="geoRefCompiledDate" uitype="formattedtext" uifieldformatter="Date" colspan="5"/>
                 </row>
             </rows>
         </viewdef>
