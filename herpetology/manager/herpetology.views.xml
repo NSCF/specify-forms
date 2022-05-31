@@ -371,6 +371,9 @@
                     <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="14"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="guid"/>
+					<cell type="field" id="guid" name="guid" uitype="text" colspan="3" readonly="true"/>
+                    <cell type="label"/>
                     <cell type="label" label="Attachments:" />
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments"  initialize="btn=true;icon=CollectionObjectAttachment"/>
                 </row>
@@ -388,30 +391,25 @@
                 </row>
                 <row>
                     <!-- <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments" colspan="7" initialize="icon=CollectionObjectAttachment" defaulttype="icon"/> -->
-                    <cell type="panel" id="116" name="outerPanel" coldef="p,2px,p:g,5px,p:g" rowdef="p,4px,p,4px,p,4px,p,4px,p,4px,p" colspan="5">
+                    <cell type="panel" id="116" name="outerPanel" coldef="p,2px,p:g,5px,p:g,2px,p:g,5px,p:g,2px,p:g,5px,p:g" rowdef="p,4px,p,4px,p,4px,p,4px,p,4px,p,4px,p,4px,p,4px,p,4px,p" colspan="8">
                         <rows>
 							<row>
 								<cell type="label" label="Total Items:" initialize="align=right"/>
 								<cell type="field" id="tq" name="totalCountAmt" uitype="text" readonly="true"/>
-							</row>
-							<row>
-								<cell type="label" label="Total Current Items:" initialize="align=right"/>
+                                <cell type="label"/>
+                                <cell type="label" label="Total Current Items:" initialize="align=right"/>
 								<cell type="field" id="ti" name="actualTotalCountAmt" uitype="text" readonly="true"/>
 							</row>
 							<row>
 								<cell type="label" labelfor="11"/>
 								<cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
-							</row>
-							<row>
-								<cell type="label" labelfor="10"/>
+                                <cell type="label"/>
+                                <cell type="label" labelfor="10"/>
 								<cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
-							</row>
-							<row>
-								<cell type="label" labelfor="guid"/>
-								<cell type="field" id="guid" name="guid" uitype="text" colspan="3" readonly="true"/>
 							</row>
                             <row>
                                 <cell type="field" id="113" uitype="checkbox" name="generateLabelChk" label="Generate Label on Save" ignore="true" default="true" initialize="visible=false" colspan="3"/>
+                                <cell type="label"/>
                                 <cell type="command" id="114" name="generateLabelBtn" label="Generate Label" ignore="true" default="true" initialize="visible=false;align=right"/>
                             </row>
                         </rows>
