@@ -5525,7 +5525,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="commonName"/>
-                    <cell type="field" id="commonName" uitype="text" name="commonName" colspan="7"/>
+                    <cell type="field" id="commonName" uitype="text" name="commonName" colspan="5"/>
                 </row>      
                 <row>
 				    <cell type="label" labelfor="tops"/>
