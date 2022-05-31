@@ -994,9 +994,9 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="t6"/>
-                    <cell type="field" id="t6" name="text6" uitype="text"/>
+                    <cell type="field" id="t6" name="text6" usedfor="prepcode" uitype="text"/>
                     <cell type="label"/>
-                    <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" usedfor="missing" initialize="editable=true"/>
                     <!-- <cell type="label" labelfor="3"/> -->
                     <!-- <cell type="field" id="3" name="countAmt" uitype="text"/> -->
 					<!-- <cell type="label" label="Current Count:" initialize="align=right"/> -->
@@ -1011,7 +1011,7 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="countAmt" uitype="text"/>
                     <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="t2" name="text2" uitype="text"/>
+                    <cell type="field" id="t2" name="text2" usedfor="container no" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="2"/>
@@ -1021,49 +1021,50 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t1"/>
-                    <cell type="field" id="t1" name="text1" uitype="combobox"/>
+                    <cell type="field" id="t1" name="text1" usedfor="fixative" uitype="combobox"/>
                     <cell type="label" labelfor="t4"/>
-                    <cell type="field" id="t4" name="text4" uitype="combobox"/>
+                    <cell type="field" id="t4" name="text4" usefor="preservative" uitype="combobox"/>
                     <!--<cell type="label" labelfor="t3"/>
                     <cell type="field" id="t3" name="text3" uitype="combobox"/>-->
                     <!-- <cell type="label" labelfor="t5"/> -->
                     <!-- <cell type="field" id="t5" name="text5" uitype="text"/> -->
                 </row>
-                <row>
-                    <!-- <cell type="label" labelfor="t5"/>
-                    <cell type="field" id="t5" name="text5" uitype="text"/> -->
+                <!-- <row>
+                    <cell type="label" labelfor="t5"/>
+                    <cell type="field" id="t5" name="text5" uitype="text"/>
                     <cell type="label" labelfor="t7"/>
                     <cell type="field" id="t7" name="text7" uitype="text"/>
-                </row>
+                </row> -->
                 <!--<row>
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="combobox"/>
                 </row>-->
-                <row>
-                    <!-- <cell type="label" labelfor="t9"/> -->
-                    <!-- <cell type="field" id="t9" name="text9" uitype="text" colspan="1"/> -->
-                    
-                    <!-- <cell type="label" labelfor="4"/> -->
-                    <!-- <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="1"/> -->
-                </row>
+                <!-- <row>
+                    <cell type="label" labelfor="t9"/>
+                    <cell type="field" id="t9" name="text9" uitype="text" colspan="1"/>
+                    <cell type="label" labelfor="4"/>
+                    <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="1"/>
+                </row> -->
                 <row>
                     <cell type="separator" label="Storage details" colspan="11"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3"/>
-                    <cell type="label" labelfor="t8"/>
-                    <cell type="field" id="t8" name="text8" uitype="text"/>
                     <!-- <cell type="label" labelfor="bottlesize" /> -->
                     <!-- <cell type="field" id="bottlesize" name="text5" uitype="combobox"/>  -->
                     <cell type="label" labelfor="t5"/>
-                    <cell type="field" id="t5" name="text5" uitype="text"/>
+                    <cell type="field" id="t5" name="text5" usedfor="movedBy" uitype="text" colspan="3"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="storloctn"/>
                     <cell type="field" id="storloctn" name="storageLocation" uitype="text" colspan="3"/>
                     <cell type="label" labelfor="storagedate"/>
-                    <cell type="field" id="storagedate" name="date1" uitype="formattedtext" uifieldformatter="Date"/>
+                    <cell type="field" id="storagedate" name="date1" uitype="formattedtext" uifieldformatter="Date" colspan="3"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="t8"/>
+                    <cell type="field" id="t8" name="text8" usedfor="movedreason" uitype="text" colspan="9"/>
                 </row>
                 <row>
                     <cell type="separator" label="Prep remarks" colspan="13"/>
