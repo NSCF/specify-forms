@@ -4375,9 +4375,9 @@
 				<row>
 				   <cell type="label" labelfor="space2"/>
 				</row>
-				<row>
+				<!-- <row>
                     <cell type="subview" id="8" name="localityDetails" viewname="LocalityDetail" colspan="14"/> 
-                </row>
+                </row> -->
                 <row>  
                     <cell type="subview" id="7" name="geoCoordDetails" viewname="GeoCoordDetail" colspan="14"/> 
                 </row>
