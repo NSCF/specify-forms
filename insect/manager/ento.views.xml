@@ -728,8 +728,10 @@
                     <!-- <cell type="label" labelfor="t7"/>
                     <cell type="field" id="t7" name="text7" uitype="text" colspan="3"/> -->
                 </row>
+                    <row>
                     <cell type="label" labelfor="t8"/>
-                    <cell type="field" id="t8" name="text8" uitype="text" colspan="12"/>
+                    <cell type="field" id="t8" name="text8" usedfor="movedreason" uitype="text" colspan="9"/>
+                </row>
                 <row>
                     <cell type="label" labelfor="storloctn"/>
                     <cell type="field" id="storloctn" name="storageLocation" uitype="text" colspan="3"/>
