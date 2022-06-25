@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewset name="Mammal Views" i18nresname="views" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <views>
+        <view name="CollectionObject"
+            class="edu.ku.brc.specify.datamodel.CollectionObject"
+            busrules="edu.ku.brc.specify.datamodel.busrules.CollectionObjectBusRules"
+            isinternal="false"
+            resourcelabels="false"
+            >
+            <desc><![CDATA[The Collection Object form.]]></desc>
+            <altviews>
+                <altview name="Collection Object View" viewdef="Collection Object" mode="view"/>
+                <altview name="Collection Object Edit" viewdef="Collection Object" mode="edit" default="true"/>
+            </altviews>
+        </view>
+        
+        <view name="MammalogyAttributes"
+            class="edu.ku.brc.specify.datamodel.CollectionObjectAttribute"
+            resourcelabels="false">
+            <desc><![CDATA[Subform within the Collection Object form.]]></desc>
+            <altviews>
+                <altview name="MammalogyAttributes View" viewdef="MammalogyAttributes" mode="view"/>
+                <altview name="MammalogyAttributes Edit" viewdef="MammalogyAttributes" mode="edit" default="true"/>
+            </altviews>
+        </view>
+    </views>
+    
+    <viewdefs>
+        
+        <viewdef
+            type="form"
+            name="Collection Object"
+            class="edu.ku.brc.specify.datamodel.CollectionObject"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[The Collection Object form.]]></desc>
+            <enableRules/>
+            
+            <columnDef>100px,2px,205px,5px,96px,2px,210px,5px,94px,2px,160px,15px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,195px,5px,125px,2px,210px,5px,125px,2px,131px,15px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,215px,5px,128px,2px,260px,5px,138px,2px,145px,15px,p:g</columnDef>
+            <columnDef os="exp">p,2px,min(p;250px),5px:g,p,2px,p:g,5px:g,p,2px,p:g(2),p,p:g</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+
+            <rows>
+			 
+                <row>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="catalogNumber" uitype="formattedtext"/>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="accession" uitype="querycbx" initialize="name=AccessionCO;title=AccessionCO" isrequired="false"/>
+                    <cell type="label" labelfor="14"/>
+                    <cell type="field" id="14" name="altCatalogNumber" uitype="text" colspan="2"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="4"/>
+                    <cell type="field" id="4" name="cataloger" uitype="querycbx" initialize="name=Agent;title=Catalog Agent" isrequired="true"/>
+                    <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" uitype="plugin" name="this" initialize="name=PartialDateUI;df=catalogedDate;tp=catalogedDatePrecision" uifieldformatter="Date"/>
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="fieldNumber" uitype="text" colspan="2"/>
+                </row>
+				<row>
+				    <cell type="label" labelfor="sensitive"/>
+                    <cell type="field" id="sensitive" name="restrictions" uitype="combobox" />
+				    <cell type="label" labelfor="remarks"/>
+                    <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="1" colspan="6"/> 
+                </row>
+                <row>
+                    <cell type="label" label="                       Audit:" />
+                    <cell type="subview" viewname="TreatmentEventForCollObj" id="13" name="treatmentEvents"  initialize="btn=true"/>
+                    <cell type="label" labelfor="spacehere1"/>
+                    <cell type="label" labelfor="spacehere2"/>
+                    <cell type="label" label="      Attachments:" />
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments"  initialize="btn=true;icon=CollectionObjectAttachment"/>
+                </row>
+                <row>
+                    <cell type="subview" viewname="CollectingEvent" id="21" name="collectingEvent" colspan="12" />
+                </row>
+				<row>
+                    <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="12" rows="5"/>
+                </row>
+                <row>
+                    <cell type="subview" viewname="Preparation" id="8" name="preparations" defaulttype="table" colspan="12"/>
+                </row>
+                <row>
+                    <cell type="subview" id="15" viewname="MammalogyAttributes" name="collectionObjectAttribute" colspan="12"/>
+                </row>
+                <row>
+                    <cell type="separator" label="" colspan="12"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
+                    <cell type="panel" id="116" name="outerPanel" coldef="p,6px,p,f:p:g" rowdef="p,4px,p" colspan="5">
+                        <rows>
+                            <row>
+                                <cell type="field" id="113" uitype="checkbox" name="generateLabelChk" label="New Label on Save" ignore="true" default="true" initialize="visible=false"/>
+                                <cell type="command" id="114" name="generateLabelBtn" label="Generate Label" ignore="true" default="true" initialize="visible=false;align=right"/>
+                            </row>
+                        </rows>
+                    </cell>
+                </row>
+            </rows>
+        </viewdef>
+
+        <viewdef name="MammalogyAttributes"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.CollectionObjectAttribute"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[Form For OtherIdentifier]]></desc>
+            
+			<columnDef>130px,2px,70px,20px,160px,2px,80px,15px,130px,2px,110px,5px,30px,2px,110px,0px,p:g</columnDef>
+            <!--columnDef>130px,2px,70px,20px,160px,2px,80px,15px,160px,2px,240px,0px,p:g</columnDef-->
+            <columnDef os="lnx">115px,2px,120px,5px,85px,2px,120px,5px,120px,2px,120px,5px,94px,2px,120px,0px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,140px,5px,95px,2px,140px,5px,125px,2px,140px,5px,94px,2px,145px,0px,p:g</columnDef>
+            <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),0px</columnDef>
+            <rowDef auto="true" sep="2px" cell="p"/>
+
+            <rows>
+                <row>
+				    <cell type="label" labelfor="Sex"/>
+                    <cell type="field" id="Sex" name="text10" uitype="combobox" />
+					<cell type="label" labelfor="Lifestage"/>
+                    <cell type="field" id="Lifestage" name="text11" uitype="combobox" />
+					<cell type="label" labelfor="space"/>
+				</row>
+                <row>
+                
+                    <cell type="label" labelfor="Mass"/>
+                    <cell type="field" id="Mass" name="number9" uitype="text"/>
+                    <cell type="label" labelfor="MassUnit"/>
+                    <cell type="field" id="MassUnit" name="text14" uitype="combobox"/>
+                    <cell type="label" labelfor="MassType"/>
+                    <cell type="field" id="MassType" name="text13" uitype="combobox" colspan="4"/>
+                </row>
+				<row>
+                    <cell type="label" labelfor="EarLength"/>
+                    <cell type="field" id="EarLength" name="number7" uitype="text"/>
+                    <cell type="label" labelfor="EarLengthUnit"/>
+                    <cell type="field" id="EarLengthUnit" name="text16" uitype="combobox"/>
+					<cell type="label" labelfor="EarLengthType"/>
+                    <cell type="field" id="EarLengthType" name="text15" uitype="combobox" colspan="4"/>
+                </row> 
+				<row>
+                    <cell type="label" labelfor="ForearmLength"/>
+                    <cell type="field" id="ForearmLength" name="number10" uitype="text"/>
+                    <cell type="label" labelfor="ForearmLengthUnit"/>
+                    <cell type="field" id="ForearmLengthUnit" name="text18" uitype="combobox"/>
+					<cell type="label" labelfor="ForearmLengthType"/>
+                    <cell type="field" id="ForearmLengthType" name="text17" uitype="combobox" colspan="4"/>
+                </row> 
+                <row>
+                    <cell type="label" labelfor="HeadBodyL"/>
+                    <cell type="field" id="HeadBodyL" name="number3" uitype="text"/>
+                    <cell type="label" labelfor="HeadBodyLUnit"/>
+                    <cell type="field" id="HeadBodyLUnit" name="text20" uitype="combobox"/>
+					<cell type="label" labelfor="HeadBodyLType"/>
+                    <cell type="field" id="HeadBodyLType" name="text19" uitype="combobox" colspan="4"/>
+                </row> 
+				<row> 
+					<cell type="label" labelfor="HindFootCU"/>
+                    <cell type="field" id="HindFootCU" name="number4" uitype="text"/>
+                    <cell type="label" labelfor="HindFootCUUnit"/>
+                    <cell type="field" id="HindFootCUUnit" name="text6" uitype="combobox"/>
+                    <cell type="label" labelfor="HindFootCUType"/>
+                    <cell type="field" id="HindFootCUType" name="text5" uitype="combobox" colspan="4"/>
+				</row> 
+				<row> 
+					<cell type="label" labelfor="HindFootSU"/>
+                    <cell type="field" id="HindFootSU" name="number5" uitype="text"/>
+                    <cell type="label" labelfor="HindFootSUUnit"/>
+                    <cell type="field" id="HindFootSUUnit" name="text8" uitype="combobox"/>
+                    <cell type="label" labelfor="HindFootSUType"/>
+                    <cell type="field" id="HindFootSUType" name="text7" uitype="combobox" colspan="4"/>
+				</row> 
+				<row> 
+					<cell type="label" labelfor="TotalLength"/>
+                    <cell type="field" id="TotalLength" name="number1" uitype="text"/>
+                    <cell type="label" labelfor="TotalLengthUnit"/>
+                    <cell type="field" id="TotalLengthUnit" name="text24" uitype="combobox"/>
+                    <cell type="label" labelfor="TotalLengthType"/>
+                    <cell type="field" id="TotalLengthType" name="text23" uitype="combobox" colspan="4"/>
+				</row>
+				<row> 
+					<cell type="label" labelfor="TailLength"/>
+                    <cell type="field" id="TailLength" name="number2" uitype="text"/>
+                    <cell type="label" labelfor="TailLengthUnit"/>
+                    <cell type="field" id="TailLengthUnit" name="text22" uitype="combobox"/>
+                    <cell type="label" labelfor="TailLengthType"/>
+                    <cell type="field" id="TailLengthType" name="text21" uitype="combobox" colspan="4"/>
+				</row>
+				<row> 
+				 <cell type="label" labelfor="FemaleEmbryoSize"/>
+                    <cell type="field" id="FemaleEmbryoSize" name="text3" uitype="text"/>
+					<cell type="label" labelfor="TestisSize"/>
+                    <cell type="field" id="TestisSize" name="text2" uitype="text"/>
+					 
+                    <cell type="label" labelfor="ReproStatus"/>
+                    <cell type="field" id="ReproStatus" name="text4" uitype="combobox" colspan="4"/>
+				</row>
+				<row> 
+					<cell type="label" labelfor="Nipples"/>
+                    <cell type="field" id="Nipples" name="text1" uitype="text"/>
+                    <cell type="label" labelfor="NumEmbryos"/>
+                    <cell type="field" id="NumEmbryos" name="text12" uitype="text"/>
+				</row>
+				<row>
+			        <cell type="label" labelfor="Notes"/>
+                    <cell type="field" id="Notes" name="remarks" uitype="textareabrief" rows="1" colspan="10"/>
+			    </row>
+            </rows>	
+        </viewdef>
+    </viewdefs>
+</viewset>
