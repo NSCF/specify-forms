@@ -28,9 +28,8 @@
     
     <viewdefs>
         
-        <viewdef
+        <viewdef name="Collection Object"
             type="form"
-            name="Collection Object"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">

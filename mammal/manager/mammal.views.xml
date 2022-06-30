@@ -299,18 +299,22 @@
                     <cell type="field" id="yn3" name="yesNo3" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
-                    <cell type="subview" id="15" viewname="MammalogyAttributes" name="collectionObjectAttribute" colspan="12"/>
+                    <cell type="label" label="Audit:" />
+                    <cell type="subview" viewname="TreatmentEventForCollObj" id="13" name="treatmentEvents"  initialize="btn=true"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="rem"/>
                     <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <row>
+                    <cell type="subview" id="15" viewname="MammalogyAttributes" name="collectionObjectAttribute" colspan="12"/>
+                </row>
+                <!-- <row>
                     <cell type="label"/>
                     <cell type="subview" viewname="TreatmentEvent" id="te" name="treatmentEvents" initialize="btn=true"/>
-                    <!--<cell type="label" label="Attachments:" />
- 					<cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments"  initialize="btn=true;icon=CollectionObjectAttachment"/>-->
-                </row>
+                    <cell type="label" label="Attachments:" />
+ 					<cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments"  initialize="btn=true;icon=CollectionObjectAttachment"/>
+                </row> -->
                 <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="12" rows="5"/>
                 </row>
