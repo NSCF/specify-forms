@@ -2666,29 +2666,16 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="agent.lastName" uitype="text" cols="20" colspan="3"/>
-                </row>
-				<row>
-                    <cell type="label" labelfor="middleInitial"/>
-                    <cell type="field" id="middleInitial" name="agent.middleInitial" uitype="text" cols="20" colspan="3"/>
+                    <cell type="field" id="3" name="agent.lastName" uitype="text" colspan="3"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" name="agent.firstName" uitype="text" cols="20" colspan="3"/>
+                    <cell type="field" id="5" name="agent.initials" uitype="text" colspan="3"/>
                 </row>
-				<row>
-                    <!-- <cell type="label" labelfor="title"/> -->
-                    <!-- <cell type="field" id="title" name="agent.title" uitype="text" cols="20" colspan="3"/> -->
-                </row>
-				<row>
-                    <!-- <cell type="label" labelfor="suffix"/> -->
-                    <!-- <cell type="field" id="suffix" name="agent.suffix" uitype="text" cols="20" colspan="3"/> -->
-                </row>
-                <!--row>
+                <row>
                     <cell type="label" labelfor="7"/>
-                    <cell type="field" id="7" name="agent.email" uitype="text" cols="32"/>
-                    <cell type="field" id="mailto" name="agent" uitype="plugin" initialize="name=WebLinkButton;url=mailto:$email$;label=Send Mail;watch=7"/>
-                </row-->
+                    <cell type="field" id="7" name="agent.firstname" uitype="text" colspan="3"/>
+                </row>
             </rows>
         </viewdef>
 
