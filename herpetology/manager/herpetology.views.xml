@@ -308,24 +308,23 @@
                     <cell type="field" id="date1" name="date1" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
                 <row>
-                    <cell type="label"/>
-                    <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true" colspan="2"/>
-                </row>
-                <row>
                     <cell type="label" labelfor="guid"/>
 					<cell type="field" id="guid" name="guid" uitype="text" colspan="3" readonly="true"/>
-                    <cell type="label"/>
-                    <cell type="label" colspan="3" />
+                    <cell type="label" colspan="5"/>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments"  initialize="btn=true;icon=CollectionObjectAttachment"/>
-                </row>   
+                </row> 
+                <row>
+                    <cell type="label" labelfor="13" />
+                    <cell type="subview" viewname="TreatmentEventForCollObj" id="13" name="treatmentEvents"  initialize="btn=true"/>
+                    <cell type="label"/>
+                    <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true" colspan="2"/>
+                </row>  
+                <row>
+                    <cell type="label" labelfor="rem" />
+                    <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="12"/>
+                </row>
                 <row>
                     <cell type="subview" id="15" viewname="HerpetologyAttributes" name="collectionObjectAttribute" colspan="14"/>
-                </row>
-                <row>
-                    <cell type="separator" label="Collection Object Remarks" colspan="14"/>
-                </row>
-                <row>
-                    <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="14"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="14" rows="5"/>
