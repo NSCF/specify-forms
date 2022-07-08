@@ -299,7 +299,7 @@
                     <cell type="field" id="yn3" name="yesNo3" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
-                    <cell type="label" label="Audit:" />
+                    <cell type="label" labelfor="13" />
                     <cell type="subview" viewname="TreatmentEventForCollObj" id="13" name="treatmentEvents"  initialize="btn=true"/>
                 </row>
                 <row>
