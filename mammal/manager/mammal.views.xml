@@ -197,13 +197,8 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Collecting Event]]></desc>
             
-<<<<<<< HEAD
             <columnDef>140px,2px,200px,5px,115px,2px,210px,5px,96px,2px,70px,0px,15px,p:g</columnDef>
             <columnDef os="lnx">135px,2px,240px,5px,125px,2px,215px,5px,106px,2px,80px,0px,15px,p:g</columnDef>
-=======
-            <columnDef>120px,2px,200px,5px,115px,2px,210px,5px,96px,2px,90px,0px,15px,p:g</columnDef>
-            <columnDef os="lnx">115px,2px,240px,5px,125px,2px,215px,5px,106px,2px,100px,0px,15px,p:g</columnDef>
->>>>>>> f23c48cc603fe08fd0f2b7d215e485101111e437
             <columnDef os="mac">130px,2px,251px,5px,130px,2px,270px,5px,130px,2px,130px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,max(p;190px),5px:g,p,2px,p,5px:g,p,2px,110px,p,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
@@ -220,7 +215,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="method" uitype="combobox" picklist="CollectingMethod"/>
+                    <cell type="field" id="3" name="method" uitype="combobox"/>
                     <cell type="label" labelfor="10"/>
                     <cell type="field" id="10" uitype="plugin" name="this" initialize="name=PartialDateUI;df=endDate;tp=endDatePrecision" uifieldformatter="Date"/>
                     <!-- <cell type="label" labelfor="7"/>
