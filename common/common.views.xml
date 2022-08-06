@@ -3663,7 +3663,7 @@
             </rows>
         </viewdef>
 
-                <viewdef name="GeoCoordDetail"
+        <viewdef name="GeoCoordDetail"
             type="form"
             class="edu.ku.brc.specify.datamodel.GeoCoordDetail"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -5507,6 +5507,10 @@
                 <row>
                     <cell type="label" labelfor="iucn"/>
                     <cell type="field" id="iucn" name="text2" uitype="combobox"  />
+                </row>
+                <row>
+                    <cell type="label" labelfor="guid"/>
+                    <cell type="field" id="guid"  uitype="text" name="guid" colspan="5"/>
                 </row>
 				<row>
 				    <cell type="label" labelfor="remarks"/>
