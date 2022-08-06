@@ -3696,7 +3696,7 @@
                     <cell type="label" labelfor="protocol" />
                     <cell type="field" id="protocol" name="Protocol" uitype="combobox" />
                     <cell type="label" labelfor="source" />
-                    <cell type="field" id="source" name="Source" uitype="combobox" colspan="6"/>
+                    <cell type="field" id="source" name="Source" uitype="text" colspan="6"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="noGeoref"/>
