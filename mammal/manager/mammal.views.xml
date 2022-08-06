@@ -393,11 +393,16 @@
                     <cell type="separator" label="" colspan="12"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="10"/>
-                    <cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
-                    <cell type="label" label=""/>
-                    <cell type="label" labelfor="11"/>
-                    <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true" cols="20" colspan="2"/>
+                    <cell type="label" labelfor="cba"/>
+                    <cell type="field" id="cba" name="createdByAgent" uitype="text" readonly="true" uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="mba"/>
+                    <cell type="field" id="mba" name="modifiedByAgent" uitype="text" readonly="true" uifieldformatter="Agent"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="tc"/>
+                    <cell type="field" id="tc" name="timestampCreated" uitype="text" readonly="true"/>
+                    <cell type="label" labelfor="tm"/>
+                    <cell type="field" id="tm" name="timestampModified" uitype="text" readonly="true"/>
                 </row>
             </rows>
         </viewdef>
