@@ -197,8 +197,8 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Collecting Event]]></desc>
             
-            <columnDef>120px,2px,200px,5px,90px,2px,210px,5px,96px,2px,115px,0px,15px,p:g</columnDef>
-            <columnDef os="lnx">115px,2px,240px,5px,100px,2px,215px,5px,106px,2px,125px,0px,15px,p:g</columnDef>
+            <columnDef>120px,2px,200px,5px,115px,2px,210px,5px,96px,2px,90px,0px,15px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,240px,5px,125px,2px,215px,5px,106px,2px,100px,0px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,251px,5px,130px,2px,270px,5px,130px,2px,130px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,max(p;190px),5px:g,p,2px,p,5px:g,p,2px,110px,p,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
@@ -230,7 +230,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="52" name="text2" uitype="text" for="habitatdetail" colspan="11" /> 
+                    <cell type="field" id="t2" name="text2" uitype="text" for="habitatdetail" colspan="11" /> 
                 </row>
                 <row>
                     <cell type="label" labelfor="verbatimLoc"/>
