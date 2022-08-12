@@ -146,15 +146,17 @@
                 </row>
                 <row>
                     <cell type="label" />
+                    <cell type="field" id="yn6" name="yesNo6" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="label" />
                     <cell type="field" id="yn3" name="yesNo3" uitype="checkbox" initialize="editable=true"/>
-                    <cell type="label" />
-                    <cell type="field" id="yn4" name="yesNo4" uitype="checkbox" initialize="editable=true"/>
-                    <cell type="label" />
-                    <cell type="field" id="yn5" name="yesNo5" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="label" labelfor="t2"/>
+                    <cell type="field" id="t2" name="text2" uitype="combobox"/> 
+                    <!-- <cell type="label" />
+                    <cell type="field" id="yn5" name="yesNo5" uitype="checkbox" initialize="editable=true"/> -->
                 </row>
                 <row>
                     <cell type="label" />
-                    <cell type="field" id="yn6" name="yesNo6" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="field" id="yn4" name="yesNo4" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="12" rows="5"/>
