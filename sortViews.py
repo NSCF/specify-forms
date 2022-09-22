@@ -1,7 +1,7 @@
 #sorts the views and viewdefs in a views.xml file
 #note this replaces the original file, so commit first...
 
-fileName = 'bird//manager/bird.views.xml'
+fileName = 'invertebrate/manager/invertebrate.views.xml'
 
 def getElemName(xmlStr):
   nameAttrStart = xmlStr.index('name')
