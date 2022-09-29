@@ -5390,7 +5390,7 @@
               <cell type="separator" label="Attachments" colspan="13"/>
                 </row>
                 <row>
-                    <cell type="subview" viewname="ObjectAttachment" id="10" name="permitAttachments" colspan="13" initialize="btn=true;icon=PermitAttachment"/>
+                    <cell type="subview" viewname="ObjectAttachment" id="10" name="permitAttachments" initialize="btn=true;icon=PermitAttachment" colspan="13" />
                 </row>
                 <!--<row>
                     <cell type="label" labelfor="n1"/>
