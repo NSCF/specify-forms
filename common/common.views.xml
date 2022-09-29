@@ -5353,8 +5353,8 @@
             <desc><![CDATA[Permit Form.]]></desc>
             <enableRules/>
 
-            <columnDef>105px,2px,200px,5px,88px,2px,200px,5px,100px,2px,123px,0px,15px,p,p:g</columnDef>
-            <columnDef os="lnx">115px,2px,210px,5px,105px,2px,210px,5px,120px,2px,141px,0px,15px,p,p:g</columnDef>
+            <columnDef>105px,2px,200px,5px,88px,2px,200px,5px,100px,2px,123px,0px,10px,p,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,210px,5px,105px,2px,210px,5px,120px,2px,141px,0px,10px,p,p:g</columnDef>
             <columnDef os="mac">130px,2px,225px,5px,120px,2px,225px,5px,140px,2px,176px,0px,15px,p,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),0px,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
