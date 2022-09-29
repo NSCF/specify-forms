@@ -1000,8 +1000,6 @@
                     <cell type="field" id="2" name="preparedByAgent" uitype="querycbx" initialize="name=Agent"/>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date"/>
-                    
-                    
                 </row>
                 <row>
                     <cell type="label" labelfor="3"/>
@@ -1009,16 +1007,14 @@
                     <cell type="subview" id="preparationAttribute" name="preparationAttribute" viewname="PreparationAttribute" initialize="btn=true"/> 
                     <!-- <cell type="label" labelfor="storLoc"/> -->
                     <!-- <cell type="field" id="storLoc" name="storageLocation" uitype="text" /> -->
-                    
                 </row>
                 <row>
                     <cell type="label" labelfor="desc"/>
                     <cell type="field" id="desc" name="description" uitype="text" colspan="10"/>
- 
                 </row>
                 <row>
-                    <cell type="label" labelfor="t2" />
-                    <cell type="field" id="t2" name="text2" uitype="combobox"/>
+                    <!-- <cell type="label" labelfor="t2" />
+                    <cell type="field" id="t2" name="text2" uitype="combobox"/> -->
                     <cell type="label" labelfor="t3" />
                     <cell type="field" id="t3" name="text3" uitype="combobox"/>
                 </row>
