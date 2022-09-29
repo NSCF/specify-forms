@@ -2022,7 +2022,7 @@
             <desc><![CDATA[Permit subform for CollectingEventAuthorization.]]></desc>
             <enableRules/>
             <columnDef>90px,2px,250px,4px,90px,2px,400px,4px,p:g</columnDef>
-            <columnDef os="lnx">115px,2px,230px,570px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,315px,2px,120px,2px,400px,5px,p:g</columnDef>
             <columnDef os="mac">130px,2px,215px,685px,p:g</columnDef>
             <columnDef os="exp">p,2px,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
