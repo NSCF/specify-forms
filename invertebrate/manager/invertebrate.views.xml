@@ -1018,7 +1018,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="4"/>
-                    <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage"/>
+                    <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="5"/>
                     <cell type="label" labelfor="t5" />
                     <cell type="field" id="t5" name="text5" uitype="text"/>
                 </row>
