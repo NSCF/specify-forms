@@ -797,24 +797,25 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="text1" uitype="combobox"/>
-                    <cell type="label" labelfor="4"/>
-                    <cell type="field" id="4" name="text2" uitype="text"/>
-                    <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="text3" uitype="text"/>
+                    <cell type="field" id="1" name="text1" for="sex" uitype="combobox"/>
+                    
                     <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="text4" uitype="combobox"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="20"/>
-                    <cell type="field" id="20" name="text5" uitype="text"/>
-                    <cell type="label" labelfor="21"/>
-                    <cell type="field" id="21" name="text6" uitype="text"/>
+                    <cell type="field" id="2" name="text4" for="stage" uitype="combobox"/>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="text3" for="reprocondition" uitype="text"/>
                     <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" name="text7" uitype="text"/>
-                    <cell type="label" labelfor="6"/>
-                    <cell type="field" id="6" name="text8" uitype="text"/>
+                    <cell type="field" id="5" name="text7" for="totalength" uitype="text"/>
                 </row>
+                <!-- <row>
+                    <cell type="label" labelfor="4"/>
+                    <cell type="field" id="4" name="text2" for="weight" uitype="text"/>
+                    <cell type="label" labelfor="20"/>
+                    <cell type="field" id="20" name="text5" for="headwidth" uitype="text"/>
+                    <cell type="label" labelfor="21"/>
+                    <cell type="field" id="21" name="text6" for="bodywidth" uitype="text"/>
+                    <cell type="label" labelfor="6"/>
+                    <cell type="field" id="6" name="text8" for="rangeofsize" uitype="text"/>
+                </row> -->
                 <!-- <row>
                     <cell type="label" labelfor="22"/>
                     <cell type="field" id="22" name="remarks" uitype="textareabrief" rows="2" colspan="14"/>
@@ -1014,9 +1015,9 @@
                 </row>
                 <row>
                     <!-- <cell type="label" labelfor="t2" />
-                    <cell type="field" id="t2" name="text2" uitype="combobox"/> -->
+                    <cell type="field" id="t2" name="text2" for="fixative" uitype="combobox"/> -->
                     <cell type="label" labelfor="t3" />
-                    <cell type="field" id="t3" name="text3" uitype="combobox"/>
+                    <cell type="field" id="t3" name="text3" for="preservative" uitype="combobox"/>
                 </row>
                 <row>
                     <cell type="separator" label="Storage details" colspan="11"/>
