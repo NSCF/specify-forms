@@ -1,7 +1,7 @@
 #sorts the views and viewdefs in a views.xml file
 #note this replaces the original file, so commit first...
 
-fileName = 'insect/manager/ento.views.xml'
+fileName = 'backstop/global.views.xml'
 
 def getElemName(xmlStr):
   nameAttrStart = xmlStr.index('name')

@@ -78,6 +78,18 @@
             </altviews>
         </view>
 
+        <view name="Agent"
+            class="edu.ku.brc.specify.datamodel.Agent"
+            busrules="edu.ku.brc.specify.datamodel.busrules.AgentBusRules"
+            isinternal="false"
+            resourcelabels="false">
+            <desc><![CDATA[Agent subform within the AccessionAgent form.]]></desc>
+            <altviews defaultmode="view">
+                <altview name="Agent View"        title="Agent"        viewdef="Agent"        mode="view" validated="false"/>
+                <altview name="Agent Edit"        title="Agent"        viewdef="Agent"        mode="edit" validated="true" default="true"/>
+            </altviews>
+        </view>
+
 		<view name="AgreementAgent"
               objtitle="Agreement Agent"
               class="edu.ku.brc.specify.datamodel.AccessionAgent">
@@ -1488,6 +1500,98 @@
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
                 </row>-->
             </rows>
+        </viewdef>
+
+        <viewdef name="Agent"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.Agent"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[Agent subform for Acessions.]]></desc>
+
+            <columnDef>100px,2px,125px,5px,75px,2px,128px,5px,80px,2px,140px,5px,90px,2px,29px,2px,35px,0px,15px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,146px,5px,85px,2px,140px,5px,90px,2px,149px,5px,100px,2px,35px,2px,35px,0px,15px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,150px,5px,85px,2px,160px,5px,105px,2px,164px,5px,120px,2px,45px,2px,48px,0px,15px,p:g</columnDef>
+            <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g,5px:g,p,2px,p:g,5px:g,p,2px,p:g,2px,p,0px,p,p:g</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+
+            <rows>
+                <row>
+                    <cell type="label" labelfor="0"/>
+                    <cell type="field" id="0" name="agentType" uitype="combobox" ignore="true"/>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="title" uitype="combobox"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="lastName" uitype="text" colspan="5" isrequired="true"/>
+                    <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" name="firstName" uitype="text"/>
+                    <cell type="label" labelfor="12" />
+                    <cell type="field" id="12" name="initials" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="8"/>
+                    <cell type="field" id="8" name="abbreviation" uitype="text"/>
+                    <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" name="email" uitype="text" colspan="9"/>
+                    <cell type="field" id="mailto" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=MailTo;icon=EMail;watch=7"/>
+                </row>
+                      <row>
+                    <cell type="subview" viewname="Address" id="9" name="addresses" colspan="19"/>
+                </row>
+                <row>
+                    <cell type="subview" viewname="GroupPersons" id="31" name="groups" defaulttype="table" colspan="19" /> <!-- initialize="addsearch=true"/> -->
+                </row>
+                <row>
+                    <cell type="subview" viewname="AgentVariant" id="10" name="variants" colspan="19"/>
+                </row>
+                <row>
+                    <cell type="separator" label="Attachments" colspan="19"/>
+                </row>
+                <row>
+                    <cell type="subview" viewname="AgentSpecialty" id="50" name="agentSpecialties" colspan="19" rows="3"/>
+                </row>
+                <row>
+                    <cell type="subview" id="agentAttachments" viewname="ObjectAttachment" name="agentAttachments" initialize="btn=true;icon=AgentAttachment"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="11" />
+                    <cell type="field" id="11" name="guid" uitype="text" colspan="5" readonly="true"/>
+                </row>
+                <!--  <row>
+                    <cell type="label" labelfor="19" />
+                    <cell type="field" id="19" uitype="plugin" name="this" initialize="name=PartialDateUI;df=dateOfBirth;tp=dateOfBirthPrecision" uifieldformatter="Date"/>
+                    <cell type="label" labelfor="20" />
+                    <cell type="field" id="20" uitype="plugin" name="this" initialize="name=PartialDateUI;df=dateOfDeath;tp=dateOfDeathPrecision" uifieldformatter="Date"/>
+                    <cell type="label" labelfor="4"/>
+                    <cell type="field" id="4" name="middleInitial" uitype="text" colspan="3"/>
+                    <cell type="label" labelfor="13" />
+                    <cell type="field" id="13" name="interests" uitype="textareabrief" rows="2"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="14" />
+                    <cell type="field" id="14" name="jobTitle" uitype="text"/>
+                    <cell type="label" labelfor="16" />
+                    <cell type="field" id="16" name="remarks" uitype="textareabrief" rows="2"/>
+                    <cell type="label" labelfor="17" />
+                    <cell type="field" id="17" name="url" uitype="text"/>
+                    <cell type="label" labelfor="suf"/>
+                    <cell type="field" id="suf" name="suffix" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="21"/>
+                    <cell type="field" id="21" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="22"/>
+                    <cell type="field" id="22" name="modifiedByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="23"/>
+                    <cell type="field" id="23" name="timestampModified" uitype="label" readonly="true"/>
+                    <cell type="label" labelfor="24"/>
+                    <cell type="field" id="24" name="timestampCreated" uitype="label" readonly="true"/>
+                </row> -->
+                  </rows>
         </viewdef>
 
 		<viewdef name="AgreementAgent"
