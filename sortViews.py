@@ -18,7 +18,7 @@ def getElemName(xmlStr):
 def formatFirstElement(elemStr):
   endIndex = elemStr.index('>') #we want the first one, ie the opening tag and it's elements
   tagAndAttrs = elemStr[0:endIndex] #this excludes the closing caret
-  theRest = elemStr[(endIndex + 2):len(elemStr)]
+  theRest = elemStr[(endIndex + 1):len(elemStr)]
   tagAndAttrsList = re.split('\s+', tagAndAttrs) #this effectively removes whitespace, but...
   tagAndAttrsList = [x for x in tagAndAttrsList if x] #apparently we need to remove any empty strings...
 
@@ -69,7 +69,8 @@ def sortxmlElems(xmlstr, section):
 
     elemEnd = xmlString.index(elemClosingTag, searchStart) + len(elemClosingTag)
     elem = xmlString[elemStart:elemEnd]
-    elements.append(elem)
+    formattedElem = formatFirstElement(elem)
+    elements.append(formattedElem)
 
     searchStart = elemEnd + 1
   
