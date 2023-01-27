@@ -3,8 +3,9 @@
 #note this replaces the original file, so commit first...
 import re
 import os
+import shlex
 
-fileName = 'backstop/global.views.xml'
+fileName = 'insect/guest/ento.views.xml'
 
 def getElemName(xmlStr):
   nameAttrStart = xmlStr.index('name')
@@ -14,13 +15,22 @@ def getElemName(xmlStr):
   name = xmlStr[nameStart:nameEnd]
   return name
 
+def quoteAttribute(attr):
+  if '=' in attr:
+    parts = attr.split('=')
+    parts[1] = '"' + parts[1] + '"'
+    return '='.join(parts)
+  else:
+    return attr
+
+
 #takes a view or viewdef element and puts the name first, sets 'tabs', and removes white space before the end of the tag
 def formatFirstElement(elemStr):
   endIndex = elemStr.index('>') #we want the first one, ie the opening tag and it's elements
   tagAndAttrs = elemStr[0:endIndex] #this excludes the closing caret
   theRest = elemStr[(endIndex + 1):len(elemStr)]
-  tagAndAttrsList = re.split('\s+', tagAndAttrs) #this effectively removes whitespace, but...
-  tagAndAttrsList = [x for x in tagAndAttrsList if x] #apparently we need to remove any empty strings...
+  tagAndAttrsList = shlex.split(tagAndAttrs) #use schlex because of attributes with spaces, but then
+  tagAndAttrsList = list(map(quoteAttribute, tagAndAttrsList))#apparently we need to remove any empty strings...
 
   #move the name attr to second place in list
   if not tagAndAttrsList[1].startswith('name'): #this is what we want
@@ -32,7 +42,7 @@ def formatFirstElement(elemStr):
   #add the necessary line breaks and tabs
   tagAndAttrsList[0] = tagAndAttrsList[0] + ' ' #space after the tag
   for ind in range(2, len(tagAndAttrsList)):
-    tagAndAttrsList[ind] = os.linesep + ('\t' * 6) + tagAndAttrsList[ind]
+    tagAndAttrsList[ind] = '\n' + ('\t' * 3) + tagAndAttrsList[ind]
 
   tagAndAttrsList.append('>') #add the closing caret for the tag again
   cleanFirstTag = ''.join(tagAndAttrsList)
