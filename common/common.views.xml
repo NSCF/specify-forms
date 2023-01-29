@@ -5571,40 +5571,57 @@
 			settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Sub Collecting Event]]></desc>
 
-            <columnDef>100px,2px,195px,5px,115px,2px,131px,5px,140px,2px,130px,p:g</columnDef>
-            <columnDef os="lnx">115px,2px,200px,5px,138px,2px,140px,5px,168px,2px,140px,p:g</columnDef>
+            <columnDef>100px,2px,195px,5px,95px,2px,130px,5px,80px,2px,210px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,200px,5px,118px,2px,140px,5px,108px,2px,220px,p:g</columnDef>
             <columnDef os="mac">130px,2px,220px,5px,158px,2px,160px,5px,188px,2px,160px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2)</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
 
             <rows>
                 <row>
+                    <cell type="label" labelfor="acc"/>
+                    <cell type="field" id="acc" name="geoRefAccuracy" uitype="text"/>
                     <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="namedPlaceExtent" uitype="text"/>
-                    <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" name="maxUncertaintyEst" uitype="text"/>
-                    <cell type="label" labelfor="6"/>
-                    <cell type="field" id="6" name="maxUncertaintyEstUnit" uitype="text"/>
+                    <cell type="field" id="3" name="geoRefAccuracyUnits" uitype="combobox"/>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" usedfor="datum" uitype="combobox"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="geoRefDetBy" uitype="querycbx" initialize="name=Agent"/>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="geoRefDetDate" uitype="formattedtext" uifieldformatter="Date"/>
-                    <cell type="label" labelfor="4"/>
-                    <cell type="field" id="4" name="geoRefDetRef" uitype="text"/>
+                    <cell type="label" labelfor="protocol"/>
+                    <cell type="field" id="protocol" name="protocol" uitype="combobox"/>
+                    
                 </row>
-                <!--<row>
+                <row>
                     <cell type="label" labelfor="source"/>
-                    <cell type="field" id="source" name="source" uitype="text"/>
+                    <cell type="field" id="source" name="source" uitype="text" colspan="10"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="geoRefRemarks" uitype="textareabrief" rows="2" colspan="10"/>
+                </row>
+                <row>
+                    <cell type="label"/>
+                    <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="geoRefCompiledDate" uitype="formattedtext" uifieldformatter="Date"/>
+                    <cell type="label" labelfor="8"/>
+                    <cell type="field" id="8" name="geoRefCompiledBy" uitype="querycbx" initialize="name=Agent"/>
+                </row>
+
+                <!--<row>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="namedPlaceExtent" uitype="text"/>
                     <cell type="label" labelfor="val"/>
                     <cell type="field" id="val" name="validation" uitype="text"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="protocol"/>
-                    <cell type="field" id="protocol" name="protocol" uitype="text"/>
-                    <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="geoRefAccuracyUnits" uitype="text"/>
+                    <cell type="label" labelfor="4"/>
+                    <cell type="field" id="4" name="geoRefDetRef" uitype="text"/>
+                    
                     <cell type="label" labelfor="11"/>
                     <cell type="field" id="11" name="originalCoordSystem" uitype="text"/>
                 </row>
@@ -5614,14 +5631,15 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" name="maxUncertaintyEst" uitype="text"/>
+                    <cell type="label" labelfor="6"/>
+                    <cell type="field" id="6" name="maxUncertaintyEstUnit" uitype="text"/>
+                    <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="geoRefVerificationStatus" uitype="text"/>
                     <cell type="label" labelfor="validation"/>
                     <cell type="field" id="validation" name="validation" uitype="text"/>
                 </row>
-                <row>
-                    <cell type="label" labelfor="10"/>
-                    <cell type="field" id="10" name="geoRefRemarks" uitype="textareabrief" rows="2" colspan="10"/>
-                </row>
+                
                 <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
@@ -6600,34 +6618,40 @@
 
             <rows>
                 <row>
+                    <cell type="label" labelfor="geography"/>
+                    <cell type="field" id="geography" name="geography" uitype="querycbx" initialize="name=Geography" colspan="7"/>
+                    <cell type="label"/>
+                    <cell type="label"/>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="localityAttachments" initialize="btn=true;icon=LocalityAttachment"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="localityName"/>
                     <cell type="field" id="localityName" name="localityName" uitype="text" colspan="14"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="geography"/>
-                    <cell type="field" id="geography" name="geography" uitype="querycbx" initialize="name=Geography" colspan="14"/>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="text" colspan="7"/>
+                    <cell type="label" labelfor="6"/>
+                    <cell type="field" id="6" name="latLongMethod" uitype="combobox" colspan="3"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="this" uitype="plugin" initialize="name=LatLonUI" colspan="11"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="datum" uitype="text" colspan="3"/>
-                    <cell type="label" label=""/>
-                    <cell type="label" labelfor="6"/>
-                    <cell type="field" id="6" name="latLongMethod" uitype="text" colspan="3"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="subview" id="7" name="geoCoordDetails" viewname="GeoCoordDetail" colspan="17"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="subview" id="8" name="localityDetails" viewname="LocalityDetail" colspan="17"/>
-                </row>
-                <row>
+                </row> -->
+                <!-- <row>
                     <cell type="separator" label="Elevation" colspan="17"/>
-                </row>
-                <row>
+                </row> -->
+                <!-- <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="minElevation" uitype="text"/>
                     <cell type="label" labelfor="10"/>
@@ -6636,7 +6660,7 @@
                     <cell type="field" id="11" name="elevationMethod" uitype="text"/>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="elevationAccuracy" uitype="text"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="separator" label="Plugins" colspan="17"/>
                 </row>
@@ -6651,14 +6675,13 @@
                         </rows>
                     </cell>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="separator" label="Attachments" colspan="17"/>
-                </row>
-                <row>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="localityAttachments" colspan="3" initialize="btn=true;icon=LocalityAttachment"/>
+                </row> -->
+                <!-- <row>
                     <cell type="label" labelfor="guid"/>
                     <cell type="field" id="guid" name="guid" uitype="text" colspan="5" readonly="true"/>
-                </row>
+                </row> -->
                 <!--<row>
                     <cell type="subview" id="10" viewname="LocalityCitation" name="localityCitations" colspan="12"/>
                 </row>
