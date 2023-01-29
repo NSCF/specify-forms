@@ -410,11 +410,11 @@
 		<view name="ReportProperties"
 			class="java.util.prefs.Preferences"
 			useresourcelabels="false">
-			      <desc><![CDATA[Report Properties Form.]]></desc>
-			      <altviews>
-				        <altview name="Report Properties" viewdef="ReportProperties" label="Properties" mode="edit" validated="true"/>
-			      </altviews>
-		    </view>
+            <desc><![CDATA[Report Properties Form.]]></desc>
+            <altviews>
+                <altview name="Report Properties" viewdef="ReportProperties" label="Properties" mode="edit" validated="true"/>
+            </altviews>
+		</view>
 
 		<view name="RootGeographyTreeDefItem"
 			class="edu.ku.brc.specify.datamodel.GeographyTreeDefItem"
