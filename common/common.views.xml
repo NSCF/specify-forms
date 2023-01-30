@@ -1800,12 +1800,15 @@
                     <cell type="field" id="mailto" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=MailTo;icon=EMail;watch=7"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="11" />
-                    <cell type="field" id="11" name="guid" uitype="text" colspan="5" readonly="true"/>
+                    <cell type="subview" id="agentIdentifiers" viewname="AgentIdentifiers" name="identifiers" colspan="18"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="Address" id="9" name="addresses" colspan="19"/>
                 </row>
+                <!-- <row>
+                    <cell type="label" labelfor="11" />
+                    <cell type="field" id="11" name="guid" uitype="text" colspan="5" readonly="true"/>
+                </row> -->
                 <!-- <row>
                     <cell type="subview" viewname="GroupPersons" id="31" name="groups" defaulttype="table" colspan="19" initialize="addsearch=false" /> 
                 </row>
@@ -1863,8 +1866,8 @@
             <desc><![CDATA[subform on the Agent form.]]></desc>
             <enableRules/>
 
-            <columnDef>100px,2px,473px,5px,120px,2px,125px,0px,15px,p:g</columnDef>
-            <columnDef os="lnx">115px,2px,510px,5px,120px,2px,198px,0px,15px,p:g</columnDef>
+            <columnDef>100px,2px,423px,5px,120px,2px,125px,0px,15px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,460px,5px,120px,2px,198px,0px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,530px,5px,105px,2px,218px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,473px,5px:g,p,2px,125px,0px,15px,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
@@ -1876,10 +1879,10 @@
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="identifierType" uitype="text"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
-                </row>
+                </row> -->
                 <!--<row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
