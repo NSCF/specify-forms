@@ -5717,7 +5717,7 @@
                     <cell type="label" labelfor="Type"/>
                     <cell type="field" id="Type" name="type" uitype="combobox"/>
 					<cell type="label" labelfor="AuditName"/>
-                    <cell type="field" id="AuditName" name="fieldNumber" uitype="combobox" />
+                    <cell type="field" id="AuditName" name="fieldNumber" uitype="text" />
 				</row>
 				<row>
                     <cell type="label" labelfor="AuditFinding"/>
