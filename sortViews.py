@@ -1,7 +1,7 @@
 #sorts the views and viewdefs in a views.xml file
 #note this replaces the original file, so commit first...
 
-fileName = 'invertebrate/manager/invertebrate.views.xml'
+fileName = 'invertebrate/invertebrate.views.xml'
 
 def getElemName(xmlStr):
   nameAttrStart = xmlStr.index('name')
@@ -9,7 +9,7 @@ def getElemName(xmlStr):
   nameStart = xmlStr.index('"', nameAttrStart) + 1
   nameEnd = xmlStr.index('"', nameStart)
   name = xmlStr[nameStart:nameEnd]
-  return name
+  return name.upper()
 
 def sortxmlElems(xmlstr, section):
 
