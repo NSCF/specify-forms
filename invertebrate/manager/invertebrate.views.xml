@@ -296,7 +296,7 @@
             <desc><![CDATA[Collecting Event]]></desc>
             
             <columnDef>120px,2px,307px,5px,120px,2px,307px,5px,1px,2px,1px,0px,1px,p:g</columnDef>
-            <columnDef os="lnx">115px,2px,215px,5px,115px,2px,215px,5px,5px,2px,5px,5px,5px,2px,5px,0px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,415px,5px,115px,2px,415px,5px,5px,2px,5px,0px,0px,p:g</columnDef>
             <columnDef os="mac">130px,2px,150px,5px,98px,2px,150px,5px,98px,2px,130px,5px,99px,2px,179px,0px,p:g</columnDef>
             <columnDef os="exp">p,2px,130px,5px:g,p,2px,130px,5px:g,p,2px,130px,5px:g,p,2px,max(p;175px),p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
