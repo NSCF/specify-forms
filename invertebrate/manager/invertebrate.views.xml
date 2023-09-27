@@ -1028,7 +1028,6 @@
                 <row>
                     <cell type="separator" label="Prep remarks" colspan="12"/>
                 </row>
-                
                 <row>
                     <!-- <cell type="label" labelfor="rem"/> -->
                     <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="12"/>
