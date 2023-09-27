@@ -302,7 +302,6 @@
             <rowDef auto="true" cell="p" sep="2px"/>
             
             <rows>
-
                 <row>                 
                     <cell type="label" labelfor="env"/>
                     <cell type="field" id="env" name="text12" uitype="combobox" picklist="environment" />                 
@@ -1024,7 +1023,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t4"/>
-                    <cell type="field" id="t4" name="text4" for="reasonmoved" uitype="text" colspan="12"/>
+                    <cell type="field" id="t4" name="text4" for="reasonmoved" uitype="text" colspan="10"/>
                 </row>
                 <row>
                     <cell type="separator" label="Prep remarks" colspan="12"/>
