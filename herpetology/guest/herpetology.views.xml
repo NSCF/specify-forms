@@ -76,8 +76,9 @@
     
     <viewdefs>
         
-        <viewdef name="Collection Object"
+        <viewdef
             type="form"
+            name="Collection Object"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -140,8 +141,10 @@
             </rows>
         </viewdef>
 
-        <viewdef name="Determination Table"
+
+        <viewdef
             type="formtable"
+            name="Determination Table"
             class="edu.ku.brc.specify.datamodel.Determination"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -150,7 +153,8 @@
             <definition>Determination</definition>
         </viewdef>
         
-        <viewdef name="Determination"
+        <viewdef
+            name="Determination"
             type="form"
             class="edu.ku.brc.specify.datamodel.Determination"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -186,8 +190,9 @@
             
         </viewdef>
 
-        <viewdef name="CollectingEvent"
+        <viewdef
             type="form"
+            name="CollectingEvent"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -240,8 +245,9 @@
             </rows>
         </viewdef>
 
-        <viewdef name="CollectingEventSub"
+        <viewdef
             type="form"
+            name="CollectingEventSub"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
@@ -291,8 +297,9 @@
             </rows>
         </viewdef>
         
-        <viewdef name="HerpetologyAttributes"
+        <viewdef
             type="form"
+            name="HerpetologyAttributes"
             class="edu.ku.brc.specify.datamodel.CollectionObjectAttribute"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
